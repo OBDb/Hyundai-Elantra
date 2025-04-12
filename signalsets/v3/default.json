@@ -6,6 +6,10 @@
     {"id": "ELANTRA_TP_RL", "path": "Tires", "fmt": {"bix": 112, "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"},
     {"id": "ELANTRA_TP_RR", "path": "Tires", "fmt": {"bix": 152, "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"}
   ]},
+{ "hdr": "7B3", "rax": "7BB", "dbg": true, "cmd": {"22": "0100"}, "freq": 10,
+  "signals": [
+    {"id": "ELANTRA_VSS", "path": "Movement", "fmt": {"bix": 232, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
+  ]},
 { "hdr": "7C6", "rax": "7CE", "dbg": true, "cmd": {"22": "B002"}, "freq": 1,
   "signals": [
     {"id": "ELANTRA_FLI_VOL", "path": "Fuel",  "fmt": {"bix": 32, "len": 8,  "max": 255,        "unit": "liters"     }, "name": "Fuel level (volume)"},
