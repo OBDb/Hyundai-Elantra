@@ -1,5 +1,5 @@
 { "commands": [
-{ "hdr": "770", "rax": "778", "dbg": true, "cmd": {"22": "BC03"}, "freq": 0.5,
+{ "hdr": "770", "rax": "778", "dbg": true, "cmd": {"22": "BC03"}, "freq": 1,
   "signals": [
     {"id": "ELANTRA_DOOR_RL_OPEN",    "path": "Body",    "fmt": {"bix": 32, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Door Rear Left Open"},
     {"id": "ELANTRA_DOOR_FL_OPEN",    "path": "Body",    "fmt": {"bix": 34, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Door Front Left Open"},
@@ -11,7 +11,7 @@
     {"id": "ELANTRA_BELT_DRIVER",     "path": "Body",    "fmt": {"bix": 41, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Seatbelt Driver"},
     {"id": "ELANTRA_DEFOG_SW",        "path": "Climate", "fmt": {"bix": 56, "len": 8, "max": 1, "nullmin": 0, "nullmax": 1, "unit": "noyes" }, "name": "Defog Switch (Raw >1)"}
   ]},
-{ "hdr": "770", "rax": "778", "dbg": true, "cmd": {"22": "BC04"}, "freq": 0.5,
+{ "hdr": "770", "rax": "778", "dbg": true, "cmd": {"22": "BC04"}, "freq": 1,
   "signals": [
     {"id": "ELANTRA_LOCK_FR",      "path": "Body",         "fmt": {"bix": 34, "len": 1, "max": 1, "unit": "scalar" }, "name": "Door Lock Front Right (Raw)"},
     {"id": "ELANTRA_LOCK_FL",      "path": "Body",         "fmt": {"bix": 35, "len": 1, "max": 1, "unit": "scalar" }, "name": "Door Lock Front Left (Raw)"},
@@ -36,7 +36,7 @@
     {"id": "ELANTRA_HL_HIGH", "path": "Body", "fmt": {"bix": 48, "len": 8, "max": 1, "div": 12, "unit": "noyes" }, "name": "Headlight High Beam On"},
     {"id": "ELANTRA_HL_LOW",  "path": "Body", "fmt": {"bix": 56, "len": 8, "max": 1, "div": 12, "unit": "noyes" }, "name": "Headlight Low Beam On"}
   ]},
-{ "hdr": "7A0", "rax": "7A8", "dbg": true, "cmd": {"22": "C00B"}, "freq": 0.1,
+{ "hdr": "7A0", "rax": "7A8", "dbg": true, "cmd": {"22": "C00B"}, "freq": 15,
   "signals": [
     {"id": "ELANTRA_TPMS_PRESS_FL", "path": "Tires", "fmt": {"bix": 32,  "len": 8, "max": 51,              "div": 5, "unit": "psi"     }, "name": "TPMS Pressure Front Left",     "suggestedMetric": "frontLeftTirePressure"},
     {"id": "ELANTRA_TPMS_TEMP_FL",  "path": "Tires", "fmt": {"bix": 40,  "len": 8, "max": 100, "min": -50,           "unit": "celsius" }, "name": "TPMS Temperature Front Left"},
@@ -69,7 +69,7 @@
     {"id": "ELANTRA_STEERING_ANGLE", "path": "Chassis", "fmt": {"bix": 200, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10,   "sign": true, "unit": "degrees"           }, "name": "Steering Wheel Angle"},
     {"id": "ELANTRA_BRAKE_PRESSURE", "path": "Chassis", "fmt": {"bix": 256, "len": 16, "max": 100,                    "div": 86.7, "sign": true, "unit": "percent"           }, "name": "Brake Pressure"}
   ]},
-{ "hdr": "7D4", "rax": "7DC", "dbg": true, "cmd": {"22": "0101"}, "freq": 0.1,
+{ "hdr": "7D4", "rax": "7DC", "dbg": true, "cmd": {"22": "0101"}, "freq": 5,
   "signals": [
     {"id": "ELANTRA_BMS_SOC",        "path": "Battery", "fmt": {"bix": 32,  "len": 8,  "max": 100,                "div": 2,                 "unit": "percent"   }, "name": "BMS State Of Charge"},
     {"id": "ELANTRA_BMS_CHG_PWR",    "path": "Battery", "fmt": {"bix": 40,  "len": 16, "max": 655.35,             "div": 100,               "unit": "kilowatts" }, "name": "BMS Available Charge Power"},
@@ -80,19 +80,19 @@
     {"id": "ELANTRA_BMS_MOD3_TEMP",  "path": "Battery", "fmt": {"bix": 144, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "BMS Battery Mod 3 Temp"},
     {"id": "ELANTRA_BMS_MOD4_TEMP",  "path": "Battery", "fmt": {"bix": 152, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "BMS Battery Mod 4 Temp"}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "05"}, "freq": 1,
+{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "05"}, "freq": 5,
   "signals": [
     {"id": "ELANTRA_SAE_COOLANT_TEMP", "path": "Engine", "fmt": { "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "SAE Coolant Temp"}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "0B"}, "freq": 10,
+{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "0B"}, "freq": 1,
   "signals": [
     {"id": "ELANTRA_SAE_MAP", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "kilopascal" }, "name": "SAE Manifold Absolute Pressure"}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "0C"}, "freq": 10,
+{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "0C"}, "freq": 1,
   "signals": [
     {"id": "ELANTRA_SAE_RPM", "path": "Engine", "fmt": { "len": 16, "max": 16383.75, "div": 4, "unit": "rpm" }, "name": "SAE RPM"}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "0D"}, "freq": 10,
+{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "0D"}, "freq": 1,
   "signals": [
     {"id": "ELANTRA_SAE_SPEED", "path": "Chassis", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "SAE Speed"}
   ]},
@@ -100,27 +100,27 @@
   "signals": [
     {"id": "ELANTRA_SAE_BARO", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "kilopascal" }, "name": "SAE Barometric Pressure"}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "34"}, "freq": 10,
+{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "34"}, "freq": 1,
   "signals": [
     {"id": "ELANTRA_SAE_LAMBDA_B1S1", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 2, "mul": 2, "div": 32768, "unit": "scalar" }, "name": "SAE Lambda B1S1 (Actual)"}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "3C"}, "freq": 0.2,
+{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "3C"}, "freq": 5,
   "signals": [
     {"id": "ELANTRA_SAE_CAT_TEMP_B1S1", "path": "Engine", "fmt": { "len": 16, "max": 6513.5, "div": 10, "add": -40, "unit": "celsius" }, "name": "SAE Catalyst Temp B1S1"}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "42"}, "freq": 0.2,
+{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "42"}, "freq": 5,
   "signals": [
     {"id": "ELANTRA_SAE_MODULE_VOLTAGE", "path": "Electrical", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "SAE Control Module Voltage"}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "44"}, "freq": 10,
+{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "44"}, "freq": 1,
   "signals": [
     {"id": "ELANTRA_SAE_LAMBDA_CMD", "path": "Engine", "fmt": { "len": 16, "max": 2, "mul": 2, "div": 32768, "unit": "scalar" }, "name": "SAE Lambda Commanded"}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "46"}, "freq": 0.1,
+{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "46"}, "freq": 5,
   "signals": [
     {"id": "ELANTRA_SAE_AMBIENT_TEMP", "path": "Climate", "fmt": { "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "SAE Ambient Air Temp"}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "67"}, "freq": 0.2,
+{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "67"}, "freq": 5,
   "signals": [
     {"id": "ELANTRA_SAE_COOLANT_A", "path": "Engine", "fmt": {"bix": 8,  "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "SAE Coolant Temp A"},
     {"id": "ELANTRA_SAE_COOLANT_B", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "SAE Coolant Temp B"}
@@ -137,12 +137,12 @@
     {"id": "ELANTRA_INJ_DUR_3", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 53.7, "div": 1220.7, "unit": "seconds" }, "name": "Injection Duration Cyl 3"},
     {"id": "ELANTRA_INJ_DUR_4", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 53.7, "div": 1220.7, "unit": "seconds" }, "name": "Injection Duration Cyl 4"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E004"}, "freq": 0.1,
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E004"}, "freq": 5,
   "signals": [
     {"id": "ELANTRA_AUX_SOC", "path": "Battery", "fmt": {"bix": 320, "len": 8, "max": 100, "unit": "percent" }, "name": "Aux Battery SOC"},
     {"id": "ELANTRA_AUX_SOH", "path": "Battery", "fmt": {"bix": 328, "len": 8, "max": 100, "unit": "percent" }, "name": "Aux Battery SOH"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E00A"}, "freq": 2,
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E00A"}, "freq": 1,
   "signals": [
     {"id": "ELANTRA_KNOCK_RETARD_1", "path": "Engine", "fmt": {"bix": 96,  "len": 8, "max": 50, "min": -50, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock Retard Cyl 1"},
     {"id": "ELANTRA_KNOCK_RETARD_2", "path": "Engine", "fmt": {"bix": 104, "len": 8, "max": 50, "min": -50, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock Retard Cyl 2"},
