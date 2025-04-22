@@ -51,6 +51,10 @@
     {"id": "ELANTRA_TPMS_TEMP_RL",  "path": "Tires", "fmt": {"bix": 160, "len": 8, "max": 100, "min": -50,           "unit": "celsius" }, "name": "TPMS Temperature Rear Left"},
     {"id": "ELANTRA_TPMS_ALERT_RL", "path": "Tires", "fmt": {"bix": 176, "len": 8, "max": 1,                         "unit": "noyes"   }, "name": "TPMS Alert Rear Left"}
   ]},
+{ "hdr": "7B3", "rax": "7BB", "fcm1": true, "cmd": {"22": "0100"}, "freq": 0.5,
+  "signals": [
+    {"id": "ELANTRA_VSS", "path": "Movement", "fmt": {"bix": 232, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
+  ]},
 { "hdr": "7C6", "rax": "7CE", "cmd": {"22": "B002"}, "freq": 1,
   "signals": [
     {"id": "ELANTRA_FLI_VOL",         "path": "Fuel",       "fmt": {"bix": 32, "len": 8,  "max": 255,                     "unit": "liters"     }, "name": "Fuel level (volume)"},
@@ -111,11 +115,6 @@
     {"id": "ELANTRA_KNOCK_LEARN_2",  "path": "Engine", "fmt": {"bix": 168, "len": 8, "max": 50, "min": -50, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock Learn Cyl 2"},
     {"id": "ELANTRA_KNOCK_LEARN_3",  "path": "Engine", "fmt": {"bix": 176, "len": 8, "max": 50, "min": -50, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock Learn Cyl 3"},
     {"id": "ELANTRA_KNOCK_LEARN_4",  "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 50, "min": -50, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock Learn Cyl 4"}
-  ]},
-{ "hdr": "7B3", "rax": "7BB", "fcm1": true, "cmd": {"22": "0100"}, "freq": 0.5,
-  "signals": [
-    {"id": "ELANTRA_VSS", "path": "Movement", "fmt": {"bix": 232, "len": 8, "max": 255, "unit": "kilometersPerHour"}, "name": "Vehicle speed", "suggestedMetric": "speed"}
-  ]
-}
+  ]}
 ]
 }
