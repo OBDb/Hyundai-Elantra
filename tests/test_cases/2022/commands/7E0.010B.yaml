@@ -1,0 +1,223 @@
+command_id: 7E0.010B
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: 7E803410B17
+  expected_values:
+    MAP: 23
+- response: 7E803410B18
+  expected_values:
+    MAP: 24
+- response: 7E803410B1A
+  expected_values:
+    MAP: 26
+- response: 7E803410B1C
+  expected_values:
+    MAP: 28
+- response: 7E803410B1D
+  expected_values:
+    MAP: 29
+- response: 7E803410B1E
+  expected_values:
+    MAP: 30
+- response: 7E803410B1F
+  expected_values:
+    MAP: 31
+- response: 7E803410B20
+  expected_values:
+    MAP: 32
+- response: 7E803410B21
+  expected_values:
+    MAP: 33
+- response: 7E803410B22
+  expected_values:
+    MAP: 34
+- response: 7E803410B23
+  expected_values:
+    MAP: 35
+- response: 7E803410B24
+  expected_values:
+    MAP: 36
+- response: 7E803410B25
+  expected_values:
+    MAP: 37
+- response: 7E803410B26
+  expected_values:
+    MAP: 38
+- response: 7E803410B27
+  expected_values:
+    MAP: 39
+- response: 7E803410B28
+  expected_values:
+    MAP: 40
+- response: 7E803410B29
+  expected_values:
+    MAP: 41
+- response: 7E803410B2A
+  expected_values:
+    MAP: 42
+- response: 7E803410B2B
+  expected_values:
+    MAP: 43
+- response: 7E803410B2C
+  expected_values:
+    MAP: 44
+- response: 7E803410B2D
+  expected_values:
+    MAP: 45
+- response: 7E803410B2E
+  expected_values:
+    MAP: 46
+- response: 7E803410B2F
+  expected_values:
+    MAP: 47
+- response: 7E803410B30
+  expected_values:
+    MAP: 48
+- response: 7E803410B31
+  expected_values:
+    MAP: 49
+- response: 7E803410B32
+  expected_values:
+    MAP: 50
+- response: 7E803410B33
+  expected_values:
+    MAP: 51
+- response: 7E803410B34
+  expected_values:
+    MAP: 52
+- response: 7E803410B35
+  expected_values:
+    MAP: 53
+- response: 7E803410B36
+  expected_values:
+    MAP: 54
+- response: 7E803410B37
+  expected_values:
+    MAP: 55
+- response: 7E803410B38
+  expected_values:
+    MAP: 56
+- response: 7E803410B39
+  expected_values:
+    MAP: 57
+- response: 7E803410B3A
+  expected_values:
+    MAP: 58
+- response: 7E803410B3B
+  expected_values:
+    MAP: 59
+- response: 7E803410B3C
+  expected_values:
+    MAP: 60
+- response: 7E803410B3D
+  expected_values:
+    MAP: 61
+- response: 7E803410B3E
+  expected_values:
+    MAP: 62
+- response: 7E803410B3F
+  expected_values:
+    MAP: 63
+- response: 7E803410B40
+  expected_values:
+    MAP: 64
+- response: 7E803410B41
+  expected_values:
+    MAP: 65
+- response: 7E803410B42
+  expected_values:
+    MAP: 66
+- response: 7E803410B43
+  expected_values:
+    MAP: 67
+- response: 7E803410B44
+  expected_values:
+    MAP: 68
+- response: 7E803410B45
+  expected_values:
+    MAP: 69
+- response: 7E803410B46
+  expected_values:
+    MAP: 70
+- response: 7E803410B47
+  expected_values:
+    MAP: 71
+- response: 7E803410B48
+  expected_values:
+    MAP: 72
+- response: 7E803410B49
+  expected_values:
+    MAP: 73
+- response: 7E803410B4B
+  expected_values:
+    MAP: 75
+- response: 7E803410B4C
+  expected_values:
+    MAP: 76
+- response: 7E803410B4D
+  expected_values:
+    MAP: 77
+- response: 7E803410B50
+  expected_values:
+    MAP: 80
+- response: 7E803410B51
+  expected_values:
+    MAP: 81
+- response: 7E803410B52
+  expected_values:
+    MAP: 82
+- response: 7E803410B53
+  expected_values:
+    MAP: 83
+- response: 7E803410B54
+  expected_values:
+    MAP: 84
+- response: 7E803410B55
+  expected_values:
+    MAP: 85
+- response: 7E803410B56
+  expected_values:
+    MAP: 86
+- response: 7E803410B57
+  expected_values:
+    MAP: 87
+- response: 7E803410B58
+  expected_values:
+    MAP: 88
+- response: 7E803410B59
+  expected_values:
+    MAP: 89
+- response: 7E803410B5A
+  expected_values:
+    MAP: 90
+- response: 7E803410B5B
+  expected_values:
+    MAP: 91
+- response: 7E803410B5C
+  expected_values:
+    MAP: 92
+- response: 7E803410B5D
+  expected_values:
+    MAP: 93
+- response: 7E803410B5E
+  expected_values:
+    MAP: 94
+- response: 7E803410B5F
+  expected_values:
+    MAP: 95
+- response: 7E803410B60
+  expected_values:
+    MAP: 96
+- response: 7E803410B61
+  expected_values:
+    MAP: 97
+- response: 7E803410B62
+  expected_values:
+    MAP: 98
+- response: 7E803410B63
+  expected_values:
+    MAP: 99
+- response: 7E803410B64
+  expected_values:
+    MAP: 100

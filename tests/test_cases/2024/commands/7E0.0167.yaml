@@ -1,0 +1,88 @@
+command_id: 7E0.0167
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: 7E805416703847E
+  expected_values:
+    ECT_1: 92
+    ECT_1_SUP: 1
+    ECT_2: 86
+    ECT_2_SUP: 1
+- response: 7E805416703857E
+  expected_values:
+    ECT_1: 93
+    ECT_1_SUP: 1
+    ECT_2: 86
+    ECT_2_SUP: 1
+- response: 7E805416703867E
+  expected_values:
+    ECT_1: 94
+    ECT_1_SUP: 1
+    ECT_2: 86
+    ECT_2_SUP: 1
+- response: 7E805416703867F
+  expected_values:
+    ECT_1: 94
+    ECT_1_SUP: 1
+    ECT_2: 87
+    ECT_2_SUP: 1
+- response: '7E8054167038680'
+  expected_values:
+    ECT_1: 94
+    ECT_1_SUP: 1
+    ECT_2: 88
+    ECT_2_SUP: 1
+- response: '7E8054167038685'
+  expected_values:
+    ECT_1: 94
+    ECT_1_SUP: 1
+    ECT_2: 93
+    ECT_2_SUP: 1
+- response: 7E805416703877F
+  expected_values:
+    ECT_1: 95
+    ECT_1_SUP: 1
+    ECT_2: 87
+    ECT_2_SUP: 1
+- response: '7E8054167038780'
+  expected_values:
+    ECT_1: 95
+    ECT_1_SUP: 1
+    ECT_2: 88
+    ECT_2_SUP: 1
+- response: '7E8054167038781'
+  expected_values:
+    ECT_1: 95
+    ECT_1_SUP: 1
+    ECT_2: 89
+    ECT_2_SUP: 1
+- response: '7E8054167038880'
+  expected_values:
+    ECT_1: 96
+    ECT_1_SUP: 1
+    ECT_2: 88
+    ECT_2_SUP: 1
+- response: 7E8054167038B85
+  expected_values:
+    ECT_1: 99
+    ECT_1_SUP: 1
+    ECT_2: 93
+    ECT_2_SUP: 1
+- response: 7E8054167038B86
+  expected_values:
+    ECT_1: 99
+    ECT_1_SUP: 1
+    ECT_2: 94
+    ECT_2_SUP: 1
+- response: 7E8054167038C86
+  expected_values:
+    ECT_1: 100
+    ECT_1_SUP: 1
+    ECT_2: 94
+    ECT_2_SUP: 1
+- response: 7E8054167038C87
+  expected_values:
+    ECT_1: 100
+    ECT_1_SUP: 1
+    ECT_2: 95
+    ECT_2_SUP: 1
