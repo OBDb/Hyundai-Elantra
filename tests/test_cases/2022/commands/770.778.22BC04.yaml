@@ -1,0 +1,53 @@
+command_id: 770.778.22BC04
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: |-
+    778100B62BC04B03770
+    778212000000E00AAAA
+  expected_values:
+    ELANTRA_LOCK_FL: 0
+    ELANTRA_LOCK_FR: 0
+    ELANTRA_REVERSE_GEAR: 0
+- response: |-
+    778100B62BC04B03770
+    778212000800E00AAAA
+  expected_values:
+    ELANTRA_LOCK_FL: 0
+    ELANTRA_LOCK_FR: 0
+    ELANTRA_REVERSE_GEAR: 0
+- response: |-
+    778100B62BC04B03770
+    778212001000E00AAAA
+  expected_values:
+    ELANTRA_LOCK_FL: 0
+    ELANTRA_LOCK_FR: 0
+    ELANTRA_REVERSE_GEAR: 0
+- response: |-
+    778100B62BC04B03770
+    778212001800E00AAAA
+  expected_values:
+    ELANTRA_LOCK_FL: 0
+    ELANTRA_LOCK_FR: 0
+    ELANTRA_REVERSE_GEAR: 0
+- response: |-
+    778100B62BC04B03770
+    778212008200E00AAAA
+  expected_values:
+    ELANTRA_LOCK_FL: 0
+    ELANTRA_LOCK_FR: 0
+    ELANTRA_REVERSE_GEAR: 1
+- response: |-
+    778100B62BC04B03770
+    77821200C000E00AAAA
+  expected_values:
+    ELANTRA_LOCK_FL: 0
+    ELANTRA_LOCK_FR: 0
+    ELANTRA_REVERSE_GEAR: 1
+- response: |-
+    778100B62BC04B03770
+    77821200D000E00AAAA
+  expected_values:
+    ELANTRA_LOCK_FL: 0
+    ELANTRA_LOCK_FR: 0
+    ELANTRA_REVERSE_GEAR: 1

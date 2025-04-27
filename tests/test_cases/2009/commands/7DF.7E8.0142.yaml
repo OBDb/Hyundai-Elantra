@@ -1,0 +1,25 @@
+command_id: 7DF.7E8.0142
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: 7E8044142342C
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 13.356
+- response: 7E804414234F8
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 13.56
+- response: 7E804414236F6
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 14.07
+- response: 7E8044142375C
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 14.172
+- response: 7E804414237C2
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 14.274
+- response: '7E80441423828'
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 14.376
+- response: 7E8044142388E
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 14.478
