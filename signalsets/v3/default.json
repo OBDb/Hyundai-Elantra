@@ -1,15 +1,15 @@
 { "commands": [
 { "hdr": "770", "rax": "778", "dbg": true, "cmd": {"22": "BC03"}, "freq": 1,
   "signals": [
-    {"id": "ELANTRA_DOOR_RL",         "path": "Doors",     "fmt": {"bix": 32, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Rear left door open?"},
-    {"id": "ELANTRA_DOOR_FL",         "path": "Doors",     "fmt": {"bix": 34, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Front left door open?"},
-    {"id": "ELANTRA_HANDBRAKE",       "path": "Chassis",   "fmt": {"bix": 35, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Handbrake engaged?"},
-    {"id": "ELANTRA_DOOR_FR",         "path": "Doors",     "fmt": {"bix": 36, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Front right door open?"},
-    {"id": "ELANTRA_DOOR_RR",         "path": "Doors",     "fmt": {"bix": 37, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Rear right door open?"},
-    {"id": "ELANTRA_TRUNK",           "path": "Body",      "fmt": {"bix": 39, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Trunk open?"},
-    {"id": "ELANTRA_BELT_PASSENGER",  "path": "Seatbelts", "fmt": {"bix": 40, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Passenger seatbelt latched?"},
-    {"id": "ELANTRA_BELT_DRIVER",     "path": "Seatbelts", "fmt": {"bix": 41, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Driver seatbelt latched?"},
-    {"id": "ELANTRA_DEFOG_SW",        "path": "Climate",   "fmt": {"bix": 56, "len": 8, "max": 1, "nullmin": 0, "nullmax": 1, "unit": "noyes" }, "name": "Defogging?"}
+    {"id": "ELANTRA_DOOR_RL",        "path": "Doors",     "fmt": {"bix": 32, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Rear left door open?"},
+    {"id": "ELANTRA_DOOR_FL",        "path": "Doors",     "fmt": {"bix": 34, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Front left door open?"},
+    {"id": "ELANTRA_HANDBRAKE",      "path": "Chassis",   "fmt": {"bix": 35, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Handbrake engaged?"},
+    {"id": "ELANTRA_DOOR_FR",        "path": "Doors",     "fmt": {"bix": 36, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Front right door open?"},
+    {"id": "ELANTRA_DOOR_RR",        "path": "Doors",     "fmt": {"bix": 37, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Rear right door open?"},
+    {"id": "ELANTRA_TRUNK",          "path": "Body",      "fmt": {"bix": 39, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Trunk open?"},
+    {"id": "ELANTRA_BELT_PASSENGER", "path": "Seatbelts", "fmt": {"bix": 40, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Passenger seatbelt latched?"},
+    {"id": "ELANTRA_BELT_DRIVER",    "path": "Seatbelts", "fmt": {"bix": 41, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Driver seatbelt latched?"},
+    {"id": "ELANTRA_DEFOG_SW",       "path": "Climate",   "fmt": {"bix": 56, "len": 8, "max": 1, "nullmin": 0, "nullmax": 1, "unit": "noyes" }, "name": "Defogging?"}
   ]},
 { "hdr": "770", "rax": "778", "dbg": true, "cmd": {"22": "BC04"}, "freq": 1,
   "signals": [
