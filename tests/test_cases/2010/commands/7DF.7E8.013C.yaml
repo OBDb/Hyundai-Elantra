@@ -1,0 +1,7 @@
+command_id: 7DF.7E8.013C
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: 7E804413C0190
+  expected_values:
+    ELANTRA_SAE_CAT_TEMP_B1S1: 0

@@ -1,0 +1,31 @@
+command_id: 7DF.7E8.010B
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: 7E803410B1D
+  expected_values:
+    ELANTRA_SAE_MAP: 29
+- response: 7E803410B1F
+  expected_values:
+    ELANTRA_SAE_MAP: 31
+- response: 7E803410B20
+  expected_values:
+    ELANTRA_SAE_MAP: 32
+- response: 7E803410B29
+  expected_values:
+    ELANTRA_SAE_MAP: 41
+- response: 7E803410B2F
+  expected_values:
+    ELANTRA_SAE_MAP: 47
+- response: 7E803410B3F
+  expected_values:
+    ELANTRA_SAE_MAP: 63
+- response: 7E803410B54
+  expected_values:
+    ELANTRA_SAE_MAP: 84
+- response: 7E803410B57
+  expected_values:
+    ELANTRA_SAE_MAP: 87
+- response: 7E803410B61
+  expected_values:
+    ELANTRA_SAE_MAP: 97

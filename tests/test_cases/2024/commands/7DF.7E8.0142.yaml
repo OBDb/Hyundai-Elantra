@@ -1,0 +1,73 @@
+command_id: 7DF.7E8.0142
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: 7E8044142315C
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 12.636
+- response: 7E804414232BC
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 12.988
+- response: 7E804414232CF
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 13.007
+- response: 7E804414232E3
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 13.027
+- response: 7E8044142330A
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 13.066
+- response: '7E80441423331'
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 13.105
+- response: '7E80441423345'
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 13.125
+- response: 7E8044142336C
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 13.164
+- response: 7E8044142337F
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 13.183
+- response: 7E804414233A6
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 13.222
+- response: 7E804414233BA
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 13.242
+- response: 7E804414233CD
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 13.261
+- response: 7E804414233E1
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 13.281
+- response: 7E804414233F4
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 13.3
+- response: '7E80441423408'
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 13.32
+- response: 7E8044142341B
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 13.339
+- response: 7E8044142342F
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 13.359
+- response: 7E8044142347D
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 13.437
+- response: 7E804414235A2
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 13.73
+- response: 7E804414235B6
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 13.75
+- response: 7E8044142362B
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 13.867
+- response: 7E8044142363E
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 13.886
+- response: '7E80441423665'
+  expected_values:
+    ELANTRA_SAE_MODULE_VOLTAGE: 13.925

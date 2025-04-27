@@ -1,0 +1,112 @@
+command_id: 7DF.7E8.0134
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: '7E806413400000000'
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 0
+- response: 7E80641347AC07FD8
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 1.99756
+- response: 7E80641347C407FE3
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 1.99823
+- response: 7E80641347D207FE9
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 1.9986
+- response: 7E80641347D407FEA
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 1.99866
+- response: 7E80641347D407FEB
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 1.99872
+- response: 7E80641347DA07FED
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 1.99884
+- response: 7E80641347DE07FEE
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 1.9989
+- response: 7E80641347E207FF0
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 1.99902
+- response: 7E80641347E407FF2
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 1.99915
+- response: 7E80641347E807FF3
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 1.99921
+- response: 7E80641347EA07FF4
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 1.99927
+- response: 7E80641347F007FF6
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 1.99939
+- response: 7E80641347F207FF7
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 1.99945
+- response: 7E80641347F607FF9
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 1.99957
+- response: 7E80641347F807FFA
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 1.99963
+- response: 7E80641347FC07FFC
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 1.99976
+- response: 7E80641347FE07FFC
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 1.99976
+- response: 7E806413480007FFE
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 1.99988
+- response: 7E806413480207FFE
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 1.99988
+- response: 7E806413480407FFF
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 1.99994
+- response: 7E806413480607FFF
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 1.99994
+- response: '7E806413480808000'
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 2
+- response: 7E806413480A08000
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 2
+- response: 7E806413480A08001
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 2
+- response: 7E806413480C08001
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 2
+- response: 7E806413480E08001
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 2
+- response: '7E806413481008002'
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 2
+- response: '7E806413481208002'
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 2
+- response: '7E806413481208003'
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 2
+- response: '7E806413481608004'
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 2
+- response: 7E806413481E08006
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 2
+- response: '7E806413482008006'
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 2
+- response: '7E806413482408008'
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 2
+- response: 7E806413483E0800F
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 2
+- response: '7E806413484208010'
+  expected_values:
+    ELANTRA_SAE_LAMBDA_B1S1: 2

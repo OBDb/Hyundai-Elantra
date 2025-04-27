@@ -1,0 +1,60 @@
+command_id: 7DF.7E8.0167
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: 7E805416703847E
+  expected_values:
+    ELANTRA_SAE_COOLANT_A: 92
+    ELANTRA_SAE_COOLANT_B: 86
+- response: 7E805416703857E
+  expected_values:
+    ELANTRA_SAE_COOLANT_A: 93
+    ELANTRA_SAE_COOLANT_B: 86
+- response: 7E805416703867E
+  expected_values:
+    ELANTRA_SAE_COOLANT_A: 94
+    ELANTRA_SAE_COOLANT_B: 86
+- response: 7E805416703867F
+  expected_values:
+    ELANTRA_SAE_COOLANT_A: 94
+    ELANTRA_SAE_COOLANT_B: 87
+- response: '7E8054167038680'
+  expected_values:
+    ELANTRA_SAE_COOLANT_A: 94
+    ELANTRA_SAE_COOLANT_B: 88
+- response: '7E8054167038685'
+  expected_values:
+    ELANTRA_SAE_COOLANT_A: 94
+    ELANTRA_SAE_COOLANT_B: 93
+- response: 7E805416703877F
+  expected_values:
+    ELANTRA_SAE_COOLANT_A: 95
+    ELANTRA_SAE_COOLANT_B: 87
+- response: '7E8054167038780'
+  expected_values:
+    ELANTRA_SAE_COOLANT_A: 95
+    ELANTRA_SAE_COOLANT_B: 88
+- response: '7E8054167038781'
+  expected_values:
+    ELANTRA_SAE_COOLANT_A: 95
+    ELANTRA_SAE_COOLANT_B: 89
+- response: '7E8054167038880'
+  expected_values:
+    ELANTRA_SAE_COOLANT_A: 96
+    ELANTRA_SAE_COOLANT_B: 88
+- response: 7E8054167038B85
+  expected_values:
+    ELANTRA_SAE_COOLANT_A: 99
+    ELANTRA_SAE_COOLANT_B: 93
+- response: 7E8054167038B86
+  expected_values:
+    ELANTRA_SAE_COOLANT_A: 99
+    ELANTRA_SAE_COOLANT_B: 94
+- response: 7E8054167038C86
+  expected_values:
+    ELANTRA_SAE_COOLANT_A: 100
+    ELANTRA_SAE_COOLANT_B: 94
+- response: 7E8054167038C87
+  expected_values:
+    ELANTRA_SAE_COOLANT_A: 100
+    ELANTRA_SAE_COOLANT_B: 95
