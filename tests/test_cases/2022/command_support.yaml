@@ -87,8 +87,6 @@ supported_commands_by_ecu:
 unsupported_commands_by_ecu:
   770:
   - 770.778.22BC08
-  7B3:
-  - 7B3.7BB.220100
   7D1:
   - 7D1.7D9.220104
   7DF:
