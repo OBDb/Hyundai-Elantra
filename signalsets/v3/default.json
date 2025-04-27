@@ -80,50 +80,9 @@
     {"id": "ELANTRA_BMS_MOD3_TEMP",  "path": "Battery", "fmt": {"bix": 144, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "BMS Battery Mod 3 Temp"},
     {"id": "ELANTRA_BMS_MOD4_TEMP",  "path": "Battery", "fmt": {"bix": 152, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "BMS Battery Mod 4 Temp"}
   ]},
-{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "05"}, "freq": 5,
-  "signals": [
-    {"id": "ELANTRA_SAE_COOLANT_TEMP", "path": "Engine", "fmt": { "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "SAE Coolant Temp"}
-  ]},
-{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "0B"}, "freq": 1,
-  "signals": [
-    {"id": "ELANTRA_SAE_MAP", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "kilopascal" }, "name": "SAE Manifold Absolute Pressure"}
-  ]},
-{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "0C"}, "freq": 1,
-  "signals": [
-    {"id": "ELANTRA_SAE_RPM", "path": "Engine", "fmt": { "len": 16, "max": 16383.75, "div": 4, "unit": "rpm" }, "name": "SAE RPM"}
-  ]},
-{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "0D"}, "freq": 1,
-  "signals": [
-    {"id": "ELANTRA_SAE_SPEED", "path": "Chassis", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "SAE Speed"}
-  ]},
-{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "33"}, "freq": 1,
-  "signals": [
-    {"id": "ELANTRA_SAE_BARO", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "kilopascal" }, "name": "SAE Barometric Pressure"}
-  ]},
 { "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "34"}, "freq": 1,
   "signals": [
     {"id": "ELANTRA_SAE_LAMBDA_B1S1", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 2, "mul": 2, "div": 32768, "unit": "scalar" }, "name": "SAE Lambda B1S1 (Actual)"}
-  ]},
-{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "3C"}, "freq": 5,
-  "signals": [
-    {"id": "ELANTRA_SAE_CAT_TEMP_B1S1", "path": "Engine", "fmt": { "len": 16, "max": 6513.5, "div": 10, "add": -40, "unit": "celsius" }, "name": "SAE Catalyst Temp B1S1"}
-  ]},
-{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "42"}, "freq": 5,
-  "signals": [
-    {"id": "ELANTRA_SAE_MODULE_VOLTAGE", "path": "Electrical", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "SAE Control Module Voltage"}
-  ]},
-{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "44"}, "freq": 1,
-  "signals": [
-    {"id": "ELANTRA_SAE_LAMBDA_CMD", "path": "Engine", "fmt": { "len": 16, "max": 2, "mul": 2, "div": 32768, "unit": "scalar" }, "name": "SAE Lambda Commanded"}
-  ]},
-{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "46"}, "freq": 5,
-  "signals": [
-    {"id": "ELANTRA_SAE_AMBIENT_TEMP", "path": "Climate", "fmt": { "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "SAE Ambient Air Temp"}
-  ]},
-{ "hdr": "7DF", "rax": "7E8", "dbg": true, "cmd": {"01": "67"}, "freq": 5,
-  "signals": [
-    {"id": "ELANTRA_SAE_COOLANT_A", "path": "Engine", "fmt": {"bix": 8,  "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "SAE Coolant Temp A"},
-    {"id": "ELANTRA_SAE_COOLANT_B", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "SAE Coolant Temp B"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E001"}, "freq": 1,
   "signals": [
