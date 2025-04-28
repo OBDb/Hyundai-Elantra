@@ -98,6 +98,12 @@ test_cases:
     ECT_1_SUP: 1
     ECT_2: 40
     ECT_2_SUP: 1
+- response: '7E8054167035451'
+  expected_values:
+    ECT_1: 44
+    ECT_1_SUP: 1
+    ECT_2: 41
+    ECT_2_SUP: 1
 - response: 7E805416703554F
   expected_values:
     ECT_1: 45
@@ -206,6 +212,12 @@ test_cases:
     ECT_1_SUP: 1
     ECT_2: 50
     ECT_2_SUP: 1
+- response: 7E8054167035F5C
+  expected_values:
+    ECT_1: 55
+    ECT_1_SUP: 1
+    ECT_2: 52
+    ECT_2_SUP: 1
 - response: '7E8054167036059'
   expected_values:
     ECT_1: 56
@@ -278,6 +290,12 @@ test_cases:
     ECT_1_SUP: 1
     ECT_2: 55
     ECT_2_SUP: 1
+- response: '7E8054167036561'
+  expected_values:
+    ECT_1: 61
+    ECT_1_SUP: 1
+    ECT_2: 57
+    ECT_2_SUP: 1
 - response: '7E8054167036660'
   expected_values:
     ECT_1: 62
@@ -337,6 +355,12 @@ test_cases:
     ECT_1: 65
     ECT_1_SUP: 1
     ECT_2: 58
+    ECT_2_SUP: 1
+- response: '7E8054167036963'
+  expected_values:
+    ECT_1: 65
+    ECT_1_SUP: 1
+    ECT_2: 59
     ECT_2_SUP: 1
 - response: 7E8054167036A62
   expected_values:
@@ -577,6 +601,12 @@ test_cases:
     ECT_1: 79
     ECT_1_SUP: 1
     ECT_2: 74
+    ECT_2_SUP: 1
+- response: '7E8054167037773'
+  expected_values:
+    ECT_1: 79
+    ECT_1_SUP: 1
+    ECT_2: 75
     ECT_2_SUP: 1
 - response: '7E8054167037871'
   expected_values:
@@ -1226,6 +1256,12 @@ test_cases:
     ECT_1_SUP: 1
     ECT_2: 95
     ECT_2_SUP: 1
+- response: 7E8054167038D88
+  expected_values:
+    ECT_1: 101
+    ECT_1_SUP: 1
+    ECT_2: 96
+    ECT_2_SUP: 1
 - response: 7E8054167038E7A
   expected_values:
     ECT_1: 102
@@ -1334,6 +1370,12 @@ test_cases:
     ECT_1_SUP: 1
     ECT_2: 87
     ECT_2_SUP: 1
+- response: 7E8054167038F80
+  expected_values:
+    ECT_1: 103
+    ECT_1_SUP: 1
+    ECT_2: 88
+    ECT_2_SUP: 1
 - response: 7E8054167038F84
   expected_values:
     ECT_1: 103
@@ -1393,6 +1435,12 @@ test_cases:
     ECT_1: 104
     ECT_1_SUP: 1
     ECT_2: 88
+    ECT_2_SUP: 1
+- response: '7E8054167039081'
+  expected_values:
+    ECT_1: 104
+    ECT_1_SUP: 1
+    ECT_2: 89
     ECT_2_SUP: 1
 - response: '7E8054167039082'
   expected_values:
@@ -1514,6 +1562,18 @@ test_cases:
     ECT_1_SUP: 1
     ECT_2: 101
     ECT_2_SUP: 1
+- response: '7E8054167039285'
+  expected_values:
+    ECT_1: 106
+    ECT_1_SUP: 1
+    ECT_2: 93
+    ECT_2_SUP: 1
+- response: '7E8054167039287'
+  expected_values:
+    ECT_1: 106
+    ECT_1_SUP: 1
+    ECT_2: 95
+    ECT_2_SUP: 1
 - response: 7E805416703928A
   expected_values:
     ECT_1: 106
@@ -1537,64 +1597,4 @@ test_cases:
     ECT_1: 106
     ECT_1_SUP: 1
     ECT_2: 101
-    ECT_2_SUP: 1
-- response: '7E8054167035451'
-  expected_values:
-    ECT_1: 44
-    ECT_1_SUP: 1
-    ECT_2: 41
-    ECT_2_SUP: 1
-- response: 7E8054167035F5C
-  expected_values:
-    ECT_1: 55
-    ECT_1_SUP: 1
-    ECT_2: 52
-    ECT_2_SUP: 1
-- response: '7E8054167036561'
-  expected_values:
-    ECT_1: 61
-    ECT_1_SUP: 1
-    ECT_2: 57
-    ECT_2_SUP: 1
-- response: '7E8054167036963'
-  expected_values:
-    ECT_1: 65
-    ECT_1_SUP: 1
-    ECT_2: 59
-    ECT_2_SUP: 1
-- response: '7E8054167037773'
-  expected_values:
-    ECT_1: 79
-    ECT_1_SUP: 1
-    ECT_2: 75
-    ECT_2_SUP: 1
-- response: 7E8054167038D88
-  expected_values:
-    ECT_1: 101
-    ECT_1_SUP: 1
-    ECT_2: 96
-    ECT_2_SUP: 1
-- response: 7E8054167038F80
-  expected_values:
-    ECT_1: 103
-    ECT_1_SUP: 1
-    ECT_2: 88
-    ECT_2_SUP: 1
-- response: '7E8054167039081'
-  expected_values:
-    ECT_1: 104
-    ECT_1_SUP: 1
-    ECT_2: 89
-    ECT_2_SUP: 1
-- response: '7E8054167039285'
-  expected_values:
-    ECT_1: 106
-    ECT_1_SUP: 1
-    ECT_2: 93
-    ECT_2_SUP: 1
-- response: '7E8054167039287'
-  expected_values:
-    ECT_1: 106
-    ECT_1_SUP: 1
-    ECT_2: 95
     ECT_2_SUP: 1
