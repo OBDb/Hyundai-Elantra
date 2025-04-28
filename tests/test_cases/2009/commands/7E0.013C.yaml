@@ -341,3 +341,324 @@ test_cases:
 - response: 7E804413C1FC4
   expected_values:
     CATEMP11: 773.2
+- response: 7E804413C01E5
+  expected_values:
+    CATEMP11: 8.5
+- response: 7E804413C02F6
+  expected_values:
+    CATEMP11: 35.8
+- response: 7E804413C03E9
+  expected_values:
+    CATEMP11: 60.1
+- response: 7E804413C04BF
+  expected_values:
+    CATEMP11: 81.5
+- response: 7E804413C0579
+  expected_values:
+    CATEMP11: 100.1
+- response: 7E804413C065C
+  expected_values:
+    CATEMP11: 122.8
+- response: 7E804413C0995
+  expected_values:
+    CATEMP11: 205.3
+- response: 7E804413C0CDB
+  expected_values:
+    CATEMP11: 289.1
+- response: 7E804413C0EE7
+  expected_values:
+    CATEMP11: 341.5
+- response: 7E804413C101B
+  expected_values:
+    CATEMP11: 372.3
+- response: 7E804413C11E2
+  expected_values:
+    CATEMP11: 417.8
+- response: 7E804413C123E
+  expected_values:
+    CATEMP11: 427
+- response: 7E804413C1297
+  expected_values:
+    CATEMP11: 435.9
+- response: 7E804413C1374
+  expected_values:
+    CATEMP11: 458
+- response: 7E804413C140D
+  expected_values:
+    CATEMP11: 473.3
+- response: 7E804413C1518
+  expected_values:
+    CATEMP11: 500
+- response: 7E804413C1558
+  expected_values:
+    CATEMP11: 506.4
+- response: 7E804413C1566
+  expected_values:
+    CATEMP11: 507.8
+- response: 7E804413C157C
+  expected_values:
+    CATEMP11: 510
+- response: 7E804413C1588
+  expected_values:
+    CATEMP11: 511.2
+- response: 7E804413C15C4
+  expected_values:
+    CATEMP11: 517.2
+- response: 7E804413C15F5
+  expected_values:
+    CATEMP11: 522.1
+- response: 7E804413C1606
+  expected_values:
+    CATEMP11: 523.8
+- response: 7E804413C160D
+  expected_values:
+    CATEMP11: 524.5
+- response: 7E804413C161E
+  expected_values:
+    CATEMP11: 526.2
+- response: 7E804413C1626
+  expected_values:
+    CATEMP11: 527
+- response: 7E804413C1661
+  expected_values:
+    CATEMP11: 532.9
+- response: 7E804413C1665
+  expected_values:
+    CATEMP11: 533.3
+- response: 7E804413C166D
+  expected_values:
+    CATEMP11: 534.1
+- response: 7E804413C168C
+  expected_values:
+    CATEMP11: 537.2
+- response: 7E804413C168F
+  expected_values:
+    CATEMP11: 537.5
+- response: 7E804413C1690
+  expected_values:
+    CATEMP11: 537.6
+- response: 7E804413C1698
+  expected_values:
+    CATEMP11: 538.4
+- response: 7E804413C169F
+  expected_values:
+    CATEMP11: 539.1
+- response: 7E804413C16A8
+  expected_values:
+    CATEMP11: 540
+- response: 7E804413C16AB
+  expected_values:
+    CATEMP11: 540.3
+- response: 7E804413C16B3
+  expected_values:
+    CATEMP11: 541.1
+- response: 7E804413C16BD
+  expected_values:
+    CATEMP11: 542.1
+- response: 7E804413C16CB
+  expected_values:
+    CATEMP11: 543.5
+- response: 7E804413C16CD
+  expected_values:
+    CATEMP11: 543.7
+- response: 7E804413C16D0
+  expected_values:
+    CATEMP11: 544
+- response: 7E804413C16D4
+  expected_values:
+    CATEMP11: 544.4
+- response: 7E804413C16DA
+  expected_values:
+    CATEMP11: 545
+- response: 7E804413C16DB
+  expected_values:
+    CATEMP11: 545.1
+- response: 7E804413C16F8
+  expected_values:
+    CATEMP11: 548
+- response: 7E804413C16FB
+  expected_values:
+    CATEMP11: 548.3
+- response: 7E804413C16FD
+  expected_values:
+    CATEMP11: 548.5
+- response: 7E804413C1707
+  expected_values:
+    CATEMP11: 549.5
+- response: 7E804413C1736
+  expected_values:
+    CATEMP11: 554.2
+- response: 7E804413C1737
+  expected_values:
+    CATEMP11: 554.3
+- response: 7E804413C173D
+  expected_values:
+    CATEMP11: 554.9
+- response: 7E804413C173F
+  expected_values:
+    CATEMP11: 555.1
+- response: 7E804413C175E
+  expected_values:
+    CATEMP11: 558.2
+- response: 7E804413C1780
+  expected_values:
+    CATEMP11: 561.6
+- response: 7E804413C1786
+  expected_values:
+    CATEMP11: 562.2
+- response: 7E804413C17C6
+  expected_values:
+    CATEMP11: 568.6
+- response: 7E804413C17CF
+  expected_values:
+    CATEMP11: 569.5
+- response: 7E804413C17D9
+  expected_values:
+    CATEMP11: 570.5
+- response: 7E804413C17F1
+  expected_values:
+    CATEMP11: 572.9
+- response: 7E804413C1805
+  expected_values:
+    CATEMP11: 574.9
+- response: 7E804413C1860
+  expected_values:
+    CATEMP11: 584
+- response: 7E804413C18B1
+  expected_values:
+    CATEMP11: 592.1
+- response: 7E804413C1974
+  expected_values:
+    CATEMP11: 611.6
+- response: 7E804413C197B
+  expected_values:
+    CATEMP11: 612.3
+- response: 7E804413C1988
+  expected_values:
+    CATEMP11: 613.6
+- response: 7E804413C198E
+  expected_values:
+    CATEMP11: 614.2
+- response: 7E804413C1991
+  expected_values:
+    CATEMP11: 614.5
+- response: 7E804413C19A3
+  expected_values:
+    CATEMP11: 616.3
+- response: 7E804413C19A5
+  expected_values:
+    CATEMP11: 616.5
+- response: 7E804413C19BA
+  expected_values:
+    CATEMP11: 618.6
+- response: 7E804413C19D5
+  expected_values:
+    CATEMP11: 621.3
+- response: 7E804413C19E1
+  expected_values:
+    CATEMP11: 622.5
+- response: 7E804413C1A13
+  expected_values:
+    CATEMP11: 627.5
+- response: 7E804413C1A19
+  expected_values:
+    CATEMP11: 628.1
+- response: 7E804413C1A31
+  expected_values:
+    CATEMP11: 630.5
+- response: 7E804413C1A3B
+  expected_values:
+    CATEMP11: 631.5
+- response: 7E804413C1A41
+  expected_values:
+    CATEMP11: 632.1
+- response: 7E804413C1A42
+  expected_values:
+    CATEMP11: 632.2
+- response: 7E804413C1A84
+  expected_values:
+    CATEMP11: 638.8
+- response: 7E804413C1A87
+  expected_values:
+    CATEMP11: 639.1
+- response: 7E804413C1A8D
+  expected_values:
+    CATEMP11: 639.7
+- response: 7E804413C1A95
+  expected_values:
+    CATEMP11: 640.5
+- response: 7E804413C1AA2
+  expected_values:
+    CATEMP11: 641.8
+- response: 7E804413C1AC2
+  expected_values:
+    CATEMP11: 645
+- response: 7E804413C1AE7
+  expected_values:
+    CATEMP11: 648.7
+- response: 7E804413C1B07
+  expected_values:
+    CATEMP11: 651.9
+- response: 7E804413C1B94
+  expected_values:
+    CATEMP11: 666
+- response: 7E804413C1BA0
+  expected_values:
+    CATEMP11: 667.2
+- response: 7E804413C1BB8
+  expected_values:
+    CATEMP11: 669.6
+- response: 7E804413C1BBF
+  expected_values:
+    CATEMP11: 670.3
+- response: 7E804413C1BF3
+  expected_values:
+    CATEMP11: 675.5
+- response: 7E804413C1BFB
+  expected_values:
+    CATEMP11: 676.3
+- response: 7E804413C1C53
+  expected_values:
+    CATEMP11: 685.1
+- response: 7E804413C1CAD
+  expected_values:
+    CATEMP11: 694.1
+- response: 7E804413C1CB9
+  expected_values:
+    CATEMP11: 695.3
+- response: 7E804413C1CE1
+  expected_values:
+    CATEMP11: 699.3
+- response: 7E804413C1D13
+  expected_values:
+    CATEMP11: 704.3
+- response: 7E804413C1D45
+  expected_values:
+    CATEMP11: 709.3
+- response: 7E804413C1D5B
+  expected_values:
+    CATEMP11: 711.5
+- response: 7E804413C1D70
+  expected_values:
+    CATEMP11: 713.6
+- response: 7E804413C1DA2
+  expected_values:
+    CATEMP11: 718.6
+- response: 7E804413C1DB6
+  expected_values:
+    CATEMP11: 720.6
+- response: 7E804413C1DBB
+  expected_values:
+    CATEMP11: 721.1
+- response: 7E804413C1DE9
+  expected_values:
+    CATEMP11: 725.7
+- response: 7E804413C1E29
+  expected_values:
+    CATEMP11: 732.1
+- response: 7E804413C1E2D
+  expected_values:
+    CATEMP11: 732.5
+- response: 7E804413C1FA2
+  expected_values:
+    CATEMP11: 769.8
