@@ -59,6 +59,9 @@ test_cases:
 - response: 7E803410B28
   expected_values:
     MAP: 40
+- response: 7E803410B29
+  expected_values:
+    MAP: 41
 - response: 7E803410B2A
   expected_values:
     MAP: 42
@@ -110,6 +113,9 @@ test_cases:
 - response: 7E803410B3A
   expected_values:
     MAP: 58
+- response: 7E803410B3B
+  expected_values:
+    MAP: 59
 - response: 7E803410B3C
   expected_values:
     MAP: 60
@@ -200,9 +206,3 @@ test_cases:
 - response: 7E803410B5C
   expected_values:
     MAP: 92
-- response: 7E803410B29
-  expected_values:
-    MAP: 41
-- response: 7E803410B3B
-  expected_values:
-    MAP: 59

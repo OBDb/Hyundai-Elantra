@@ -11,9 +11,18 @@ test_cases:
 - response: 7E803410D04
   expected_values:
     VSS: 4
+- response: 7E803410D07
+  expected_values:
+    VSS: 7
 - response: 7E803410D08
   expected_values:
     VSS: 8
+- response: 7E803410D09
+  expected_values:
+    VSS: 9
+- response: 7E803410D0B
+  expected_values:
+    VSS: 11
 - response: 7E803410D0D
   expected_values:
     VSS: 13
@@ -53,12 +62,24 @@ test_cases:
 - response: 7E803410D1A
   expected_values:
     VSS: 26
+- response: 7E803410D1B
+  expected_values:
+    VSS: 27
 - response: 7E803410D1C
   expected_values:
     VSS: 28
+- response: 7E803410D1D
+  expected_values:
+    VSS: 29
+- response: 7E803410D1E
+  expected_values:
+    VSS: 30
 - response: 7E803410D1F
   expected_values:
     VSS: 31
+- response: 7E803410D20
+  expected_values:
+    VSS: 32
 - response: 7E803410D21
   expected_values:
     VSS: 33
@@ -68,9 +89,15 @@ test_cases:
 - response: 7E803410D23
   expected_values:
     VSS: 35
+- response: 7E803410D25
+  expected_values:
+    VSS: 37
 - response: 7E803410D27
   expected_values:
     VSS: 39
+- response: 7E803410D29
+  expected_values:
+    VSS: 41
 - response: 7E803410D2A
   expected_values:
     VSS: 42
@@ -86,6 +113,9 @@ test_cases:
 - response: 7E803410D2E
   expected_values:
     VSS: 46
+- response: 7E803410D2F
+  expected_values:
+    VSS: 47
 - response: 7E803410D31
   expected_values:
     VSS: 49
@@ -104,6 +134,12 @@ test_cases:
 - response: 7E803410D37
   expected_values:
     VSS: 55
+- response: 7E803410D38
+  expected_values:
+    VSS: 56
+- response: 7E803410D39
+  expected_values:
+    VSS: 57
 - response: 7E803410D3A
   expected_values:
     VSS: 58
@@ -119,6 +155,12 @@ test_cases:
 - response: 7E803410D3E
   expected_values:
     VSS: 62
+- response: 7E803410D40
+  expected_values:
+    VSS: 64
+- response: 7E803410D42
+  expected_values:
+    VSS: 66
 - response: 7E803410D43
   expected_values:
     VSS: 67
@@ -128,6 +170,9 @@ test_cases:
 - response: 7E803410D45
   expected_values:
     VSS: 69
+- response: 7E803410D46
+  expected_values:
+    VSS: 70
 - response: 7E803410D47
   expected_values:
     VSS: 71
@@ -146,69 +191,15 @@ test_cases:
 - response: 7E803410D4E
   expected_values:
     VSS: 78
-- response: 7E803410D52
-  expected_values:
-    VSS: 82
-- response: 7E803410D59
-  expected_values:
-    VSS: 89
-- response: 7E803410D5D
-  expected_values:
-    VSS: 93
-- response: 7E803410D61
-  expected_values:
-    VSS: 97
-- response: 7E803410D07
-  expected_values:
-    VSS: 7
-- response: 7E803410D09
-  expected_values:
-    VSS: 9
-- response: 7E803410D0B
-  expected_values:
-    VSS: 11
-- response: 7E803410D1B
-  expected_values:
-    VSS: 27
-- response: 7E803410D1D
-  expected_values:
-    VSS: 29
-- response: 7E803410D1E
-  expected_values:
-    VSS: 30
-- response: 7E803410D20
-  expected_values:
-    VSS: 32
-- response: 7E803410D25
-  expected_values:
-    VSS: 37
-- response: 7E803410D29
-  expected_values:
-    VSS: 41
-- response: 7E803410D2F
-  expected_values:
-    VSS: 47
-- response: 7E803410D38
-  expected_values:
-    VSS: 56
-- response: 7E803410D39
-  expected_values:
-    VSS: 57
-- response: 7E803410D40
-  expected_values:
-    VSS: 64
-- response: 7E803410D42
-  expected_values:
-    VSS: 66
-- response: 7E803410D46
-  expected_values:
-    VSS: 70
 - response: 7E803410D4F
   expected_values:
     VSS: 79
 - response: 7E803410D51
   expected_values:
     VSS: 81
+- response: 7E803410D52
+  expected_values:
+    VSS: 82
 - response: 7E803410D53
   expected_values:
     VSS: 83
@@ -218,18 +209,27 @@ test_cases:
 - response: 7E803410D58
   expected_values:
     VSS: 88
+- response: 7E803410D59
+  expected_values:
+    VSS: 89
 - response: 7E803410D5B
   expected_values:
     VSS: 91
 - response: 7E803410D5C
   expected_values:
     VSS: 92
+- response: 7E803410D5D
+  expected_values:
+    VSS: 93
 - response: 7E803410D5F
   expected_values:
     VSS: 95
 - response: 7E803410D60
   expected_values:
     VSS: 96
+- response: 7E803410D61
+  expected_values:
+    VSS: 97
 - response: 7E803410D65
   expected_values:
     VSS: 101
