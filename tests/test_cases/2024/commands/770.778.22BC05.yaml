@@ -19,6 +19,11 @@ test_cases:
     ELANTRA_HAZARD_SW: 80
 - response: |-
     778100B62BC050F1320
+    7782100A0000000AAAA
+  expected_values:
+    ELANTRA_HAZARD_SW: 160
+- response: |-
+    778100B62BC050F1320
     7782100F0400000AAAA
   expected_values:
     ELANTRA_HAZARD_SW: 240
