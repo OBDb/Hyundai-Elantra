@@ -1,0 +1,35 @@
+generations:
+  - name: "First Generation"
+    start_year: 1990
+    end_year: 1995
+    description: "The original Hyundai Elantra was introduced as a compact sedan to compete with established models like the Toyota Corolla and Honda Civic. Featuring conservative, boxy styling typical of early 1990s compact cars, it represented Hyundai's effort to expand beyond its entry-level Excel/Accent. Powered by 1.5L to 1.8L four-cylinder engines depending on the market, it offered modest performance focused on reliability and economy. The interior was basic but functional, with a straightforward dashboard design and durable materials. This generation established the Elantra nameplate that would eventually become one of Hyundai's global core models, though it struggled to compete with Japanese rivals in terms of refinement and quality perception."
+
+  - name: "Second Generation"
+    start_year: 1995
+    end_year: 2000
+    description: "The second-generation Elantra featured more rounded styling in line with mid-1990s design trends. Available as a four-door sedan and five-door wagon in some markets, it grew slightly in dimensions to offer improved interior space. Engine options typically included 1.6L to 2.0L four-cylinders with improved refinement and slightly better performance. The interior saw enhancements in design and material quality, though still positioned as a value-oriented compact car. This generation began to establish the Elantra's reputation for offering good value with competitive features at a lower price than many competitors."
+
+  - name: "Third Generation"
+    start_year: 2000
+    end_year: 2006
+    description: "The third-generation Elantra continued the model's evolution with more sophisticated styling and improved engineering. Sharing its platform with the Kia Cerato/Spectra, it featured a more aerodynamic design with smoother lines. Engine options expanded to include more refined and powerful units, typically ranging from 1.6L to 2.0L four-cylinders. The interior received significant improvements in design, material quality, and feature content, reflecting Hyundai's overall push toward better quality and value. Safety features also improved with better crash structures and increased availability of airbags. This generation marked a significant step forward in the Elantra's refinement and market positioning, beginning to close the gap with established competitors."
+
+  - name: "Fourth Generation"
+    start_year: 2006
+    end_year: 2010
+    description: "The fourth-generation Elantra featured more European-influenced styling with a focus on dynamic lines and a sporty stance. Built on an all-new platform that improved both handling and interior space, it represented a significant advancement over its predecessor. Engine options were updated to include more efficient and powerful units, including improved 1.6L and 2.0L four-cylinders. The interior saw substantial enhancements in design, materials, and technology, offering features previously uncommon in its class. Safety features expanded to include standard stability control in many markets. This generation elevated the Elantra's market position, offering more refinement and features while maintaining competitive pricing."
+
+  - name: "Fifth Generation"
+    start_year: 2010
+    end_year: 2015
+    description: "The fifth-generation Elantra adopted Hyundai's 'Fluidic Sculpture' design language, featuring dramatic, flowing lines and a distinctive hexagonal grille. Slightly larger than its predecessor, it offered improved interior space especially for rear passengers. Powered by updated engine options including the new Nu 1.8L and improved Gamma 1.6L four-cylinders, it balanced performance with enhanced fuel efficiency. The interior featured a more sophisticated design with higher quality materials and expanded technology options, including available navigation and premium audio systems. Safety features continued to advance with multiple airbags and enhanced structural design. This generation represented Hyundai's ambition to compete directly with established compact sedans on both features and quality, winning North American Car of the Year in 2012."
+
+  - name: "Sixth Generation"
+    start_year: 2015
+    end_year: 2020
+    description: "The sixth-generation Elantra featured more restrained styling compared to its predecessor, with clean lines and a focus on elegant simplicity over dramatic flourishes. Built on an updated platform with increased use of high-strength steel, it offered improved handling, refinement, and safety. Engine options were refined for better efficiency and drivability, typically including 1.6L and 2.0L four-cylinders with improved fuel economy. The first Elantra Sport model with a 1.6L turbocharged engine provided enhanced performance. The interior saw enhancements in design, material quality, and technology, with available features including a larger touchscreen infotainment system, driver assistance technologies, and premium audio. This generation continued the Elantra's upmarket progression while maintaining its value proposition."
+
+  - name: "Seventh Generation"
+    start_year: 2020
+    end_year: null
+    description: "The current Elantra features radical styling with a 'parametric dynamics' design theme, incorporating dramatic creases, angular elements, and distinctive lighting signatures. Built on Hyundai's K3 platform, it offers improved dynamics, refinement, and efficiency. Powertrain options include a standard 2.0L naturally aspirated four-cylinder, an available hybrid combining a 1.6L engine with electric motors, and a performance-oriented N Line with a 1.6L turbocharged engine. The high-performance Elantra N joined the lineup with a 2.0L turbocharged engine producing 276 HP. The interior represents a major departure from previous generations, featuring a driver-focused cockpit design with an available dual-screen setup combining a 10.25-inch digital instrument cluster and 10.25-inch infotainment touchscreen under a single piece of glass. Technology has advanced significantly with available features including wireless smartphone integration, Digital Key, and Hyundai's SmartSense suite of advanced driver assistance systems. This generation pushes the Elantra further upmarket with distinctive styling and technology while maintaining its position as a value leader in the compact sedan segment."
