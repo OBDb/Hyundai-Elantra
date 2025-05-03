@@ -1,0 +1,67 @@
+command_id: 7E0.0131
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: 7E804413102A2
+  expected_values:
+    CLR_DIST: 674
+- response: 7E804413102A3
+  expected_values:
+    CLR_DIST: 675
+- response: 7E804413102A4
+  expected_values:
+    CLR_DIST: 676
+- response: 7E804413102A5
+  expected_values:
+    CLR_DIST: 677
+- response: 7E804413102A6
+  expected_values:
+    CLR_DIST: 678
+- response: 7E804413102A7
+  expected_values:
+    CLR_DIST: 679
+- response: 7E804413102A8
+  expected_values:
+    CLR_DIST: 680
+- response: 7E804413102A9
+  expected_values:
+    CLR_DIST: 681
+- response: 7E804413102AA
+  expected_values:
+    CLR_DIST: 682
+- response: 7E804413102AB
+  expected_values:
+    CLR_DIST: 683
+- response: 7E804413102AC
+  expected_values:
+    CLR_DIST: 684
+- response: 7E804413102AD
+  expected_values:
+    CLR_DIST: 685
+- response: 7E804413102AE
+  expected_values:
+    CLR_DIST: 686
+- response: 7E804413102F5
+  expected_values:
+    CLR_DIST: 757
+- response: 7E804413102F6
+  expected_values:
+    CLR_DIST: 758
+- response: 7E804413102F7
+  expected_values:
+    CLR_DIST: 759
+- response: 7E8044131031F
+  expected_values:
+    CLR_DIST: 799
+- response: '7E80441310320'
+  expected_values:
+    CLR_DIST: 800
+- response: '7E80441310321'
+  expected_values:
+    CLR_DIST: 801
+- response: '7E80441310322'
+  expected_values:
+    CLR_DIST: 802
+- response: 7E8044131033B
+  expected_values:
+    CLR_DIST: 827
