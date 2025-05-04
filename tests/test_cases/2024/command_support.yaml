@@ -85,8 +85,6 @@ supported_commands_by_ecu:
   - 0130:WARM_UPS
   - 0131:CLR_DIST
 unsupported_commands_by_ecu:
-  7A0:
-  - 7A0.7A8.22C00B
   7C6:
   - 7C6.7CE.22B002
   7DF:

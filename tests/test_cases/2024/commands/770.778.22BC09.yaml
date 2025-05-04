@@ -16,6 +16,12 @@ test_cases:
     ELANTRA_HL_LOW: 1
 - response: |-
     778100B62BC09302003
+    77821CC0000C000AAAA
+  expected_values:
+    ELANTRA_HL_HIGH: 1
+    ELANTRA_HL_LOW: 0
+- response: |-
+    778100B62BC09302003
     77821CC00040000AAAA
   expected_values:
     ELANTRA_HL_HIGH: 0
