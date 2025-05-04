@@ -233,3 +233,126 @@ test_cases:
 - response: '7E803410588'
   expected_values:
     ECT: 96
+- response: 7E80341058A
+  expected_values:
+    ECT: 98
+- response: 7ED03410544
+  expected_values:
+    ECT: 28
+- response: 7ED0341054F
+  expected_values:
+    ECT: 39
+- response: 7ED03410557
+  expected_values:
+    ECT: 47
+- response: 7ED0341055B
+  expected_values:
+    ECT: 51
+- response: 7ED0341055D
+  expected_values:
+    ECT: 53
+- response: 7ED0341055F
+  expected_values:
+    ECT: 55
+- response: 7ED03410560
+  expected_values:
+    ECT: 56
+- response: 7ED03410561
+  expected_values:
+    ECT: 57
+- response: 7ED03410566
+  expected_values:
+    ECT: 62
+- response: 7ED03410567
+  expected_values:
+    ECT: 63
+- response: 7ED03410568
+  expected_values:
+    ECT: 64
+- response: 7ED03410569
+  expected_values:
+    ECT: 65
+- response: 7ED0341056A
+  expected_values:
+    ECT: 66
+- response: 7ED0341056B
+  expected_values:
+    ECT: 67
+- response: 7ED0341056D
+  expected_values:
+    ECT: 69
+- response: 7ED0341056E
+  expected_values:
+    ECT: 70
+- response: 7ED0341056F
+  expected_values:
+    ECT: 71
+- response: 7ED03410570
+  expected_values:
+    ECT: 72
+- response: 7ED03410571
+  expected_values:
+    ECT: 73
+- response: 7ED03410573
+  expected_values:
+    ECT: 75
+- response: 7ED03410574
+  expected_values:
+    ECT: 76
+- response: 7ED03410575
+  expected_values:
+    ECT: 77
+- response: 7ED03410577
+  expected_values:
+    ECT: 79
+- response: 7ED03410578
+  expected_values:
+    ECT: 80
+- response: 7ED0341057A
+  expected_values:
+    ECT: 82
+- response: 7ED0341057B
+  expected_values:
+    ECT: 83
+- response: 7ED0341057C
+  expected_values:
+    ECT: 84
+- response: 7ED0341057D
+  expected_values:
+    ECT: 85
+- response: 7ED0341057E
+  expected_values:
+    ECT: 86
+- response: 7ED0341057F
+  expected_values:
+    ECT: 87
+- response: 7ED03410580
+  expected_values:
+    ECT: 88
+- response: 7ED03410581
+  expected_values:
+    ECT: 89
+- response: 7ED03410582
+  expected_values:
+    ECT: 90
+- response: 7ED03410583
+  expected_values:
+    ECT: 91
+- response: 7ED03410584
+  expected_values:
+    ECT: 92
+- response: 7ED03410585
+  expected_values:
+    ECT: 93
+- response: 7ED03410586
+  expected_values:
+    ECT: 94
+- response: 7ED03410587
+  expected_values:
+    ECT: 95
+- response: 7ED03410588
+  expected_values:
+    ECT: 96
+- response: 7ED03410589
+  expected_values:
+    ECT: 97
