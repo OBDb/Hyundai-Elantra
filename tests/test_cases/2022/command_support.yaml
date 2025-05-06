@@ -85,24 +85,14 @@ supported_commands_by_ecu:
   - 0130:WARM_UPS
   - 0131:CLR_DIST
 unsupported_commands_by_ecu:
-  7D1:
-  - 7D1.7D9.220104
   7DF:
   - 7DF.7E8.0167
   7E0:
-  - 7E0.7E8.0101
   - 7E0.7E8.0104
   - 7E0.7E8.0105
   - 7E0.7E8.010C
-  - 7E0.7E8.010D
   - 7E0.7E8.010E
-  - 7E0.7E8.0113
   - 7E0.7E8.011F
-  - 7E0.7E8.012E
-  - 7E0.7E8.012F
-  - 7E0.7E8.0131
-  - 7E0.7E8.0141
-  - 7E0.7E8.0144
   - 7E0.7E8.0149
   - 7E0.7E8.014A
   - 7E0.7E8.014C
@@ -110,7 +100,6 @@ unsupported_commands_by_ecu:
   - 7E0.7E8.0169
   - 7E0.7E8.016D
   - 7E0.7E8.019D
-  - 7E0.7E8.22E004
   7E5:
   - 7E5.7ED.0101
   - 7E5.7ED.0104
