@@ -1,7 +1,8 @@
-command_id: 7E0.013C
+command_id: 7E0.0103
 can_id_format: ELEVEN_BIT
 extended_addressing_enabled: false
 test_cases:
-- response: 7E804413C0190
+- response: '7E80441030200'
   expected_values:
-    CATEMP11: 0
+    FUELSYS1: CL
+    FUELSYS2: 'OFF'
