@@ -2,7 +2,7 @@ command_id: 7DF.7E8.0134
 can_id_format: ELEVEN_BIT
 extended_addressing_enabled: false
 test_cases:
-- response: 7E806413459AB8036
+- response: '7E806413400008000'
   expected_values:
     ELANTRA_SAE_LAMBDA_B1S1: 2
 - response: 7E80641346B6D7EDF
@@ -11,16 +11,10 @@ test_cases:
 - response: 7E806413478FF7FCA
   expected_values:
     ELANTRA_SAE_LAMBDA_B1S1: 1.9967
-- response: 7E80641347F038001
-  expected_values:
-    ELANTRA_SAE_LAMBDA_B1S1: 2
-- response: 7E80641347F338000
-  expected_values:
-    ELANTRA_SAE_LAMBDA_B1S1: 2
 - response: 7E80641347FC17FFF
   expected_values:
     ELANTRA_SAE_LAMBDA_B1S1: 1.99994
-- response: 7E8064134FFFF817B
+- response: 7E8064134FFFF8177
   expected_values:
     ELANTRA_SAE_LAMBDA_B1S1: 2
 - response: 7E8064134FFFF8401
