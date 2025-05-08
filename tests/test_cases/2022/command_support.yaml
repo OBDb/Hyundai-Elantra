@@ -86,6 +86,7 @@ supported_commands_by_ecu:
   - 0131:CLR_DIST
 unsupported_commands_by_ecu:
   7DF:
+  - 7DF.7E8.0134
   - 7DF.7E8.0167
   7E0:
   - 7E0.7E8.0149
