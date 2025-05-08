@@ -4,6 +4,11 @@ extended_addressing_enabled: false
 test_cases:
 - response: |-
     778100B62BC08A05290
+    77821BC0100011CAAAA
+  expected_values:
+    ELANTRA_TURN_R: 1
+- response: |-
+    778100B62BC08A05290
     77821BC0200011CAAAA
   expected_values:
     ELANTRA_TURN_R: 1
