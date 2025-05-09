@@ -1,5 +1,5 @@
 { "commands": [
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC03"}, "freq": 1, "filter": { "from": 2021 },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC03"}, "freq": 1, "filter": { "to": 2015 },
   "signals": [
     {"id": "ELANTRA_TRUNK",     "path": "Doors",     "fmt": {"bix": 32, "len": 1, "max": 1, "unit": "noyes" }, "name": "Trunk open?"},
     {"id": "ELANTRA_DOOR_FL",   "path": "Doors",     "fmt": {"bix": 34, "len": 1, "max": 1, "unit": "noyes" }, "name": "Front left door open?"},
@@ -12,7 +12,7 @@
     {"id": "ELANTRA_HOOD",      "path": "Doors",     "fmt": {"bix": 47, "len": 1, "max": 1, "unit": "noyes" }, "name": "Hood latched?"},
     {"id": "ELANTRA_DEFOG_SW",  "path": "Climate",   "fmt": {"bix": 62, "len": 1, "max": 1, "unit": "noyes" }, "name": "Defogging?"}
   ]},
-{ "hdr": "770", "rax": "778", "dbg": true, "cmd": {"22": "BC04"}, "freq": 1, "filter": { "from": 2021 },
+{ "hdr": "770", "rax": "778", "dbg": true, "cmd": {"22": "BC04"}, "freq": 1, "filter": { "to": 2010 },
   "signals": [
     {"id": "ELANTRA_GEAR_R",  "path": "Transmission", "fmt": {"bix": 35, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Reverse gear selected"},
     {"id": "ELANTRA_LOCK_FL", "path": "Doors",        "fmt": {"bix": 36, "len": 1, "max": 1, "unit": "scalar" }, "name": "Front left door locked?"},
