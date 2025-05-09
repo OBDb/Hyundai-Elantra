@@ -40,7 +40,7 @@
     {"id": "ELANTRA_HL_HIGH", "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 1, "div": 12, "unit": "noyes" }, "name": "Headlight high beam on"},
     {"id": "ELANTRA_HL_LOW",  "path": "Lights", "fmt": {"bix": 56, "len": 8, "max": 1, "div": 12, "unit": "noyes" }, "name": "Headlight low beam on"}
   ]},
-{ "hdr": "7A0", "dbg": true, "cmd": {"22": "C00B"}, "freq": 1, "filter": { "to": 2020 },
+{ "hdr": "7A0", "rax": "7A8", "dbg": true, "cmd": {"22": "C00B"}, "freq": 1, "filter": { "to": 2020 },
   "signals": [
     {"id": "ELANTRA_TP_FL_PRE21", "path": "Tires", "fmt": {"bix": 32,  "len": 8, "max": 3.5163276,             "mul": 0.01378952,             "unit": "bars"    }, "name": "Tire pressure front left",     "suggestedMetric": "frontLeftTirePressure"},
     {"id": "ELANTRA_TT_FL_PRE21", "path": "Tires", "fmt": {"bix": 40,  "len": 8, "max": 205,       "min": -50,                    "add": -50, "unit": "celsius" }, "name": "Tire temperature front left"},
