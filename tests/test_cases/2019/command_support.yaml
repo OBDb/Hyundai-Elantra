@@ -63,6 +63,8 @@ unsupported_commands_by_ecu:
   - 770.778.22BC07
   - 770.778.22BC08
   - 770.778.22BC09
+  7B3:
+  - 7B3.7BB.220100:ELANTRA_VSS
   7D4:
   - 7D4.7DC.220101
   7DF:
