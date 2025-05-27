@@ -1,0 +1,10 @@
+command_id: 7E0.014A
+test_cases:
+- response: |-
+    > 7D4.7DC.220101
+    CAN ERROR
+    NO DATA
+    > 7E0.7E8.014A
+    7E803414A26
+  expected_values:
+    APP_E: 14.90196

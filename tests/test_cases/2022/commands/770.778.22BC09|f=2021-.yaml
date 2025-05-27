@@ -1,0 +1,50 @@
+command_id: 770.778.22BC09|f=2021-
+test_cases:
+- response: |-
+    778100B62BC09302030
+    778213C00000000AAAA
+  expected_values:
+    ELANTRA_HL_HIGH: 0
+    ELANTRA_HL_LOW: 0
+- response: |-
+    778100B62BC09302030
+    778213C0000000CAAAA
+  expected_values:
+    ELANTRA_HL_HIGH: 0
+    ELANTRA_HL_LOW: 1
+- response: |-
+    778100B62BC09302030
+    778213C00000030AAAA
+  expected_values:
+    ELANTRA_HL_HIGH: 0
+    ELANTRA_HL_LOW: 1
+- response: |-
+    778100B62BC09302030
+    778213C00040000AAAA
+  expected_values:
+    ELANTRA_HL_HIGH: 0
+    ELANTRA_HL_LOW: 0
+- response: |-
+    778100B62BC09302030
+    778213C0004000CAAAA
+  expected_values:
+    ELANTRA_HL_HIGH: 0
+    ELANTRA_HL_LOW: 1
+- response: |-
+    778100B62BC09302030
+    778213C00040010AAAA
+  expected_values:
+    ELANTRA_HL_HIGH: 0
+    ELANTRA_HL_LOW: 1
+- response: |-
+    778100B62BC09302030
+    778213C00040020AAAA
+  expected_values:
+    ELANTRA_HL_HIGH: 0
+    ELANTRA_HL_LOW: 1
+- response: |-
+    778100B62BC09302030
+    778213C00040030AAAA
+  expected_values:
+    ELANTRA_HL_HIGH: 0
+    ELANTRA_HL_LOW: 1

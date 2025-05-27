@@ -1,10 +1,30 @@
 command_id: 7E0.0130
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
 - response: '7E803413004'
   expected_values:
     WARM_UPS: 4
 - response: '7E903413004'
+  expected_values:
+    WARM_UPS: 4
+- response: |-
+    > 7D4.7DC.220101
+    NO DATA
+    > 7E1.7E9.0130
+    7E803413004
+  expected_values:
+    WARM_UPS: 4
+- response: |-
+    > 7E0.7E8.0130
+    7E803413004
+  expected_values:
+    WARM_UPS: 4
+- response: |-
+    > 7E0.7E8.0130
+    7E903413004
+  expected_values:
+    WARM_UPS: 4
+- response: |-
+    > 7E1.7E9.0130
+    7E903413004
   expected_values:
     WARM_UPS: 4
