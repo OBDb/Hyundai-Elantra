@@ -1,0 +1,7 @@
+command_id: 770.778.22BC07|f=2021-
+test_cases:
+- response: |-
+    778100B62BC07000003
+    778210000000000AAAA
+  expected_values:
+    ELANTRA_DEFOG_LIGHT: 0

@@ -1,6 +1,4 @@
 command_id: 7E0.0131
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
 - response: 7E8044131018F
   expected_values:
@@ -10,15 +8,58 @@ test_cases:
     7E9044131019D
   expected_values:
     CLR_DIST: 413
-- response: 7E8044131B43D
+- response: 7E8044131B434
   expected_values:
-    CLR_DIST: 46141
-- response: 7E8044131B43E
-  expected_values:
-    CLR_DIST: 46142
-- response: 7E8044131B43F
-  expected_values:
-    CLR_DIST: 46143
+    CLR_DIST: 46132
 - response: 7E9044131019D
   expected_values:
     CLR_DIST: 413
+- response: |-
+    7E9044131019D
+    7E8044131018F
+  expected_values:
+    CLR_DIST: 399
+- response: |-
+    > 7A0.7A8.22C00B
+    NO DATA
+    > 7E0.7E8.0131
+    7E9044131019D
+  expected_values:
+    CLR_DIST: 413
+- response: |-
+    > 7E0.7E8.0131
+    7E8044131018F
+  expected_values:
+    CLR_DIST: 399
+- response: |-
+    > 7E0.7E8.0131
+    7E8044131B433
+  expected_values:
+    CLR_DIST: 46131
+- response: |-
+    > 7E0.7E8.0131
+    7E9044131019D
+  expected_values:
+    CLR_DIST: 413
+- response: |-
+    > 7E1.7E9.0131
+    7E8044131018F
+  expected_values:
+    CLR_DIST: 399
+- response: |-
+    NO DATA
+    > 7C6.7CE.22B002
+    NO DATA
+    > 7B3.7BB.220100
+    NO DATA
+    > 7E0.7E8.0131
+    7E9044131019D
+  expected_values:
+    CLR_DIST: 413
+- response: |-
+    NO DATA
+    OK
+    > 7E0.7E8.0131
+    7E8044131018F
+  expected_values:
+    CLR_DIST: 399

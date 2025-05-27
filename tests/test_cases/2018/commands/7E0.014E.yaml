@@ -1,7 +1,13 @@
 command_id: 7E0.014E
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
 - response: 7E804414E0233
   expected_values:
     CLR_TIME: 563
+- response: |-
+    > 7D1.7D9.220104
+    CAN ERROR
+    NO DATA
+    > 7E0.7E8.014E
+    7E804414E022B
+  expected_values:
+    CLR_TIME: 555
