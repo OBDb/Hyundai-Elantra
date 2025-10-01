@@ -1,0 +1,12 @@
+command_id: 770.778.22BC05|f=2021-
+test_cases:
+- expected_values:
+    ELANTRA_HAZARD_SW: 0
+  response: |-
+    778100B62BC050F1320
+    778210000000000AAAA
+- expected_values:
+    ELANTRA_HAZARD_SW: 0
+  response: |-
+    778100B62BC050F1320
+    778210000400000AAAA
