@@ -1,12 +1,10 @@
 command_id: 7E0.0124
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
-- response: 7E80641247B043C28
-  expected_values:
-    LAMBDA11_WIDE: 0.96106
-    O2S11_WIDE: 1.87897
-- response: 7E80641247C033CF0
-  expected_values:
-    LAMBDA11_WIDE: 0.96884
-    O2S11_WIDE: 1.90337
+- expected_values:
+    LAMBDA11_VOLT: 0.96106
+    O2S11_VOLT: 1.87897
+  response: 7E80641247B043C28
+- expected_values:
+    LAMBDA11_VOLT: 0.96884
+    O2S11_VOLT: 1.90337
+  response: 7E80641247C033CF0
