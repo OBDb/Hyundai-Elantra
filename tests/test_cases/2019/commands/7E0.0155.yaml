@@ -1,13 +1,11 @@
 command_id: 7E0.0155
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
-- response: 7E80341557C
-  expected_values:
+- expected_values:
     STSO2FT1: -3.125
-- response: 7E80341557F
-  expected_values:
+  response: 7E80341557C
+- expected_values:
     STSO2FT1: -0.78125
-- response: '7E803415580'
-  expected_values:
+  response: 7E80341557F
+- expected_values:
     STSO2FT1: 0
+  response: '7E803415580'
