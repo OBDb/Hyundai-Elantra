@@ -1,10 +1,8 @@
 command_id: 7E0.010B
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
-- response: 7E803410B16
-  expected_values:
+- expected_values:
     MAP: 22
-- response: 7E803410B61
-  expected_values:
+  response: 7E803410B16
+- expected_values:
     MAP: 97
+  response: 7E803410B61
