@@ -1,0 +1,22 @@
+command_id: 770.778.22BC08|f=2021-
+test_cases:
+- expected_values:
+    ELANTRA_TURN_R: 1
+  response: |-
+    778100B62BC08A05290
+    77821BC0100011CAAAA
+- expected_values:
+    ELANTRA_TURN_R: 1
+  response: |-
+    778100B62BC08A05290
+    77821BC0200011CAAAA
+- expected_values:
+    ELANTRA_TURN_R: 1
+  response: |-
+    778100B62BC08A05290
+    77821BC0240011CAAAA
+- expected_values:
+    ELANTRA_TURN_R: 1
+  response: |-
+    778100B62BC08A05290
+    77821BC0800011CAAAA

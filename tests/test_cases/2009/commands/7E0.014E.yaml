@@ -1,25 +1,23 @@
 command_id: 7E0.014E
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
-- response: 7E804414E0064
-  expected_values:
+- expected_values:
     CLR_TIME: 100
-- response: 7E804414E0101
-  expected_values:
+  response: 7E804414E0064
+- expected_values:
     CLR_TIME: 257
-- response: 7E804414E0305
-  expected_values:
+  response: 7E804414E0101
+- expected_values:
     CLR_TIME: 773
-- response: 7E804414E05E0
-  expected_values:
+  response: 7E804414E0305
+- expected_values:
     CLR_TIME: 1504
-- response: 7E804414E05E3
-  expected_values:
+  response: 7E804414E05E0
+- expected_values:
     CLR_TIME: 1507
-- response: 7E804414E0609
-  expected_values:
+  response: 7E804414E05E3
+- expected_values:
     CLR_TIME: 1545
-- response: 7E804414E06A8
-  expected_values:
+  response: 7E804414E0609
+- expected_values:
     CLR_TIME: 1704
+  response: 7E804414E06A8
