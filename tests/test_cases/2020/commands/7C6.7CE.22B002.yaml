@@ -1,13 +1,11 @@
 command_id: 7C6.7CE.22B002
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
-- response: |-
-    7CE100F62B002E00000
-    7CE21001B8E00DCB200
-    7CE2200000000000000
-  expected_values:
+- expected_values:
     ELANTRA_CLUSTER_VOLTAGE: 11.09375
     ELANTRA_FLI_VOL: 27
     ELANTRA_ODO_KM: 56498
     ELANTRA_ODO_MI: 0
+  response: |-
+    7CE100F62B002E00000
+    7CE21001B8E00DCB200
+    7CE2200000000000000

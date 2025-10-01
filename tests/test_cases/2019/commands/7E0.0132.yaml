@@ -1,28 +1,26 @@
 command_id: 7E0.0132
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
-- response: 7E804413200E4
-  expected_values:
+- expected_values:
     EVAP_VP: 0.057
-- response: '7E80441320125'
-  expected_values:
+  response: 7E804413200E4
+- expected_values:
     EVAP_VP: 0.07325
-- response: 7E804413201A7
-  expected_values:
+  response: '7E80441320125'
+- expected_values:
     EVAP_VP: 0.10575
-- response: 7E804413201E9
-  expected_values:
+  response: 7E804413201A7
+- expected_values:
     EVAP_VP: 0.12225
-- response: '7E80441320229'
-  expected_values:
+  response: 7E804413201E9
+- expected_values:
     EVAP_VP: 0.13825
-- response: 7E8044132026B
-  expected_values:
+  response: '7E80441320229'
+- expected_values:
     EVAP_VP: 0.15475
-- response: 7E8044132FA87
-  expected_values:
+  response: 7E8044132026B
+- expected_values:
     EVAP_VP: -0.35025
-- response: 7E8044132FD95
-  expected_values:
+  response: 7E8044132FA87
+- expected_values:
     EVAP_VP: -0.15475
+  response: 7E8044132FD95
