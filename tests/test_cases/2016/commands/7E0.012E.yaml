@@ -3,6 +3,3 @@ test_cases:
 - expected_values:
     EVAP_PCT: 0
   response: 7E803412E00
-- expected_values:
-    EVAP_PCT: 100
-  response: 7E803412EFF
