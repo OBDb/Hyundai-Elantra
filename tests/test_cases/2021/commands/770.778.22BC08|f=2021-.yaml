@@ -1,12 +1,50 @@
 command_id: 770.778.22BC08|f=2021-
 test_cases:
 - expected_values:
-    ELANTRA_TURN_R: 1
+    ELANTRA_TURN_L: 0
+    ELANTRA_TURN_R: 0
+  response: |-
+    778100B62BC08A05090
+    77821B800000018AAAA
+- expected_values:
+    ELANTRA_TURN_L: 0
+    ELANTRA_TURN_R: 0
+  response: |-
+    778100B62BC08A05090
+    77821B80000001CAAAA
+- expected_values:
+    ELANTRA_TURN_L: 0
+    ELANTRA_TURN_R: 0
+  response: |-
+    778100B62BC08A05090
+    77821B80000011CAAAA
+- expected_values:
+    ELANTRA_TURN_L: 0
+    ELANTRA_TURN_R: 0
+  response: |-
+    778100B62BC08A05090
+    77821B80002001CAAAA
+- expected_values:
+    ELANTRA_TURN_L: 0
+    ELANTRA_TURN_R: 0
+  response: |-
+    778100B62BC08A05090
+    77821B80002011CAAAA
+- expected_values:
+    ELANTRA_TURN_L: 0
+    ELANTRA_TURN_R: 0
+  response: |-
+    778100B62BC08A05090
+    77821B80008011CAAAA
+- expected_values:
+    ELANTRA_TURN_L: 1
+    ELANTRA_TURN_R: 0
   response: |-
     778100B62BC08A05090
     77821B80200011CAAAA
 - expected_values:
-    ELANTRA_TURN_R: 1
+    ELANTRA_TURN_L: 0
+    ELANTRA_TURN_R: 0
   response: |-
     778100B62BC08A05090
     77821B80800011CAAAA
