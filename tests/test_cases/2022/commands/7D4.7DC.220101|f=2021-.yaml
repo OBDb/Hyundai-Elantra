@@ -1,4 +1,4 @@
-command_id: 7D4.7DC.220101
+command_id: 7D4.7DC.220101|f=2021-
 test_cases:
 - expected_values:
     ELANTRA_BMS_CHG_PWR: 235.52
