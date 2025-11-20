@@ -1,4 +1,4 @@
-command_id: 7B3.7BB.220100|fc=1
+command_id: 7B3.7BB.220100|fc=1,f=2021-
 test_cases:
 - expected_values:
     ELANTRA_VSS: 26
