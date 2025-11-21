@@ -41,6 +41,7 @@ supported_commands_by_ecu:
   - 014E:CLR_TIME
   - 0155:STSO2FT1
   - 0156:LGSO2FT1
+  - 7E0.0104:LOAD_PCT
   - 7E0.010D:VSS
   - 7E0.010F:IAT
   - 7E0.012F:FLI
