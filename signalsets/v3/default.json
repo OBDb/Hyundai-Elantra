@@ -220,7 +220,7 @@
     {"id": "ELANTRA_KNOCK_RETARD_CYLINDER_3", "path": "ECU", "fmt": {"bix": 112, "len": 8, "max": 191.25, "mul": 0.75, "unit": "degrees" }, "name": "Knock retard cylinder #3"},
     {"id": "ELANTRA_KNOCK_RETARD_CYLINDER_4", "path": "ECU", "fmt": {"bix": 120, "len": 8, "max": 191.25, "mul": 0.75, "unit": "degrees" }, "name": "Knock retard cylinder #4"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "17"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "17"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "ELANTRA_INTAKE_CAMSHAFT_POSITION_COMMANDED", "path": "ECU", "fmt": {"bix": 32, "len": 8,  "max": 63.5,  "min": -64,         "mul": 0.5,                    "sign": true,               "unit": "degrees" },                "name": "intake camshaft position commanded"},
     {"id": "ELANTRA_INTAKE_CAMSHAFT_POSITION_ACTUAL",    "path": "ECU", "fmt": {"bix": 40, "len": 16, "blsb": true, "max": 255.9921875, "min": -256, "mul": 0.0078125,               "sign": true,                   "unit": "degrees" },                                            "name": "intake camshaft position actual"}
