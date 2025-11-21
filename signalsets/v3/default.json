@@ -138,7 +138,7 @@
     {"id": "ELANTRA_TP_4", "path": "Tires", "fmt": {"bix": 144, "len": 16, "max": 6553.5,                "div": 10,               "unit": "kilopascal" }, "name": "Sensor 4 pressure"},
     {"id": "ELANTRA_TT_4", "path": "Tires", "fmt": {"bix": 160, "len": 16, "max": 32767,  "min": -32768,            "sign": true, "unit": "celsius"    }, "name": "Sensor 4 temperature"}
   ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"22": "E021"}, "freq": 1,
+{ "hdr": "7E0", "cmd": {"22": "E021"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "ELANTRA_TB_PRES", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 543.350685,  "mul": 0.008291,    "unit": "kilopascal" }, "name": "Turbo boost pressure"},
     {"id": "ELANTRA_WG_V",    "path": "Engine", "fmt": {"bix": 392, "len": 16, "max": 9.99985458,  "mul": 0.000152588, "unit": "volts"      }, "name": "Waste gate voltage"},
