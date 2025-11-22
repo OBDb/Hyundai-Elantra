@@ -7,5 +7,8 @@ test_cases:
     LGSO2FT1: -22.53125
   response: '7E803415687'
 - expected_values:
+    LGSO2FT1: -21.75
+  response: '7E803415688'
+- expected_values:
     LGSO2FT1: -20.96875
   response: '7E803415689'
