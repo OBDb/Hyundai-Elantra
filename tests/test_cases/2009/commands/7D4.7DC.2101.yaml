@@ -1,0 +1,9 @@
+command_id: 7D4.7DC.2101
+test_cases:
+- expected_values:
+    ELANTRA_STEER_ANGLE_V2: -0.1
+  response: |-
+    7DC101761010DF500FF
+    7DC21FF030000000000
+    7DC220000151A640000
+    7DC2300006400000000
