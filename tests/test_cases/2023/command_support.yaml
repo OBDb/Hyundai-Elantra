@@ -112,3 +112,6 @@ supported_commands_by_ecu:
   - 0121:MIL_DIST
   - 0130:WARM_UPS
   - 0131:CLR_DIST
+unsupported_commands_by_ecu:
+  "7D1":
+  - 7D1.7D9.2101:ELANTRA_FL_VSS,ELANTRA_FR_VSS,ELANTRA_RL_VSS,ELANTRA_RR_VSS
