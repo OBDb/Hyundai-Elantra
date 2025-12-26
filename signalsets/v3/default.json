@@ -123,7 +123,7 @@
     {"id": "ELANTRA_STEER_ANGLE", "path": "Control",  "fmt": {"bix": 200, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10,   "sign": true, "unit": "degrees"           }, "name": "Steering wheel angle"},
     {"id": "ELANTRA_BRAKE_P",     "path": "Control",  "fmt": {"bix": 256, "len": 16, "max": 100,                    "div": 86.7, "sign": true, "unit": "percent"           }, "name": "Brake pressure"}
   ]},
-{ "hdr": "7D4", "rax": "7DC", "cmd": {"21": "01"}, "freq": 1, "dbgfilter": { "to": 2008, "years": [2010, 2011, 2012, 2013, 2015, 2016, 2017, 2018], "from": 2020 },
+{ "hdr": "7D4", "rax": "7DC", "cmd": {"21": "01"}, "freq": 1, "dbgfilter": { "to": 2008, "years": [2010, 2011, 2012, 2013, 2015, 2016, 2017], "from": 2020 },
   "signals": [
     {"id": "ELANTRA_STEER_ANGLE_V2", "path": "Control", "fmt": {"bix": 24, "len": 16, "max": 3276.7, "min": -3276.8, "mul": 10, "div": 100, "sign": true, "unit": "degrees" }, "name": "Steering angle"}
   ]},
@@ -138,7 +138,7 @@
     {"id": "ELANTRA_TP_4", "path": "Tires", "fmt": {"bix": 144, "len": 16, "max": 6553.5,                "div": 10,               "unit": "kilopascal" }, "name": "Sensor 4 pressure"},
     {"id": "ELANTRA_TT_4", "path": "Tires", "fmt": {"bix": 160, "len": 16, "max": 32767,  "min": -32768,            "sign": true, "unit": "celsius"    }, "name": "Sensor 4 temperature"}
   ]},
-{ "hdr": "7E0", "cmd": {"22": "E021"}, "freq": 1, "dbgfilter": { "to": 2016, "years": [2018, 2020], "from": 2026 },
+{ "hdr": "7E0", "cmd": {"22": "E021"}, "freq": 1, "dbgfilter": { "to": 2016, "years": [2020], "from": 2026 },
   "signals": [
     {"id": "ELANTRA_TB_PRES", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 543.350685,  "mul": 0.008291,    "unit": "kilopascal" }, "name": "Turbo boost pressure"},
     {"id": "ELANTRA_WG_V",    "path": "Engine", "fmt": {"bix": 392, "len": 16, "max": 9.99985458,  "mul": 0.000152588, "unit": "volts"      }, "name": "Waste gate voltage"},
@@ -272,7 +272,7 @@
     {"id": "ELANTRA_KNOCK_LEARN_3",  "path": "Engine", "fmt": {"bix": 176, "len": 8, "max": 25, "min": -25, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock learn, cylinder 3"},
     {"id": "ELANTRA_KNOCK_LEARN_4",  "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 25, "min": -25, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock learn, cylinder 4"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E019"}, "freq": 1, "dbgfilter": { "to": 2016, "years": [2018, 2020], "from": 2025 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E019"}, "freq": 1, "dbgfilter": { "to": 2016, "years": [2020], "from": 2025 },
   "signals": [
     {"id": "ELANTRA_KNOCK_RETARD_1_E019", "path": "Engine", "fmt": {"bix": 168, "len": 8, "max": 0, "min": -191.25, "mul": 0.75, "add": -191.25, "unit": "degrees" }, "name": "Knock retard cylinder 1, alternate"},
     {"id": "ELANTRA_KNOCK_RETARD_2_E019", "path": "Engine", "fmt": {"bix": 176, "len": 8, "max": 0, "min": -191.25, "mul": 0.75, "add": -191.25, "unit": "degrees" }, "name": "Knock retard cylinder 2, alternate"},
