@@ -9,3 +9,6 @@ test_cases:
 - expected_values:
     CLR_TIME: 23063
   response: 7E804414E5A17
+- expected_values:
+    CLR_TIME: 23709
+  response: 7E804414E5C9D
