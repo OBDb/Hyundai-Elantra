@@ -6,3 +6,9 @@ test_cases:
 - expected_values:
     MIL_TIME: 428
   response: 7E804414D01AC
+- expected_values:
+    MIL_TIME: 488
+  response: 7E804414D01E8
+- expected_values:
+    MIL_TIME: 496
+  response: 7E804414D01F0
