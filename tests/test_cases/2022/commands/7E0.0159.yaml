@@ -4,11 +4,11 @@ test_cases:
     FRP_ABS: 4890
   response: 7E804415901E9
 - expected_values:
-    FRP_ABS: 5100
-  response: 7E804415901FE
+    FRP_ABS: 7670
+  response: 7E804415902FF
 - expected_values:
-    FRP_ABS: 7700
-  response: '7E80441590302'
+    FRP_ABS: 7690
+  response: '7E80441590301'
 - expected_values:
-    FRP_ABS: 12350
-  response: 7E804415904D3
+    FRP_ABS: 10310
+  response: '7E80441590407'
