@@ -4,8 +4,22 @@ test_cases:
     MAF: 0
   response: '7E80441100000'
 - expected_values:
+    MAF: 2.52
+  response: |-
+    7E804411000F4AAAAAA
+    7E804411000FCAAAAAA
+    > 770.778.22BC03|f=2021-
+    CAN ERROR
+- expected_values:
     MAF: 2.54
   response: 7E804411000FE
+- expected_values:
+    MAF: 4.25
+  response: |-
+    7E8044110014AAAAAAA
+    7E80441100163AAAAAA
+    7E804411001A9AAAAAA
+    CAN ERROR
 - expected_values:
     MAF: 48.23
   response: 7E804411012D7

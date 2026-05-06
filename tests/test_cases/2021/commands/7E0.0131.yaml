@@ -18,5 +18,10 @@ test_cases:
     > 770.778.22BC04|f=2021-
     CAN ERROR
 - expected_values:
+    CLR_DIST: 6496
+  response: |-
+    7E80441311960AAAAAA
+    CAN ERROR
+- expected_values:
     CLR_DIST: 65535
   response: 7E8044131FFFF
