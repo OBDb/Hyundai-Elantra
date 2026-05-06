@@ -21,5 +21,20 @@ test_cases:
     7E804411001A9AAAAAA
     CAN ERROR
 - expected_values:
+    MAF: 4.11
+  response: |-
+    7E8044110019BAAAAAA
+    > 7E0.7E8.2100
+    > 7E0.7E8.012F
+    7E803412F4CAAAAAAAA
+    > 7E0.7E8.2116
+    > 7E0.7E8.2104
+    > 7E0.7E8.2114
+    > 7E0.7E8.211D
+    > 7E0.7E8.0104
+    7E803410451AAAAAAAA
+    > 7D6.7DE.2106
+    CAN ERROR
+- expected_values:
     MAF: 48.23
   response: 7E804411012D7
