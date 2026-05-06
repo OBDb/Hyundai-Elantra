@@ -10,5 +10,11 @@ test_cases:
     EQ_RAT: 0.9922
   response: 7E80441447F00
 - expected_values:
+    EQ_RAT: 0.99998
+  response: |-
+    7E80441447FFFAAAAAA
+    > 7A0.7A8.22C00B|f=2021-
+    CAN ERROR
+- expected_values:
     EQ_RAT: 1.99
   response: 7E8044144FFFE
