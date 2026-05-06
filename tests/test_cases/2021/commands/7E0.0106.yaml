@@ -4,6 +4,13 @@ test_cases:
     SHRTFT1: -29.6875
   response: 7E80341065A
 - expected_values:
+    SHRTFT1: -3.125
+  response: |-
+    7E80341067AAAAAAAAA
+    7E80341067BAAAAAAAA
+    7E80341067CAAAAAAAA
+    CAN ERROR
+- expected_values:
     SHRTFT1: 0
   response: |-
     7E80341067AAAAAAAAA
