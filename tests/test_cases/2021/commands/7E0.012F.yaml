@@ -4,6 +4,13 @@ test_cases:
     FLI: 3.92157
   response: 7E803412F0A
 - expected_values:
+    FLI: 23.92157
+  response: |-
+    7E803412F3BAAAAAAAA
+    7E803412F3CAAAAAAAA
+    7E803412F3DAAAAAAAA
+    CAN ERROR
+- expected_values:
     FLI: 30.98039
   response: |-
     7E803412F4AAAAAAAAA
