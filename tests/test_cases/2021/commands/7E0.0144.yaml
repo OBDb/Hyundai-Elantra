@@ -4,6 +4,15 @@ test_cases:
     EQ_RAT: 0.89558
   response: 7E804414472A2
 - expected_values:
+    EQ_RAT: 0.99998
+  response: |-
+    7E804414475FFAAAAAA
+    7E8044144788FAAAAAA
+    7E80441447D87AAAAAA
+    7E80441447FFFAAAAAA
+    > 7D6.7DE.2106
+    CAN ERROR
+- expected_values:
     EQ_RAT: 1.99
   response: |-
     7E80441447657AAAAAA
