@@ -29,5 +29,13 @@ test_cases:
     > 7D4.7DC.2101
     CAN ERROR
 - expected_values:
+    CLR_DIST: 6959
+  response: |-
+    7E80441311B2DAAAAAA
+    7E80441311B2EAAAAAA
+    7E80441311B2FAAAAAA
+    > 7D1.7D9.2101
+    CAN ERROR
+- expected_values:
     CLR_DIST: 65535
   response: 7E8044131FFFF
