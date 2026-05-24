@@ -4,8 +4,8 @@ test_cases:
     CLR_TIME: 2000
   response: 7E804414E07D0
 - expected_values:
-    CLR_TIME: 23063
-  response: 7E804414E5A17
+    CLR_TIME: 42004
+  response: 7E804414EA414
 - expected_values:
     CLR_TIME: 65535
   response: 7E804414EFFFF
