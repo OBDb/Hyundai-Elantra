@@ -22,5 +22,8 @@ test_cases:
     TQ_FR: 10
   response: 7E803418E87
 - expected_values:
+    TQ_FR: 11
+  response: 7E803418E88
+- expected_values:
     TQ_FR: 13
   response: 7E803418E8A
