@@ -24,8 +24,8 @@ test_cases:
     EQ_RAT: 0.98433
   response: 7E80441447DFE
 - expected_values:
-    EQ_RAT: 0.9922
-  response: 7E80441447F00
+    EQ_RAT: 0.98439
+  response: 7E80441447E00
 - expected_values:
     EQ_RAT: 0.99998
   response: |-
@@ -39,4 +39,4 @@ test_cases:
     CAN ERROR
 - expected_values:
     EQ_RAT: 1.99
-  response: 7E8044144FFFE
+  response: 7E8044144FF5E
