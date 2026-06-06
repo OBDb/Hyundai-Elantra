@@ -11,8 +11,8 @@ test_cases:
     > 770.778.22BC03|f=2021-
     CAN ERROR
 - expected_values:
-    MAF: 2.54
-  response: 7E804411000FE
+    MAF: 2.55
+  response: 7E804411000FF
 - expected_values:
     MAF: 4.25
   response: |-
