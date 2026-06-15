@@ -49,5 +49,5 @@ test_cases:
     7E803410469AAAAAAAA
     CAN ERROR
 - expected_values:
-    LOAD_PCT: 83.92157
-  response: 7E8034104D6
+    LOAD_PCT: 85.09804
+  response: 7E8034104D9
