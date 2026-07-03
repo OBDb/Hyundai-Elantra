@@ -16,6 +16,7 @@ supported_commands_by_ecu:
   - 0105:ECT
   - 0106:SHRTFT1
   - 0107:LONGFT1
+  - 010B:MAP
   - 010C:RPM
   - 010D:VSS
   - 010E:SPARKADV
@@ -23,6 +24,7 @@ supported_commands_by_ecu:
   - 0110:MAF
   - 0111:TP
   - 0113:O2S11_EXISTS,O2S12_EXISTS,O2S13_EXISTS,O2S14_EXISTS,O2S21_EXISTS,O2S22_EXISTS,O2S23_EXISTS,O2S24_EXISTS
+  - 0114:O2S11,SHRTFT11
   - 0115:O2S12,SHRTFT11
   - 011C:OBDSUP
   - 011F:RUNTM
@@ -40,6 +42,8 @@ supported_commands_by_ecu:
   - 0142:VPWR
   - 0143:LOAD_ABS
   - 0144:EQ_RAT
+  - 0145:TP_R
+  - 0146:AAT
 unsupported_commands_by_ecu:
   "770":
   - 770.778.22BC03
