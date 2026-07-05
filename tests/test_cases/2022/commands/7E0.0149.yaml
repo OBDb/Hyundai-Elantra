@@ -7,5 +7,8 @@ test_cases:
     APP_D: 25.4902
   response: '7E803414941'
 - expected_values:
+    APP_D: 32.94118
+  response: '7E803414954'
+- expected_values:
     APP_D: 34.5098
   response: '7E803414958'
