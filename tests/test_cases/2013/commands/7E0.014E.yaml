@@ -1,0 +1,11 @@
+command_id: 7E0.014E
+test_cases:
+- expected_values:
+    CLR_TIME: 9809
+  response: 7E804414E2651
+- expected_values:
+    CLR_TIME: 9810
+  response: 7E804414E2652
+- expected_values:
+    CLR_TIME: 9886
+  response: 7E804414E269E
