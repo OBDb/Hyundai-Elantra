@@ -146,7 +146,7 @@
     {"id": "ELANTRA_WG_POS",  "path": "Engine", "fmt": {"bix": 424, "len": 16, "max": 399.9941832, "mul": 0.00610352,  "unit": "percent"    }, "name": "Waste gate position"},
     {"id": "ELANTRA_WG_SP",   "path": "Engine", "fmt": {"bix": 440, "len": 16, "max": 399.9941832, "mul": 0.00610352,  "unit": "percent"    }, "name": "Waste gate setpoint"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "00"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "00"}, "freq": 1, "dbgfilter": { "to": 2011, "years": [2013, 2014, 2015], "from": 2017 },
   "signals": [
     {"id": "ELANTRA_FUEL_CUT",               "path": "Fuel",     "fmt": {"bix": 88,  "len": 8, "max": 255, "unit": "scalar" }, "name": "Fuel cut"},
     {"id": "ELANTRA_IDLE_CONTROL_MODE",      "path": "Engine",   "fmt": {"bix": 120, "len": 8, "max": 255, "unit": "scalar" }, "name": "Idle control mode"},
@@ -184,7 +184,7 @@
     {"id": "ELANTRA_COOLANT_FAN_HIGH_SPEED__1_8_", "path": "Movement", "fmt": {"bix": 109, "len": 1, "max": 1, "unit": "offon" }, "name": "Coolant fan high speed (1.8)"},
     {"id": "ELANTRA_COOLANT_FAN_LOW_SPEED__1_8_",  "path": "Movement", "fmt": {"bix": 110, "len": 1, "max": 1, "unit": "offon" }, "name": "Coolant fan low speed (1.8)"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "0D"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "0D"}, "freq": 1, "dbgfilter": { "to": 2011, "years": [2013, 2014, 2015], "from": 2017 },
   "signals": [
     {"id": "ELANTRA_MIS_CNT_EMIS_1", "path": "Engine.Misfires", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission-relevant misfires, cylinder #1"},
     {"id": "ELANTRA_MIS_CNT_EMIS_2", "path": "Engine.Misfires", "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission-relevant misfires, cylinder #2"},
