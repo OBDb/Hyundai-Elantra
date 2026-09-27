@@ -1,4 +1,7 @@
-{ "commands": [
+{ "ecu": [
+    { "hdr": "7E0", "type": "engine" }
+  ],
+  "commands": [
 { "hdr": "770", "rax": "778", "cmd": {"22": "BC03"}, "freq": 1, "filter": { "from": 2021 }, "dbgfilter": { "from": 2026 },
   "signals": [
     {"id": "ELANTRA_TRUNK",     "path": "Doors",     "fmt": {"bix": 32, "len": 1, "max": 1, "unit": "noyes" }, "name": "Trunk open?"},
