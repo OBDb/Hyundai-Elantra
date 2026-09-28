@@ -30,6 +30,10 @@
     {"id": "ELANTRA_HAZARD_SW", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 255,                             "unit": "scalar" }, "name": "Hazard switch"},
     {"id": "ELANTRA_HL_SW",     "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 1,   "nullmin": 0, "nullmax": 2, "unit": "noyes"  }, "name": "Headlight switch (raw >2)"}
   ]},
+{ "hdr": "770", "rax": "778", "dbg": true, "cmd": {"22": "BC06"}, "freq": 0.25,
+  "signals": [
+    {"id": "ELANTRA_BRAKE_LIGHT", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "scalar" }, "name": "Brake light"}
+  ]},
 { "hdr": "770", "rax": "778", "cmd": {"22": "BC07"}, "freq": 1, "filter": { "from": 2021 }, "dbgfilter": { "from": 2026 },
   "signals": [
     {"id": "ELANTRA_DEFOG_LIGHT", "path": "Climate", "fmt": {"bix": 47, "len": 1, "max": 1, "unit": "offon" }, "name": "Defog light"}
@@ -98,9 +102,38 @@
         }}
     }
   ]},
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "C00C"}, "freq": 30,
+  "signals": [
+    {"id": "ELANTRA_SENS_1_ODO_EVT_1", "path": "Trips", "fmt": {"bix": 272, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor 1 odometer event 1"},
+    {"id": "ELANTRA_SENS_1_ODO_EVT_2", "path": "Trips", "fmt": {"bix": 296, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor 1 odometer event 2"},
+    {"id": "ELANTRA_SENS_1_ODO_EVT_3", "path": "Trips", "fmt": {"bix": 320, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor 1 odometer event 3"}
+  ]},
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "C00D"}, "freq": 30,
+  "signals": [
+    {"id": "ELANTRA_SENS_2_ODO_EVT_1", "path": "Trips", "fmt": {"bix": 272, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor 2 odometer event 1"},
+    {"id": "ELANTRA_SENS_2_ODO_EVT_2", "path": "Trips", "fmt": {"bix": 296, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor 2 odometer event 2"},
+    {"id": "ELANTRA_SENS_2_ODO_EVT_3", "path": "Trips", "fmt": {"bix": 320, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor 2 odometer event 3"}
+  ]},
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "C00E"}, "freq": 30,
+  "signals": [
+    {"id": "ELANTRA_SENS_3_ODO_EVT_1", "path": "Trips", "fmt": {"bix": 272, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor 3 odometer event 1"},
+    {"id": "ELANTRA_SENS_3_ODO_EVT_2", "path": "Trips", "fmt": {"bix": 296, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor 3 odometer event 2"},
+    {"id": "ELANTRA_SENS_3_ODO_EVT_3", "path": "Trips", "fmt": {"bix": 320, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor 3 odometer event 3"}
+  ]},
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "C00F"}, "freq": 30,
+  "signals": [
+    {"id": "ELANTRA_SENS_4_ODO_EVT_1", "path": "Trips", "fmt": {"bix": 272, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor 4 odometer event 1"},
+    {"id": "ELANTRA_SENS_4_ODO_EVT_2", "path": "Trips", "fmt": {"bix": 296, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor 4 odometer event 2"},
+    {"id": "ELANTRA_SENS_4_ODO_EVT_3", "path": "Trips", "fmt": {"bix": 320, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor 4 odometer event 3"}
+  ]},
 { "hdr": "7B3", "rax": "7BB", "fcm1": true, "cmd": {"22": "0100"}, "freq": 0.5, "filter": { "from": 2021 }, "dbgfilter": { "from": 2026 },
   "signals": [
     {"id": "ELANTRA_VSS", "path": "Movement", "fmt": {"bix": 232, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
+  ]},
+{ "hdr": "7B3", "rax": "7BB", "dbg": true, "cmd": {"22": "0101"}, "freq": 5,
+  "signals": [
+    {"id": "ELANTRA_HVAC_IAT_PASSENGER_VENT",      "path": "Climate", "fmt": {"bix": 64, "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Interior temperature, passenger vent"},
+    {"id": "ELANTRA_HVAC_IAT_PASSENGER_LEGS_VENT", "path": "Climate", "fmt": {"bix": 72, "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Interior temperature, passenger legs vent"}
   ]},
 { "hdr": "7C6", "rax": "7CE", "cmd": {"22": "B002"}, "freq": 1, "dbgfilter": { "to": 2015, "from": 2026 },
   "signals": [
@@ -126,6 +159,20 @@
     {"id": "ELANTRA_TC_SWITCH",   "path": "Movement", "fmt": {"bix": 150, "len": 1,  "max": 1,                                                 "unit": "noyes"             }, "name": "Vehicle traction control switch (raw)"},
     {"id": "ELANTRA_STEER_ANGLE", "path": "Control",  "fmt": {"bix": 200, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10,   "sign": true, "unit": "degrees"           }, "name": "Steering wheel angle"},
     {"id": "ELANTRA_BRAKE_P",     "path": "Control",  "fmt": {"bix": 256, "len": 16, "max": 100,                    "div": 86.7, "sign": true, "unit": "percent"           }, "name": "Brake pressure"}
+  ]},
+{ "hdr": "7D1", "rax": "7D9", "dbg": true, "cmd": {"22": "4000"}, "freq": 0.25,
+  "signals": [
+    {"id": "ELANTRA_TIRE_FL_VSS_V3", "path": "Movement", "fmt": {"bix": 48, "len": 8, "max": 205, "min": -50, "add": -50, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "ELANTRA_TIRE_FR_VSS_V3", "path": "Movement", "fmt": {"bix": 56, "len": 8, "max": 205, "min": -50, "add": -50, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "ELANTRA_TIRE_RL_VSS_V3", "path": "Movement", "fmt": {"bix": 64, "len": 8, "max": 205, "min": -50, "add": -50, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "ELANTRA_TIRE_RR_VSS_V3", "path": "Movement", "fmt": {"bix": 72, "len": 8, "max": 205, "min": -50, "add": -50, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]},
+{ "hdr": "7D1", "rax": "7D9", "dbg": true, "cmd": {"22": "C101"}, "freq": 0.25,
+  "signals": [
+    {"id": "ELANTRA_FL_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 88,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "ELANTRA_FR_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 96,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "ELANTRA_RL_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 104, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "ELANTRA_RR_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 112, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
   ]},
 { "hdr": "7D4", "rax": "7DC", "cmd": {"21": "01"}, "freq": 1, "dbgfilter": { "to": 2008, "years": [2011], "from": 2020 },
   "signals": [
@@ -188,6 +235,46 @@
     {"id": "ELANTRA_COOLANT_FAN_HIGH_SPEED__1_8_", "path": "Movement", "fmt": {"bix": 109, "len": 1, "max": 1, "unit": "offon" }, "name": "Coolant fan high speed (1.8)"},
     {"id": "ELANTRA_COOLANT_FAN_LOW_SPEED__1_8_",  "path": "Movement", "fmt": {"bix": 110, "len": 1, "max": 1, "unit": "offon" }, "name": "Coolant fan low speed (1.8)"}
   ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "08"}, "freq": 1,
+  "signals": [
+    {"id": "ELANTRA_EMIS_MIS_TOT_1",     "path": "Engine", "fmt": {"bix": 128, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Emission relevant misfires total, cylinder 1"},
+    {"id": "ELANTRA_EMIS_MIS_TOT_2",     "path": "Engine", "fmt": {"bix": 144, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Emission relevant misfires total, cylinder 2"},
+    {"id": "ELANTRA_EMIS_MIS_TOT_3",     "path": "Engine", "fmt": {"bix": 160, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Emission relevant misfires total, cylinder 3"},
+    {"id": "ELANTRA_EMIS_MIS_TOT_4",     "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Emission relevant misfires total, cylinder 4"},
+    {"id": "ELANTRA_EMIS_MIS_TOT_5",     "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Emission relevant misfires total, cylinder 5"},
+    {"id": "ELANTRA_EMIS_MIS_TOT_6",     "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Emission relevant misfires total, cylinder 6"},
+    {"id": "ELANTRA_CATDMG_MIS_TOT_1",   "path": "Engine", "fmt": {"bix": 256, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Catalyst damaging misfires total, cylinder 1"},
+    {"id": "ELANTRA_CATDMG_MIS_TOT_2",   "path": "Engine", "fmt": {"bix": 272, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Catalyst damaging misfires total, cylinder 2"},
+    {"id": "ELANTRA_CATDMG_MIS_TOT_3",   "path": "Engine", "fmt": {"bix": 288, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Catalyst damaging misfires total, cylinder 3"},
+    {"id": "ELANTRA_CATDMG_MIS_TOT_4",   "path": "Engine", "fmt": {"bix": 304, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Catalyst damaging misfires total, cylinder 4"},
+    {"id": "ELANTRA_CATDMG_MIS_TOT_5",   "path": "Engine", "fmt": {"bix": 320, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Catalyst damaging misfires total, cylinder 5"},
+    {"id": "ELANTRA_CATDMG_MIS_TOT_6",   "path": "Engine", "fmt": {"bix": 336, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Catalyst damaging misfires total, cylinder 6"},
+    {"id": "ELANTRA_EMIS_MIS_TOT_ALL",   "path": "Engine", "fmt": {"bix": 384, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Emission relevant misfires total all cylinders"},
+    {"id": "ELANTRA_CATDMG_MIS_TOT_ALL", "path": "Engine", "fmt": {"bix": 400, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Catalyst damaging misfires total all cylinders"},
+    {"id": "ELANTRA_MIS_CURRENT_1",      "path": "Engine", "fmt": {"bix": 536, "len": 8,  "max": 255,                 "unit": "scalar" },               "name": "Misfires current, cylinder 1"},
+    {"id": "ELANTRA_MIS_CURRENT_2",      "path": "Engine", "fmt": {"bix": 544, "len": 8,  "max": 255,                 "unit": "scalar" },               "name": "Misfires current, cylinder 2"},
+    {"id": "ELANTRA_MIS_CURRENT_3",      "path": "Engine", "fmt": {"bix": 552, "len": 8,  "max": 255,                 "unit": "scalar" },               "name": "Misfires current, cylinder 3"},
+    {"id": "ELANTRA_MIS_CURRENT_4",      "path": "Engine", "fmt": {"bix": 560, "len": 8,  "max": 255,                 "unit": "scalar" },               "name": "Misfires current, cylinder 4"},
+    {"id": "ELANTRA_MIS_CURRENT_5",      "path": "Engine", "fmt": {"bix": 568, "len": 8,  "max": 255,                 "unit": "scalar" },               "name": "Misfires current, cylinder 5"},
+    {"id": "ELANTRA_MIS_CURRENT_6",      "path": "Engine", "fmt": {"bix": 576, "len": 8,  "max": 255,                 "unit": "scalar" },               "name": "Misfires current, cylinder 6"},
+    {"id": "ELANTRA_MIS_CURRENT_TOT",    "path": "Engine", "fmt": {"bix": 584, "len": 8,  "max": 255,                 "unit": "scalar" },               "name": "Misfires current total"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "0A"}, "freq": 1,
+  "signals": [
+    {"id": "ELANTRA_KNOCK_RETARD_CYL_1_ALT", "path": "Engine", "fmt": {"bix": 160, "len": 8, "max": 191.25, "div": 1.3333333333, "unit": "degrees" }, "name": "Knock retard cylinder 1, alternate"},
+    {"id": "ELANTRA_KNOCK_RETARD_CYL_2_ALT", "path": "Engine", "fmt": {"bix": 168, "len": 8, "max": 191.25, "div": 1.3333333333, "unit": "degrees" }, "name": "Knock retard cylinder 2, alternate"},
+    {"id": "ELANTRA_KNOCK_RETARD_CYL_3_ALT", "path": "Engine", "fmt": {"bix": 176, "len": 8, "max": 191.25, "div": 1.3333333333, "unit": "degrees" }, "name": "Knock retard cylinder 3, alternate"},
+    {"id": "ELANTRA_KNOCK_RETARD_CYL_4_ALT", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 191.25, "div": 1.3333333333, "unit": "degrees" }, "name": "Knock retard cylinder 4, alternate"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "0B"}, "freq": 1,
+  "signals": [
+    {"id": "ELANTRA_DI_TIME_1", "path": "Engine", "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 500, "mul": 100, "div": 13107, "unit": "milliseconds" }, "name": "Direct injection time 1"},
+    {"id": "ELANTRA_DI_TIME_2", "path": "Engine", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 500, "mul": 100, "div": 13107, "unit": "milliseconds" }, "name": "Direct injection time 2"},
+    {"id": "ELANTRA_DI_TIME_3", "path": "Engine", "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 500, "mul": 100, "div": 13107, "unit": "milliseconds" }, "name": "Direct injection time 3"},
+    {"id": "ELANTRA_DI_TIME_4", "path": "Engine", "fmt": {"bix": 80,  "len": 16, "blsb": true, "max": 500, "mul": 100, "div": 13107, "unit": "milliseconds" }, "name": "Direct injection time 4"},
+    {"id": "ELANTRA_DI_TIME_5", "path": "Engine", "fmt": {"bix": 96,  "len": 16, "blsb": true, "max": 500, "mul": 100, "div": 13107, "unit": "milliseconds" }, "name": "Direct injection time 5"},
+    {"id": "ELANTRA_DI_TIME_6", "path": "Engine", "fmt": {"bix": 112, "len": 16, "blsb": true, "max": 500, "mul": 100, "div": 13107, "unit": "milliseconds" }, "name": "Direct injection time 6"}
+  ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "0D"}, "freq": 1, "dbgfilter": { "to": 2011, "years": [2013, 2014, 2015], "from": 2017 },
   "signals": [
     {"id": "ELANTRA_MIS_CNT_EMIS_1", "path": "Engine.Misfires", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission-relevant misfires, cylinder #1"},
@@ -199,6 +286,10 @@
     {"id": "ELANTRA_MIS_CNT_3",      "path": "Engine.Misfires", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires total counter, cylinder #3"},
     {"id": "ELANTRA_MIS_CNT_4",      "path": "Engine.Misfires", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires total counter, cylinder #4"},
     {"id": "ELANTRA_MIS_CNT_ALL",    "path": "Engine.Misfires", "fmt": {"bix": 432, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires total counter, all cylinders"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "0E"}, "freq": 30,
+  "signals": [
+    {"id": "ELANTRA_ENG_RUN_TIME_TOT", "path": "Engine", "fmt": {"bix": 80, "len": 16, "blsb": true, "max": 393209.9999, "mul": 6, "unit": "minutes" }, "name": "Engine run time, total"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "13"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2017 },
   "signals": [
@@ -237,6 +328,31 @@
     {"id": "ELANTRA_INTAKE_CAMSHAFT_POSITION_COMMANDED", "path": "ECU", "fmt": {"bix": 32, "len": 8,  "max": 63.5,  "min": -64,         "mul": 0.5,                    "sign": true,               "unit": "degrees" },                "name": "intake camshaft position commanded"},
     {"id": "ELANTRA_INTAKE_CAMSHAFT_POSITION_ACTUAL",    "path": "ECU", "fmt": {"bix": 40, "len": 16, "blsb": true, "max": 255.9921875, "min": -256, "mul": 0.0078125,               "sign": true,                   "unit": "degrees" },                                            "name": "intake camshaft position actual"}
   ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "18"}, "freq": 5,
+  "signals": [
+    {"id": "ELANTRA_CVVT_T", "path": "Engine", "fmt": {"bix": 272, "len": 8, "max": 207, "min": -48, "add": -48, "unit": "celsius" }, "name": "Variable valve timing temperature", "description": "Continuously variable valve timing temperature."}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "19"}, "freq": 1,
+  "signals": [
+    {"id": "ELANTRA_TURBO_BOOST_P",           "path": "Engine",  "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 5433,                  "mul": 829.1, "div": 10000,                                   "unit": "unknown" },                                                "name": "Turbo boost pressure"},
+    {"id": "ELANTRA_IGN_RETARD_KNOCK_1",      "path": "Engine",  "fmt": {"bix": 104, "len": 8,  "max": 0,     "min": -191.25, "mul": 0.75,                "add": -191.25,               "unit": "degrees" },                "name": "Ignition retard due to knock control 1"},
+    {"id": "ELANTRA_IGN_RETARD_KNOCK_2",      "path": "Engine",  "fmt": {"bix": 112, "len": 8,  "max": 0,     "min": -191.25, "mul": 0.75,                "add": -191.25,               "unit": "degrees" },                "name": "Ignition retard due to knock control 2"},
+    {"id": "ELANTRA_IGN_RETARD_KNOCK_3",      "path": "Engine",  "fmt": {"bix": 120, "len": 8,  "max": 0,     "min": -191.25, "mul": 0.75,                "add": -191.25,               "unit": "degrees" },                "name": "Ignition retard due to knock control 3"},
+    {"id": "ELANTRA_IGN_RETARD_KNOCK_4",      "path": "Engine",  "fmt": {"bix": 128, "len": 8,  "max": 0,     "min": -191.25, "mul": 0.75,                "add": -191.25,               "unit": "degrees" },                "name": "Ignition retard due to knock control 4"},
+    {"id": "ELANTRA_KNOCK_RETARD_CYL_1",      "path": "Engine",  "fmt": {"bix": 168, "len": 8,  "max": 0,     "min": -191.25, "mul": 0.75,                "add": -191.25,               "unit": "degrees" },                "name": "Knock retard cylinder 1"},
+    {"id": "ELANTRA_KNOCK_RETARD_CYL_2",      "path": "Engine",  "fmt": {"bix": 176, "len": 8,  "max": 0,     "min": -191.25, "mul": 0.75,                "add": -191.25,               "unit": "degrees" },                "name": "Knock retard cylinder 2"},
+    {"id": "ELANTRA_KNOCK_RETARD_CYL_3",      "path": "Engine",  "fmt": {"bix": 184, "len": 8,  "max": 0,     "min": -191.25, "mul": 0.75,                "add": -191.25,               "unit": "degrees" },                "name": "Knock retard cylinder 3"},
+    {"id": "ELANTRA_KNOCK_RETARD_CYL_4",      "path": "Engine",  "fmt": {"bix": 192, "len": 8,  "max": 0,     "min": -191.25, "mul": 0.75,                "add": -191.25,               "unit": "degrees" },                "name": "Knock retard cylinder 4"},
+    {"id": "ELANTRA_ADPT_LO_STOP",            "path": "Engine",  "fmt": {"bix": 384, "len": 16, "blsb": true, "max": 5.01,    "min": -5.01, "mul": 1.53,  "div": 10000,   "sign": true,                   "unit": "volts"   },                                                "name": "Adaptation value for lower stop of wastegate actuator"},
+    {"id": "ELANTRA_WASTEGATE_POS_V",         "path": "Battery", "fmt": {"bix": 400, "len": 16, "blsb": true, "max": 5.01,    "min": -5.01, "mul": 1.53,  "div": 10000,   "sign": true,                   "unit": "volts"   },                                                "name": "Wastegate position voltage"},
+    {"id": "ELANTRA_WASTEGATE_CTRL_PWM",      "path": "Engine",  "fmt": {"bix": 416, "len": 16, "blsb": true, "max": 100,     "min": -100,  "mul": 100,   "div": 32767,   "sign": true,                   "unit": "percent" },                                                "name": "Wastegate control PWM, wastegate actuator"},
+    {"id": "ELANTRA_WASTEGATE_POS",           "path": "Engine",  "fmt": {"bix": 432, "len": 16, "blsb": true, "max": 200,     "min": -200,  "mul": 200,   "div": 32767,   "sign": true,                   "unit": "percent" },                                                "name": "Wastegate position, wastegate actuator"},
+    {"id": "ELANTRA_WASTEGATE_POS_TGT",       "path": "Engine",  "fmt": {"bix": 448, "len": 16, "blsb": true, "max": 200,     "min": -200,  "mul": 200,   "div": 32767,   "sign": true,                   "unit": "percent" },                                                "name": "Wastegate position target, wastegate actuator"},
+    {"id": "ELANTRA_MAX_ADPT_LO_MECH_P",      "path": "Engine",  "fmt": {"bix": 464, "len": 16, "blsb": true, "max": 10.02,                 "mul": 1.53,  "div": 10000,                                   "unit": "volts"   },                                                "name": "Max adaptation value for lower mechanical stop of the boost pressure actuator during engine stop"},
+    {"id": "ELANTRA_MAX_ADPT_LO_MECH_STOP_P", "path": "Engine",  "fmt": {"bix": 480, "len": 16, "blsb": true, "max": 10.02,                 "mul": 1.53,  "div": 10000,                                   "unit": "volts"   },                                                "name": "Max adaptation value for lower mechanical stop of the boost pressure actuator during engine running"},
+    {"id": "ELANTRA_MIN_ADPT_LO_MECH_P",      "path": "Engine",  "fmt": {"bix": 496, "len": 16, "blsb": true, "max": 10.02,                 "mul": 1.53,  "div": 10000,                                   "unit": "volts"   },                                                "name": "Min adaptation value for lower mechanical stop of the boost pressure actuator during engine stop"},
+    {"id": "ELANTRA_MIN_ADPT_LO_MECH_STOP_P", "path": "Engine",  "fmt": {"bix": 512, "len": 16, "blsb": true, "max": 10.02,                 "mul": 1.53,  "div": 10000,                                   "unit": "volts"   },                                                "name": "Min adaptation value for lower mechanical stop of the boost pressure actuator during engine running"}
+  ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "1D"}, "freq": 1, "dbgfilter": { "to": 2012, "years": [2015], "from": 2017 },
   "signals": [
     {"id": "ELANTRA_MIS_1",     "path": "Engine.Misfires", "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 1"},
@@ -247,6 +363,31 @@
     {"id": "ELANTRA_MIS_CAT_2", "path": "Engine.Misfires", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires harmful for catalyst cylinder 2"},
     {"id": "ELANTRA_MIS_CAT_3", "path": "Engine.Misfires", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires harmful for catalyst cylinder 3"},
     {"id": "ELANTRA_MIS_CAT_4", "path": "Engine.Misfires", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires harmful for catalyst cylinder 4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "23"}, "freq": 1,
+  "signals": [
+    {"id": "ELANTRA_FUEL_P",             "path": "Fuel",   "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 347774.5845,                      "mul": 53067, "div": 10000,               "unit": "unknown"      }, "name": "Fuel pressure"},
+    {"id": "ELANTRA_FUEL_P_SET_POINT",   "path": "Fuel",   "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 347774.5845,                      "mul": 53067, "div": 10000,               "unit": "unknown"      }, "name": "Fuel pressure set point"},
+    {"id": "ELANTRA_FUEL_P_DEV",         "path": "Fuel",   "fmt": {"bix": 80,  "len": 16, "blsb": true, "max": 173884.6389, "min": -173889.9456, "mul": 53067, "div": 10000, "sign": true, "unit": "unknown"      }, "name": "Fuel pressure deviation"},
+    {"id": "ELANTRA_CYL_1_INJ_TIME_2ND", "path": "Engine", "fmt": {"bix": 200, "len": 16, "blsb": true, "max": 262.14,                           "mul": 4,     "div": 1000,                "unit": "milliseconds" }, "name": "Cylinder 1 injection time, 2nd pulse"},
+    {"id": "ELANTRA_CYL_2_INJ_TIME_2ND", "path": "Engine", "fmt": {"bix": 216, "len": 16, "blsb": true, "max": 262.14,                           "mul": 4,     "div": 1000,                "unit": "milliseconds" }, "name": "Cylinder 2 injection time, 2nd pulse"},
+    {"id": "ELANTRA_CYL_3_INJ_TIME_2ND", "path": "Engine", "fmt": {"bix": 232, "len": 16, "blsb": true, "max": 262.14,                           "mul": 4,     "div": 1000,                "unit": "milliseconds" }, "name": "Cylinder 3 injection time, 2nd pulse"},
+    {"id": "ELANTRA_CYL_4_INJ_TIME_2ND", "path": "Engine", "fmt": {"bix": 248, "len": 16, "blsb": true, "max": 262.14,                           "mul": 4,     "div": 1000,                "unit": "milliseconds" }, "name": "Cylinder 4 injection time, 2nd pulse"},
+    {"id": "ELANTRA_CYL_1_INJ_TIME_1ST", "path": "Engine", "fmt": {"bix": 264, "len": 16, "blsb": true, "max": 262.14,                           "mul": 4,     "div": 1000,                "unit": "milliseconds" }, "name": "Cylinder 1 injection time, 1st pulse"},
+    {"id": "ELANTRA_CYL_2_INJ_TIME_1ST", "path": "Engine", "fmt": {"bix": 280, "len": 16, "blsb": true, "max": 262.14,                           "mul": 4,     "div": 1000,                "unit": "milliseconds" }, "name": "Cylinder 2 injection time, 1st pulse"},
+    {"id": "ELANTRA_CYL_3_INJ_TIME_1ST", "path": "Engine", "fmt": {"bix": 296, "len": 16, "blsb": true, "max": 262.14,                           "mul": 4,     "div": 1000,                "unit": "milliseconds" }, "name": "Cylinder 3 injection time, 1st pulse"},
+    {"id": "ELANTRA_CYL_4_INJ_TIME_1ST", "path": "Engine", "fmt": {"bix": 312, "len": 16, "blsb": true, "max": 262.14,                           "mul": 4,     "div": 1000,                "unit": "milliseconds" }, "name": "Cylinder 4 injection time, 1st pulse"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "A0"}, "freq": 5,
+  "signals": [
+    {"id": "ELANTRA_TURBINE_SPD",  "path": "Movement", "fmt": {"bix": 64,  "len": 16, "max": 16383.75,              "div": 4,              "unit": "rpm"     }, "name": "Turbine speed"},
+    {"id": "ELANTRA_OUTPUT_SPD",   "path": "Movement", "fmt": {"bix": 80,  "len": 16, "max": 16383.75,              "div": 4,              "unit": "rpm"     }, "name": "Output speed"},
+    {"id": "ELANTRA_TQ_CONV_SLIP", "path": "Engine",   "fmt": {"bix": 104, "len": 16, "max": 15871.75, "min": -512, "div": 4, "add": -512, "unit": "rpm"     }, "name": "Torque converter slip"},
+    {"id": "ELANTRA_ATF_T_7E0",    "path": "Engine",   "fmt": {"bix": 264, "len": 8,  "max": 215,      "min": -40,            "add": -40,  "unit": "celsius" }, "name": "Transmission fluid temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "21A0"}, "freq": 10,
+  "signals": [
+    {"id": "ELANTRA_ATF_TEMP", "path": "Transmission", "fmt": {"bix": 16, "len": 8, "max": 255, "mul": 9, "div": 5, "add": -40, "unit": "fahrenheit" }, "name": "Transmission fluid temperature"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E001"}, "freq": 5, "dbgfilter": { "to": 2015, "from": 2026 },
   "signals": [
@@ -260,10 +401,26 @@
     {"id": "ELANTRA_INJ_DUR_3", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 3"},
     {"id": "ELANTRA_INJ_DUR_4", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 4"}
   ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E003"}, "freq": 1,
+  "signals": [
+    {"id": "ELANTRA_BOOST_P_UP",     "path": "Engine", "fmt": {"bix": 280, "len": 16, "blsb": true, "max": 5111, "mul": 39, "div": 500, "unit": "unknown" }, "name": "Boost pressure upstream"},
+    {"id": "ELANTRA_BOOST_P_UP_DES", "path": "Engine", "fmt": {"bix": 312, "len": 16, "blsb": true, "max": 5111, "mul": 39, "div": 500, "unit": "unknown" }, "name": "Boost pressure upstream, desired"}
+  ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E004"}, "freq": 5, "filter": { "from": 2021 }, "dbgfilter": { "from": 2026 },
   "signals": [
     {"id": "ELANTRA_AUX_SOC", "path": "Battery", "fmt": {"bix": 320, "len": 8, "max": 100, "unit": "percent" }, "name": "Aux battery state of charge", "suggestedMetric": "stateOfCharge"},
     {"id": "ELANTRA_AUX_SOH", "path": "Battery", "fmt": {"bix": 328, "len": 8, "max": 100, "unit": "percent" }, "name": "Aux battery state of health", "suggestedMetric": "stateOfHealth"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E005"}, "freq": 1,
+  "signals": [
+    {"id": "ELANTRA_GDI_IT_A1", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 1"},
+    {"id": "ELANTRA_GDI_IT_A2", "path": "Engine", "fmt": {"bix": 240, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 2"},
+    {"id": "ELANTRA_GDI_IT_A3", "path": "Engine", "fmt": {"bix": 256, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 3"},
+    {"id": "ELANTRA_GDI_IT_A4", "path": "Engine", "fmt": {"bix": 272, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 4"},
+    {"id": "ELANTRA_GDI_IT_B1", "path": "Engine", "fmt": {"bix": 352, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank b, 1"},
+    {"id": "ELANTRA_GDI_IT_B2", "path": "Engine", "fmt": {"bix": 368, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank b, 2"},
+    {"id": "ELANTRA_GDI_IT_B3", "path": "Engine", "fmt": {"bix": 384, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank b, 3"},
+    {"id": "ELANTRA_GDI_IT_B4", "path": "Engine", "fmt": {"bix": 400, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank b, 4"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E00A"}, "freq": 1, "dbgfilter": { "to": 2015, "from": 2026 },
   "signals": [
@@ -276,12 +433,309 @@
     {"id": "ELANTRA_KNOCK_LEARN_3",  "path": "Engine", "fmt": {"bix": 176, "len": 8, "max": 25, "min": -25, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock learn, cylinder 3"},
     {"id": "ELANTRA_KNOCK_LEARN_4",  "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 25, "min": -25, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock learn, cylinder 4"}
   ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E00D"}, "freq": 1,
+  "signals": [
+    {"id": "ELANTRA_MISFIRES_C1_CUR",                                "path": "Engine", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, current, cylinder 1"},
+    {"id": "ELANTRA_MISFIRES_C2_CUR",                                "path": "Engine", "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, current, cylinder 2"},
+    {"id": "ELANTRA_MISFIRES_C3_CUR",                                "path": "Engine", "fmt": {"bix": 80,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, current, cylinder 3"},
+    {"id": "ELANTRA_MISFIRES_C4_CUR",                                "path": "Engine", "fmt": {"bix": 96,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, current, cylinder 4"},
+    {"id": "ELANTRA_EMISSION_RELEVANT_MISFIRES_TOTAL_C1",            "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 1"},
+    {"id": "ELANTRA_EMISSION_RELEVANT_MISFIRES_TOTAL_C2",            "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 2"},
+    {"id": "ELANTRA_EMISSION_RELEVANT_MISFIRES_TOTAL_C3",            "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 3"},
+    {"id": "ELANTRA_EMISSION_RELEVANT_MISFIRES_TOTAL_C4",            "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 4"},
+    {"id": "ELANTRA_CATALYST_DAMAGING_MISFIRES_TOTAL_C1",            "path": "Engine", "fmt": {"bix": 304, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 1"},
+    {"id": "ELANTRA_CATALYST_DAMAGING_MISFIRES_TOTAL_C2",            "path": "Engine", "fmt": {"bix": 320, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 2"},
+    {"id": "ELANTRA_CATALYST_DAMAGING_MISFIRES_TOTAL_C3",            "path": "Engine", "fmt": {"bix": 336, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 3"},
+    {"id": "ELANTRA_CATALYST_DAMAGING_MISFIRES_TOTAL_C4",            "path": "Engine", "fmt": {"bix": 352, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 4"},
+    {"id": "ELANTRA_EMISSION_RELEVANT_MISFIRES_TOTAL_ALL_CYLINDERS", "path": "Engine", "fmt": {"bix": 432, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total all cylinders"},
+    {"id": "ELANTRA_CATALYST_DAMAGING_MISFIRES_TOTAL_ALL_CYLINDERS", "path": "Engine", "fmt": {"bix": 448, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total all cylinders"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E010"}, "freq": 1,
+  "signals": [
+    {"id": "ELANTRA_MAF_RATE", "path": "Engine", "fmt": {"bix": 208, "len": 8, "blsb": true, "max": 10.8, "mul": 0.04239, "unit": "unknown" }, "name": "Mass air flow rate"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E011"}, "freq": 5,
+  "signals": [
+    {"id": "ELANTRA_CALC_OIL_T", "path": "Engine", "fmt": {"bix": 304, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Calculated oil temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E014"}, "freq": 1,
+  "signals": [
+    {"id": "ELANTRA_CLT_FAN_PWM",         "path": "Engine", "fmt": {"bix": 88,  "len": 16, "max": 99.67,   "mul": 15.21, "div": 10000, "unit": "percent"    }, "name": "Coolant fan PWM"},
+    {"id": "ELANTRA_AC_P",                "path": "Engine", "fmt": {"bix": 112, "len": 8,  "max": 3516.45, "mul": 13.79,               "unit": "kilopascal" }, "name": "Air conditioning pressure"},
+    {"id": "ELANTRA_OVERHEAT_PROTECTION", "path": "Engine", "fmt": {"bix": 132, "len": 1,  "max": 1,                                   "unit": "offon"      }, "name": "Overheat protection, active"}
+  ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E019"}, "freq": 1, "dbgfilter": { "to": 2016, "years": [2020], "from": 2026 },
   "signals": [
     {"id": "ELANTRA_KNOCK_RETARD_1_E019", "path": "Engine", "fmt": {"bix": 168, "len": 8, "max": 0, "min": -191.25, "mul": 0.75, "add": -191.25, "unit": "degrees" }, "name": "Knock retard cylinder 1, alternate"},
     {"id": "ELANTRA_KNOCK_RETARD_2_E019", "path": "Engine", "fmt": {"bix": 176, "len": 8, "max": 0, "min": -191.25, "mul": 0.75, "add": -191.25, "unit": "degrees" }, "name": "Knock retard cylinder 2, alternate"},
     {"id": "ELANTRA_KNOCK_RETARD_3_E019", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 0, "min": -191.25, "mul": 0.75, "add": -191.25, "unit": "degrees" }, "name": "Knock retard cylinder 3, alternate"},
     {"id": "ELANTRA_KNOCK_RETARD_4_E019", "path": "Engine", "fmt": {"bix": 192, "len": 8, "max": 0, "min": -191.25, "mul": 0.75, "add": -191.25, "unit": "degrees" }, "name": "Knock retard cylinder 4, alternate"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E01D"}, "freq": 1,
+  "signals": [
+    {"id": "ELANTRA_MIS_1_7E0",         "path": "Engine", "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 1"},
+    {"id": "ELANTRA_MIS_2_7E0",         "path": "Engine", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 2"},
+    {"id": "ELANTRA_MIS_3_7E0",         "path": "Engine", "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 3"},
+    {"id": "ELANTRA_MIS_4_7E0",         "path": "Engine", "fmt": {"bix": 80,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 4"},
+    {"id": "ELANTRA_MIS_HARMFUL_CAT_1", "path": "Engine", "fmt": {"bix": 160, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires harmful for catalyst, cylinder 1"},
+    {"id": "ELANTRA_MIS_HARMFUL_CAT_2", "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires harmful for catalyst, cylinder 2"},
+    {"id": "ELANTRA_MIS_HARMFUL_CAT_3", "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires harmful for catalyst, cylinder 3"},
+    {"id": "ELANTRA_MIS_HARMFUL_CAT_4", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires harmful for catalyst, cylinder 4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E020"}, "freq": 1,
+  "signals": [
+    {"id": "ELANTRA_INT_CAM_POS", "path": "Engine", "fmt": {"bix": 72, "len": 16, "blsb": true, "max": 255, "min": -256, "div": 128, "sign": true, "unit": "degrees" }, "name": "Intake camshaft position"},
+    {"id": "ELANTRA_EXH_CAM_POS", "path": "Engine", "fmt": {"bix": 88, "len": 16, "blsb": true, "max": 255, "min": -256, "div": 128, "sign": true, "unit": "degrees" }, "name": "Exhaust camshaft position"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E023"}, "freq": 1,
+  "signals": [
+    {"id": "ELANTRA_FUEL_P_ACT",           "path": "Fuel",   "fmt": {"bix": 32,  "len": 16, "blsb": true,   "max": 347774.5845,                      "mul": 53067, "div": 10000,                                 "unit": "unknown"      },                                "name": "Fuel pressure, actual"},
+    {"id": "ELANTRA_FUEL_P_SET_POINT_7E0", "path": "Fuel",   "fmt": {"bix": 48,  "len": 16, "blsb": true,   "max": 347774.5845,                      "mul": 53067, "div": 10000,                                 "unit": "unknown"      },                                "name": "Fuel pressure, set point"},
+    {"id": "ELANTRA_FUEL_P_SET_POINT_DEV", "path": "Fuel",   "fmt": {"bix": 80,  "len": 16, "blsb": true,   "max": 173881.3622, "min": -173886.6688, "mul": 53066, "div": 10000, "sign": true,                   "unit": "unknown"      },                                "name": "Fuel pressure set point deviation"},
+    {"id": "ELANTRA_INJ_IMPULSE_1_CYL_1",  "path": "Engine", "fmt": {"bix": 200, "len": 16, "blsb": true,   "max": 262.14,                                         "div": 250,                                   "unit": "milliseconds" },                                "name": "Injection impulse 1, cylinder 1"},
+    {"id": "ELANTRA_INJ_IMPULSE_1_CYL_2",  "path": "Engine", "fmt": {"bix": 216, "len": 16, "blsb": true,   "max": 262.14,                                         "div": 250,                                   "unit": "milliseconds" },                                "name": "Injection impulse 1, cylinder 2"},
+    {"id": "ELANTRA_INJ_IMPULSE_1_CYL_3",  "path": "Engine", "fmt": {"bix": 232, "len": 16, "blsb": true,   "max": 262.14,                                         "div": 250,                                   "unit": "milliseconds" },                                "name": "Injection impulse 1, cylinder 3"},
+    {"id": "ELANTRA_INJ_IMPULSE_1_CYL_4",  "path": "Engine", "fmt": {"bix": 248, "len": 16, "blsb": true,   "max": 262.14,                                         "div": 250,                                   "unit": "milliseconds" },                                "name": "Injection impulse 1, cylinder 4"},
+    {"id": "ELANTRA_INJ_IMPULSE_2_CYL_1",  "path": "Engine", "fmt": {"bix": 264, "len": 16, "blsb": true,   "max": 262.14,                                         "div": 250,                                   "unit": "milliseconds" },                                "name": "Injection impulse 2, cylinder 1"},
+    {"id": "ELANTRA_INJ_IMPULSE_2_CYL_2",  "path": "Engine", "fmt": {"bix": 280, "len": 16, "blsb": true,   "max": 262.14,                                         "div": 250,                                   "unit": "milliseconds" },                                "name": "Injection impulse 2, cylinder 2"},
+    {"id": "ELANTRA_INJ_IMPULSE_2_CYL_3",  "path": "Engine", "fmt": {"bix": 296, "len": 16, "blsb": true,   "max": 262.14,                                         "div": 250,                                   "unit": "milliseconds" },                                "name": "Injection impulse 2, cylinder 3"},
+    {"id": "ELANTRA_INJ_IMPULSE_2_CYL_4",  "path": "Engine", "fmt": {"bix": 312, "len": 16, "blsb": true,   "max": 262.14,                                         "div": 250,                                   "unit": "milliseconds" },                                "name": "Injection impulse 2, cylinder 4"},
+    {"id": "ELANTRA_INJ_IMPULSE_3_CYL_1",  "path": "Engine", "fmt": {"bix": 328, "len": 16, "blsb": true,   "max": 2621.4,                                         "div": 25,                                    "unit": "milliseconds" },                                "name": "Injection impulse 3, cylinder 1"},
+    {"id": "ELANTRA_INJ_IMPULSE_3_CYL_2",  "path": "Engine", "fmt": {"bix": 344, "len": 16, "blsb": true,   "max": 2621.4,                                         "div": 25,                                    "unit": "milliseconds" },                                "name": "Injection impulse 3, cylinder 2"},
+    {"id": "ELANTRA_INJ_IMPULSE_3_CYL_3",  "path": "Engine", "fmt": {"bix": 360, "len": 16, "blsb": true,   "max": 2621.4,                                         "div": 25,                                    "unit": "milliseconds" },                                "name": "Injection impulse 3, cylinder 3"},
+    {"id": "ELANTRA_INJ_IMPULSE_3_CYL_4",  "path": "Engine", "fmt": {"bix": 376, "len": 16, "blsb": true,   "max": 2621.4,                                         "div": 25,                                    "unit": "milliseconds" },                                "name": "Injection impulse 3, cylinder 4"},
+    {"id": "ELANTRA_CYCLE_FUEL_CONS",      "path": "Fuel",   "fmt": {"bix": 416, "len": 8,  "max": 21.6189,                     "mul": 8.478,        "div": 100,                               "unit": "unknown" },                     "name": "Cycle fuel consumption"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "ED02"}, "freq": 5,
+  "signals": [
+    {"id": "ELANTRA_EOT_V2", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 251, "min": -4, "add": -4, "unit": "celsius" }, "name": "Engine oil temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "ED04"}, "freq": 1,
+  "signals": [
+    {"id": "ELANTRA_ACT_ACCEL", "path": "Movement", "fmt": {"bix": 240, "len": 8, "max": 64, "mul": 64, "div": 255, "unit": "metersPerSecondSquared" }, "name": "Actual acceleration"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "ED05"}, "freq": 0.25,
+  "signals": [
+    {"id": "ELANTRA_GEAR_7E0", "path": "Transmission", "fmt": {"bix": 176, "len": 8, "max": 255,                         "unit": "scalar"       }, "name": "Gear"},
+    {"id": "ELANTRA_CRANK_TQ", "path": "Engine",       "fmt": {"bix": 240, "len": 8, "max": 600, "mul": 600, "div": 255, "unit": "newtonMeters" }, "name": "Crankshaft torque"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "ED06"}, "freq": 0.25,
+  "signals": [
+    {"id": "ELANTRA_REQ_TQ_LIM_TRACTION", "path": "Engine", "fmt": {"bix": 120, "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Requested torque limitation from traction control"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "ED07"}, "freq": 5,
+  "signals": [
+    {"id": "ELANTRA_EOT_7E0", "path": "Engine", "fmt": {"bix": 152, "len": 8, "max": 149.9965, "min": -50, "mul": 0.7843, "add": -50, "unit": "celsius" }, "name": "Engine oil temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "ED27"}, "freq": 5,
+  "signals": [
+    {"id": "ELANTRA_BAT_CURRENT_BATSENS",  "path": "Battery", "fmt": {"bix": 48,  "len": 8,  "max": 25.5,                                  "div": 10,                              "unit": "amps"        }, "name": "Battery current, battery sensor"},
+    {"id": "ELANTRA_BAT_V_BATSENS",        "path": "Battery", "fmt": {"bix": 56,  "len": 8,  "max": 18.75,                   "mul": 12.75, "div": 255,   "add": 6,                 "unit": "volts"       }, "name": "Battery voltage, battery sensor"},
+    {"id": "ELANTRA_BAT_T_BATSENS",        "path": "Battery", "fmt": {"bix": 64,  "len": 8,  "max": 87.5,    "min": -40,                   "div": 2,     "add": -40,               "unit": "celsius"     }, "name": "Battery temperature, battery sensor"},
+    {"id": "ELANTRA_BAT_ST_CHG_BATSENS",   "path": "Battery", "fmt": {"bix": 72,  "len": 8,  "max": 100,                                                                           "unit": "percent"     }, "name": "Battery state of charge, battery sensor"},
+    {"id": "ELANTRA_BAT_ST_HEALTH",        "path": "Battery", "fmt": {"bix": 80,  "len": 8,  "max": 100,                                                                           "unit": "percent"     }, "name": "Battery state of health, battery sensor"},
+    {"id": "ELANTRA_BAT_ST_FUNCTION",      "path": "Battery", "fmt": {"bix": 88,  "len": 8,  "max": 12.75,                   "mul": 12.75, "div": 255,                             "unit": "volts"       }, "name": "Battery state of function, battery sensor"},
+    {"id": "ELANTRA_BAT_CAP_BATSENS",      "path": "Battery", "fmt": {"bix": 160, "len": 8,  "max": 255,                                                                           "unit": "ampereHours" }, "name": "Battery capacity, battery sensor"},
+    {"id": "ELANTRA_RESPONSE_ERROR",       "path": "Battery", "fmt": {"bix": 178, "len": 1,  "max": 1,                                                                             "unit": "offon"       }, "name": "Response error from battery sensor flag, battery sensor"},
+    {"id": "ELANTRA_BATSENS_INVALID_COND", "path": "Battery", "fmt": {"bix": 179, "len": 1,  "max": 1,                                                                             "unit": "offon"       }, "name": "Battery sensor invalid condition flag, battery sensor"},
+    {"id": "ELANTRA_BAT_QUIESCENT",        "path": "Battery", "fmt": {"bix": 180, "len": 1,  "max": 1,                                                                             "unit": "offon"       }, "name": "Battery quiescent current flag, battery sensor"},
+    {"id": "ELANTRA_BAT_CRANK_ENG_FLAG",   "path": "Battery", "fmt": {"bix": 181, "len": 1,  "max": 1,                                                                             "unit": "offon"       }, "name": "Battery is in use to crank the engine flag, battery sensor"},
+    {"id": "ELANTRA_BAT_HEALTH_AGING",     "path": "Battery", "fmt": {"bix": 182, "len": 1,  "max": 1,                                                                             "unit": "offon"       }, "name": "Battery health aging flag, battery sensor"},
+    {"id": "ELANTRA_BAT_CHG_FLAG_BATSENS", "path": "Battery", "fmt": {"bix": 183, "len": 1,  "max": 1,                                                                             "unit": "offon"       }, "name": "Battery charge flag, battery sensor"},
+    {"id": "ELANTRA_BAT_CURRENT",          "path": "Battery", "fmt": {"bix": 256, "len": 16, "max": 3276.7,  "min": -3276.8, "mul": 1000,  "div": 10000,             "sign": true, "unit": "amps"        }, "name": "Battery current"},
+    {"id": "ELANTRA_BAT_V",                "path": "Battery", "fmt": {"bix": 272, "len": 16, "max": 71.535,                  "mul": 10,    "div": 10000, "add": 6,                 "unit": "volts"       }, "name": "Battery voltage"},
+    {"id": "ELANTRA_BAT_T",                "path": "Battery", "fmt": {"bix": 288, "len": 16, "max": 32767.5,                               "div": 2,                               "unit": "celsius"     }, "name": "Battery temperature"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"21": "A0"}, "freq": 0.25,
+  "signals": [
+    {"id": "ELANTRA_ENGINE_RPM_TCM",        "path": "Engine",       "fmt": {"bix": 32,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Engine RPM"},
+    {"id": "ELANTRA_VEHICLE_SPEED",         "path": "Movement",     "fmt": {"bix": 48,  "len": 8,  "max": 255,                                                        "unit": "kilometersPerHour" }, "name": "Vehicle speed",                            "suggestedMetric": "speed"},
+    {"id": "ELANTRA_APP_REL_TCM",           "path": "Control",      "fmt": {"bix": 64,  "len": 8,  "max": 100,                   "mul": 100, "div": 255,              "unit": "percent"           }, "name": "Relative accelerator pedal position"},
+    {"id": "ELANTRA_TURBINE_SPEED",         "path": "Engine",       "fmt": {"bix": 72,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Turbine speed"},
+    {"id": "ELANTRA_OUTPUT_SPEED",          "path": "Engine",       "fmt": {"bix": 88,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Output speed"},
+    {"id": "ELANTRA_ATF_T",                 "path": "Engine",       "fmt": {"bix": 104, "len": 8,  "max": 215,      "min": -40,                          "add": -40,  "unit": "celsius"           }, "name": "Automatic transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"},
+    {"id": "ELANTRA_TORQUE_CONVERTER_SLIP", "path": "Engine",       "fmt": {"bix": 128, "len": 16, "max": 15871.75, "min": -512,             "div": 4,   "add": -512, "unit": "rpm"               }, "name": "Torque converter slip"},
+    {"id": "ELANTRA_CURRENT_GEAR",          "path": "Transmission", "fmt": {"bix": 168, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Current gear"},
+    {"id": "ELANTRA_COMMANDED_GEAR",        "path": "Transmission", "fmt": {"bix": 176, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Commanded gear"},
+    {"id": "ELANTRA_BRAKE_PEDAL",           "path": "Control",      "fmt": {"bix": 192, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Brake pedal"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"21": "A1"}, "freq": 0.25,
+  "signals": [
+    {"id": "ELANTRA_CURRENT_GEAR_7E1_2", "path": "Transmission", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "scalar" }, "name": "Current gear"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "01A0"}, "freq": 0.25,
+  "signals": [
+    {"id": "ELANTRA_RPM_7E1",                   "path": "Movement",     "fmt": {"bix": 32,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Engine RPM"},
+    {"id": "ELANTRA_VSS_7E1",                   "path": "Movement",     "fmt": {"bix": 48,  "len": 8,  "max": 255,                                                        "unit": "kilometersPerHour" }, "name": "Vehicle speed",                            "suggestedMetric": "speed"},
+    {"id": "ELANTRA_REL_APP",                   "path": "Movement",     "fmt": {"bix": 64,  "len": 8,  "max": 100,                   "mul": 100, "div": 255,              "unit": "percent"           }, "name": "Relative accelerator pedal position"},
+    {"id": "ELANTRA_TURBINE_SPEED_7E1",         "path": "Movement",     "fmt": {"bix": 72,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Turbine speed"},
+    {"id": "ELANTRA_OUTPUT_SPEED_7E1",          "path": "Movement",     "fmt": {"bix": 88,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Output speed"},
+    {"id": "ELANTRA_ATF_T_7E1",                 "path": "Engine",       "fmt": {"bix": 104, "len": 8,  "max": 215,      "min": -40,                          "add": -40,  "unit": "celsius"           }, "name": "Automatic transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"},
+    {"id": "ELANTRA_TORQUE_CONVERTER_SLIP_7E1", "path": "Engine",       "fmt": {"bix": 128, "len": 16, "max": 15871.75, "min": -512,             "div": 4,   "add": -512, "unit": "rpm"               }, "name": "Torque converter slip"},
+    {"id": "ELANTRA_GEAR",                      "path": "Transmission", "fmt": {"bix": 160, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Gear selector"},
+    {"id": "ELANTRA_CURRENT_GEAR_7E1",          "path": "Transmission", "fmt": {"bix": 168, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Current gear"},
+    {"id": "ELANTRA_COMMANDED_GEAR_7E1",        "path": "Transmission", "fmt": {"bix": 176, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Commanded gear"},
+    {"id": "ELANTRA_BRAKE_PEDAL_7E1",           "path": "Control",      "fmt": {"bix": 192, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Brake pedal"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "01A4"}, "freq": 0.25, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "ELANTRA_GEAR_CUR", "path": "Transmission", "fmt": {"bix": 216, "len": 8, "max": 15, "unit": "scalar" }, "name": "Current gear"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "01A5"}, "freq": 5,
+  "signals": [
+    {"id": "ELANTRA_DUAL_CLU_TRANS_ODD",       "path": "Transmission", "fmt": {"bix": 32,  "len": 8,  "max": 255,                                                     "unit": "scalar"  }, "name": "Dual-clutch transmission odd shaft, gear engaged"},
+    {"id": "ELANTRA_DUAL_CLU_TRANS_EVEN",      "path": "Transmission", "fmt": {"bix": 40,  "len": 8,  "max": 255,                                                     "unit": "scalar"  }, "name": "Dual-clutch transmission even shaft, gear engaged"},
+    {"id": "ELANTRA_DUAL_CLU_ATF_T_1",         "path": "Engine",       "fmt": {"bix": 48,  "len": 8,  "max": 215, "min": -40,                             "add": -40, "unit": "celsius" }, "name": "Dual-clutch transmission fluid temperature 1"},
+    {"id": "ELANTRA_DUAL_CLU_ATF_T_2",         "path": "Engine",       "fmt": {"bix": 56,  "len": 8,  "max": 215, "min": -40,                             "add": -40, "unit": "celsius" }, "name": "Dual-clutch transmission fluid temperature 2"},
+    {"id": "ELANTRA_DUAL_CLU_TRANS_CLU_1_P",   "path": "Engine",       "fmt": {"bix": 192, "len": 16, "max": 127,             "mul": 19.53, "div": 10000,             "unit": "bars"    }, "name": "Dual-clutch transmission clutch 1, pressure sensor A"},
+    {"id": "ELANTRA_DUAL_CLU_TRANS_CLU_2_P_B", "path": "Engine",       "fmt": {"bix": 208, "len": 16, "max": 127,             "mul": 19.53, "div": 10000,             "unit": "bars"    }, "name": "Dual-clutch transmission clutch 2, pressure sensor B"},
+    {"id": "ELANTRA_DUAL_CLU_TRANS_LINE_P_C",  "path": "Engine",       "fmt": {"bix": 224, "len": 16, "max": 127,             "mul": 19.53, "div": 10000,             "unit": "bars"    }, "name": "Dual-clutch transmission line pressure, sensor C"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"21": "01"}, "freq": 0.25,
+  "signals": [
+    {"id": "ELANTRA_VSS_V2_7E2", "path": "Movement", "fmt": {"bix": 104, "len": 16, "blsb": true, "max": 180, "min": -180, "div": 100, "sign": true, "unit": "milesPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed", "description": "Current vehicle speed"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "E004"}, "freq": 1,
+  "signals": [
+    {"id": "ELANTRA_VPWR_V3", "path": "Battery", "fmt": {"bix": 152, "len": 8, "max": 100, "unit": "percent" }, "name": "12v battery charge"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "dbg": true, "cmd": {"22": "0101"}, "freq": 1, "filter": { "from": 2021 },
+  "signals": [
+    {"id": "ELANTRA_HVBAT_SOC",        "path": "Battery", "fmt": {"bix": 32,  "len": 8,  "max": 100,                     "div": 2,                "unit": "percent"       }, "name": "HV battery charge, dashboard",     "suggestedMetric": "stateOfCharge"},
+    {"id": "ELANTRA_HVBAT_CHARGING",   "path": "Battery", "fmt": {"bix": 72,  "len": 1,  "max": 1,                                                "unit": "offon"         }, "name": "HV battery charging",              "suggestedMetric": "isCharging"},
+    {"id": "ELANTRA_HVBAT_PLUG_RAPD",  "path": "Battery", "fmt": {"bix": 73,  "len": 1,  "max": 1,                                                "unit": "offon"         }, "name": "Rapid charge port state",          "suggestedMetric": "pluggedIn"},
+    {"id": "ELANTRA_HVBAT_PLUG_NORM",  "path": "Battery", "fmt": {"bix": 74,  "len": 1,  "max": 1,                                                "unit": "offon"         }, "name": "Normal charge port state",         "suggestedMetric": "pluggedIn"},
+    {"id": "ELANTRA_HVBAT_CURR",       "path": "Battery", "fmt": {"bix": 80,  "len": 16, "max": 6553.5,                  "div": 10,               "unit": "amps"          }, "name": "HV battery current"},
+    {"id": "ELANTRA_HVBAT_VDC",        "path": "Battery", "fmt": {"bix": 96,  "len": 16, "max": 6553.5,                  "div": 10,               "unit": "volts"         }, "name": "HV battery DC voltage"},
+    {"id": "ELANTRA_HVBAT_T_MAX",      "path": "Battery", "fmt": {"bix": 112, "len": 8,  "max": 127,        "min": -127,            "sign": true, "unit": "celsius"       }, "name": "HV battery temperature, maximum"},
+    {"id": "ELANTRA_HVBAT_T_MIN",      "path": "Battery", "fmt": {"bix": 120, "len": 8,  "max": 127,        "min": -127,            "sign": true, "unit": "celsius"       }, "name": "HV battery temperature, minimum"},
+    {"id": "ELANTRA_HVBAT_MOD1_T",     "path": "Battery", "fmt": {"bix": 128, "len": 8,  "max": 127,        "min": -127,            "sign": true, "unit": "celsius"       }, "name": "HV battery temperature, module 1"},
+    {"id": "ELANTRA_HVBAT_MOD2_T",     "path": "Battery", "fmt": {"bix": 136, "len": 8,  "max": 127,        "min": -127,            "sign": true, "unit": "celsius"       }, "name": "HV battery temperature, module 2"},
+    {"id": "ELANTRA_HVBAT_MOD3_T",     "path": "Battery", "fmt": {"bix": 144, "len": 8,  "max": 127,        "min": -127,            "sign": true, "unit": "celsius"       }, "name": "HV battery temperature, module 3"},
+    {"id": "ELANTRA_HVBAT_MOD4_T",     "path": "Battery", "fmt": {"bix": 152, "len": 8,  "max": 127,        "min": -127,            "sign": true, "unit": "celsius"       }, "name": "HV battery temperature, module 4"},
+    {"id": "ELANTRA_HVBAT_INLET_T",    "path": "Battery", "fmt": {"bix": 176, "len": 8,  "max": 127,        "min": -127,            "sign": true, "unit": "celsius"       }, "name": "Battery inlet temperature"},
+    {"id": "ELANTRA_C_V_MAX",          "path": "Battery", "fmt": {"bix": 184, "len": 8,  "max": 5.1,                     "div": 50,               "unit": "volts"         }, "name": "Maximum cell voltage"},
+    {"id": "ELANTRA_C_V_MAX_ID",       "path": "Battery", "fmt": {"bix": 192, "len": 8,  "max": 255,                                              "unit": "scalar"        }, "name": "Maximum cell voltage id",          "description": "The id of the cell with the highest voltage."},
+    {"id": "ELANTRA_C_V_MIN",          "path": "Battery", "fmt": {"bix": 200, "len": 8,  "max": 5.1,                     "div": 50,               "unit": "volts"         }, "name": "Minimum cell voltage"},
+    {"id": "ELANTRA_C_V_MIN_ID",       "path": "Battery", "fmt": {"bix": 208, "len": 8,  "max": 255,                                              "unit": "scalar"        }, "name": "Minimum cell voltage id",          "description": "The id of the cell with the lowest voltage."},
+    {"id": "ELANTRA_HVBAT_FAN_STATUS", "path": "Battery", "fmt": {"bix": 216, "len": 8,  "max": 255,                                              "unit": "scalar"        }, "name": "HV battery fan status"},
+    {"id": "ELANTRA_HVBAT_FAN",        "path": "Battery", "fmt": {"bix": 224, "len": 8,  "max": 255,                                              "unit": "hertz"         }, "name": "HV battery fan"},
+    {"id": "ELANTRA_VPWR_V2",          "path": "Battery", "fmt": {"bix": 232, "len": 8,  "max": 25.5,                    "div": 10,               "unit": "volts"         }, "name": "Battery auxiliary voltage",        "suggestedMetric": "starterBatteryVoltage"},
+    {"id": "ELANTRA_HVBAT_CHRG_TOT_C", "path": "Battery", "fmt": {"bix": 240, "len": 32, "max": 429496729,               "div": 10,               "unit": "ampereHours"   }, "name": "Total charge current"},
+    {"id": "ELANTRA_HVBAT_DSCH_TOT_C", "path": "Battery", "fmt": {"bix": 272, "len": 32, "max": 429496729,               "div": 10,               "unit": "ampereHours"   }, "name": "Total discharge current"},
+    {"id": "ELANTRA_HVBAT_CHRG_TOT_E", "path": "Battery", "fmt": {"bix": 304, "len": 32, "max": 429496729,               "div": 10,               "unit": "kilowattHours" }, "name": "Total charge energy"},
+    {"id": "ELANTRA_HVBAT_DSCH_TOT_E", "path": "Battery", "fmt": {"bix": 336, "len": 32, "max": 429496729,               "div": 10,               "unit": "kilowattHours" }, "name": "Total discharge energy"},
+    {"id": "ELANTRA_DRIVE_TIME",       "path": "Stats",   "fmt": {"bix": 368, "len": 32, "max": 4294967295,                                       "unit": "seconds"       }, "name": "Total drive time"},
+    {"id": "ELANTRA_IGN",              "path": "Battery", "fmt": {"bix": 405, "len": 1,  "max": 1,                                                "unit": "offon"         }, "name": "Ignition"},
+    {"id": "ELANTRA_INVRT_CV",         "path": "Battery", "fmt": {"bix": 408, "len": 16, "max": 65535,                                            "unit": "volts"         }, "name": "Inverter capacitor voltage"},
+    {"id": "ELANTRA_RPM_7E4",          "path": "Engine",  "fmt": {"bix": 424, "len": 16, "max": 65535,                                            "unit": "rpm"           }, "name": "Drive motor speed"},
+    {"id": "ELANTRA_ISO_R",            "path": "Battery", "fmt": {"bix": 456, "len": 16, "max": 65535,                                            "unit": "kiloohms"      }, "name": "Isolation resistance"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "dbg": true, "cmd": {"22": "0102"}, "freq": 1, "filter": { "from": 2021 },
+  "signals": [
+    {"id": "ELANTRA_CELL_V_001", "path": "Battery.Cells", "fmt": {"bix": 32,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 001"},
+    {"id": "ELANTRA_CELL_V_002", "path": "Battery.Cells", "fmt": {"bix": 40,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 002"},
+    {"id": "ELANTRA_CELL_V_003", "path": "Battery.Cells", "fmt": {"bix": 48,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 003"},
+    {"id": "ELANTRA_CELL_V_004", "path": "Battery.Cells", "fmt": {"bix": 56,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 004"},
+    {"id": "ELANTRA_CELL_V_005", "path": "Battery.Cells", "fmt": {"bix": 64,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 005"},
+    {"id": "ELANTRA_CELL_V_006", "path": "Battery.Cells", "fmt": {"bix": 72,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 006"},
+    {"id": "ELANTRA_CELL_V_007", "path": "Battery.Cells", "fmt": {"bix": 80,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 007"},
+    {"id": "ELANTRA_CELL_V_008", "path": "Battery.Cells", "fmt": {"bix": 88,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 008"},
+    {"id": "ELANTRA_CELL_V_009", "path": "Battery.Cells", "fmt": {"bix": 96,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 009"},
+    {"id": "ELANTRA_CELL_V_010", "path": "Battery.Cells", "fmt": {"bix": 104, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 010"},
+    {"id": "ELANTRA_CELL_V_011", "path": "Battery.Cells", "fmt": {"bix": 112, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 011"},
+    {"id": "ELANTRA_CELL_V_012", "path": "Battery.Cells", "fmt": {"bix": 120, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 012"},
+    {"id": "ELANTRA_CELL_V_013", "path": "Battery.Cells", "fmt": {"bix": 128, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 013"},
+    {"id": "ELANTRA_CELL_V_014", "path": "Battery.Cells", "fmt": {"bix": 136, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 014"},
+    {"id": "ELANTRA_CELL_V_015", "path": "Battery.Cells", "fmt": {"bix": 144, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 015"},
+    {"id": "ELANTRA_CELL_V_016", "path": "Battery.Cells", "fmt": {"bix": 152, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 016"},
+    {"id": "ELANTRA_CELL_V_017", "path": "Battery.Cells", "fmt": {"bix": 160, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 017"},
+    {"id": "ELANTRA_CELL_V_018", "path": "Battery.Cells", "fmt": {"bix": 168, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 018"},
+    {"id": "ELANTRA_CELL_V_019", "path": "Battery.Cells", "fmt": {"bix": 176, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 019"},
+    {"id": "ELANTRA_CELL_V_020", "path": "Battery.Cells", "fmt": {"bix": 184, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 020"},
+    {"id": "ELANTRA_CELL_V_021", "path": "Battery.Cells", "fmt": {"bix": 192, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 021"},
+    {"id": "ELANTRA_CELL_V_022", "path": "Battery.Cells", "fmt": {"bix": 200, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 022"},
+    {"id": "ELANTRA_CELL_V_023", "path": "Battery.Cells", "fmt": {"bix": 208, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 023"},
+    {"id": "ELANTRA_CELL_V_024", "path": "Battery.Cells", "fmt": {"bix": 216, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 024"},
+    {"id": "ELANTRA_CELL_V_025", "path": "Battery.Cells", "fmt": {"bix": 224, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 025"},
+    {"id": "ELANTRA_CELL_V_026", "path": "Battery.Cells", "fmt": {"bix": 232, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 026"},
+    {"id": "ELANTRA_CELL_V_027", "path": "Battery.Cells", "fmt": {"bix": 240, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 027"},
+    {"id": "ELANTRA_CELL_V_028", "path": "Battery.Cells", "fmt": {"bix": 248, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 028"},
+    {"id": "ELANTRA_CELL_V_029", "path": "Battery.Cells", "fmt": {"bix": 256, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 029"},
+    {"id": "ELANTRA_CELL_V_030", "path": "Battery.Cells", "fmt": {"bix": 264, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 030"},
+    {"id": "ELANTRA_CELL_V_031", "path": "Battery.Cells", "fmt": {"bix": 272, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 031"},
+    {"id": "ELANTRA_CELL_V_032", "path": "Battery.Cells", "fmt": {"bix": 280, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 032"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "dbg": true, "cmd": {"22": "0103"}, "freq": 1, "filter": { "from": 2021 },
+  "signals": [
+    {"id": "ELANTRA_CELL_V_033", "path": "Battery.Cells", "fmt": {"bix": 32,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 033"},
+    {"id": "ELANTRA_CELL_V_034", "path": "Battery.Cells", "fmt": {"bix": 40,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 034"},
+    {"id": "ELANTRA_CELL_V_035", "path": "Battery.Cells", "fmt": {"bix": 48,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 035"},
+    {"id": "ELANTRA_CELL_V_036", "path": "Battery.Cells", "fmt": {"bix": 56,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 036"},
+    {"id": "ELANTRA_CELL_V_037", "path": "Battery.Cells", "fmt": {"bix": 64,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 037"},
+    {"id": "ELANTRA_CELL_V_038", "path": "Battery.Cells", "fmt": {"bix": 72,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 038"},
+    {"id": "ELANTRA_CELL_V_039", "path": "Battery.Cells", "fmt": {"bix": 80,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 039"},
+    {"id": "ELANTRA_CELL_V_040", "path": "Battery.Cells", "fmt": {"bix": 88,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 040"},
+    {"id": "ELANTRA_CELL_V_041", "path": "Battery.Cells", "fmt": {"bix": 96,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 041"},
+    {"id": "ELANTRA_CELL_V_042", "path": "Battery.Cells", "fmt": {"bix": 104, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 042"},
+    {"id": "ELANTRA_CELL_V_043", "path": "Battery.Cells", "fmt": {"bix": 112, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 043"},
+    {"id": "ELANTRA_CELL_V_044", "path": "Battery.Cells", "fmt": {"bix": 120, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 044"},
+    {"id": "ELANTRA_CELL_V_045", "path": "Battery.Cells", "fmt": {"bix": 128, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 045"},
+    {"id": "ELANTRA_CELL_V_046", "path": "Battery.Cells", "fmt": {"bix": 136, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 046"},
+    {"id": "ELANTRA_CELL_V_047", "path": "Battery.Cells", "fmt": {"bix": 144, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 047"},
+    {"id": "ELANTRA_CELL_V_048", "path": "Battery.Cells", "fmt": {"bix": 152, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 048"},
+    {"id": "ELANTRA_CELL_V_049", "path": "Battery.Cells", "fmt": {"bix": 160, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 049"},
+    {"id": "ELANTRA_CELL_V_050", "path": "Battery.Cells", "fmt": {"bix": 168, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 050"},
+    {"id": "ELANTRA_CELL_V_051", "path": "Battery.Cells", "fmt": {"bix": 176, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 051"},
+    {"id": "ELANTRA_CELL_V_052", "path": "Battery.Cells", "fmt": {"bix": 184, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 052"},
+    {"id": "ELANTRA_CELL_V_053", "path": "Battery.Cells", "fmt": {"bix": 192, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 053"},
+    {"id": "ELANTRA_CELL_V_054", "path": "Battery.Cells", "fmt": {"bix": 200, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 054"},
+    {"id": "ELANTRA_CELL_V_055", "path": "Battery.Cells", "fmt": {"bix": 208, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 055"},
+    {"id": "ELANTRA_CELL_V_056", "path": "Battery.Cells", "fmt": {"bix": 216, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 056"},
+    {"id": "ELANTRA_CELL_V_057", "path": "Battery.Cells", "fmt": {"bix": 224, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 057"},
+    {"id": "ELANTRA_CELL_V_058", "path": "Battery.Cells", "fmt": {"bix": 232, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 058"},
+    {"id": "ELANTRA_CELL_V_059", "path": "Battery.Cells", "fmt": {"bix": 240, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 059"},
+    {"id": "ELANTRA_CELL_V_060", "path": "Battery.Cells", "fmt": {"bix": 248, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 060"},
+    {"id": "ELANTRA_CELL_V_061", "path": "Battery.Cells", "fmt": {"bix": 256, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 061"},
+    {"id": "ELANTRA_CELL_V_062", "path": "Battery.Cells", "fmt": {"bix": 264, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 062"},
+    {"id": "ELANTRA_CELL_V_063", "path": "Battery.Cells", "fmt": {"bix": 272, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 063"},
+    {"id": "ELANTRA_CELL_V_064", "path": "Battery.Cells", "fmt": {"bix": 280, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 064"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "dbg": true, "cmd": {"22": "0105"}, "freq": 1, "filter": { "from": 2021 },
+  "signals": [
+    {"id": "ELANTRA_HVBAT_C_DEV_V",     "path": "Battery",             "fmt": {"bix": 160, "len": 8,  "max": 5.1,                        "div": 50,                                 "unit": "volts"         }, "name": "HV cell voltage deviation"},
+    {"id": "ELANTRA_HVBAT_HTR1_T",      "path": "Battery",             "fmt": {"bix": 184, "len": 8,  "max": 127, "min": -127,                        "sign": true,                 "unit": "celsius"       }, "name": "HV battery heater 1 temperature"},
+    {"id": "ELANTRA_HVBAT_HTR2_T",      "path": "Battery",             "fmt": {"bix": 192, "len": 8,  "max": 127, "min": -127,                        "sign": true,                 "unit": "celsius"       }, "name": "HV battery heater 2 temperature"},
+    {"id": "ELANTRA_HVBAT_SOH",         "path": "Battery",             "fmt": {"bix": 200, "len": 16, "max": 100,                        "div": 10,                                 "unit": "percent"       }, "name": "HV battery state of health",           "suggestedMetric": "stateOfHealth"},
+    {"id": "ELANTRA_HVBAT_DET_MAX_ID",  "path": "Battery",             "fmt": {"bix": 216, "len": 8,  "max": 98,                                                    "nullmax": 200, "unit": "scalar"        }, "name": "HV battery max deterioration cell id"},
+    {"id": "ELANTRA_HVBAT_WH",          "path": "Battery",             "fmt": {"bix": 224, "len": 16, "max": 100,              "mul": 2, "div": 1000,                               "unit": "kilowattHours" }, "name": "HV battery remaining energy"},
+    {"id": "ELANTRA_HVBAT_DET_MIN_ID",  "path": "Battery",             "fmt": {"bix": 240, "len": 8,  "max": 98,                                                    "nullmax": 200, "unit": "scalar"        }, "name": "HV battery min deterioration cell id"},
+    {"id": "ELANTRA_HVBAT_SOC_DISP",    "path": "Battery",             "fmt": {"bix": 248, "len": 8,  "max": 100,                        "div": 2,                                  "unit": "percent"       }, "name": "HV battery charge",                    "suggestedMetric": "stateOfCharge"},
+    {"id": "ELANTRA_HVBAT_CMU097_VOLT", "path": "Battery.Modules.097", "fmt": {"bix": 272, "len": 8,  "max": 4.2, "min": 2.8,            "div": 50,                                 "unit": "volts"         }, "name": "HV battery module 097 voltage"},
+    {"id": "ELANTRA_HVBAT_CMU098_VOLT", "path": "Battery.Modules.098", "fmt": {"bix": 280, "len": 8,  "max": 4.2, "min": 2.8,            "div": 50,                                 "unit": "volts"         }, "name": "HV battery module 098 voltage"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "dbg": true, "cmd": {"22": "0106"}, "freq": 5, "filter": { "from": 2021 },
+  "signals": [
+    {"id": "ELANTRA_BAT_T_WCS_INPUT", "path": "Battery",  "fmt": {"bix": 32,  "len": 8, "max": 127,  "min": -128,            "sign": true, "unit": "celsius" }, "name": "Battery temperature at cooling input"},
+    {"id": "ELANTRA_BAT_FAN_DUTY",    "path": "Battery",  "fmt": {"bix": 64,  "len": 8, "max": 255,                                        "unit": "percent" }, "name": "Battery fan duty feedback"},
+    {"id": "ELANTRA_DATC_AC_COMP_1",  "path": "Movement", "fmt": {"bix": 96,  "len": 8, "max": 5100,              "mul": 20,               "unit": "rpm"     }, "name": "Climate compressor operation RPM, variant 1"},
+    {"id": "ELANTRA_BAT_T_PRA",       "path": "Battery",  "fmt": {"bix": 160, "len": 8, "max": 254,  "min": -256, "mul": 2,  "sign": true, "unit": "celsius" }, "name": "Battery temperature, power relay assembly"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "0111"}, "freq": 1, "filter": { "from": 2021 },
+  "signals": [
+    {"id": "ELANTRA_NUM_STANDARD_CHG",   "path": "Engine", "fmt": {"bix": 32, "len": 32, "max": 4294967295, "unit": "scalar"        }, "name": "Number of standard charging"},
+    {"id": "ELANTRA_NUM_QUICK_CHG",      "path": "Engine", "fmt": {"bix": 64, "len": 32, "max": 4294967295, "unit": "scalar"        }, "name": "Number of quick charging"},
+    {"id": "ELANTRA_ACCUMULATED_NORMAL", "path": "Engine", "fmt": {"bix": 96, "len": 32, "max": 4294967295, "unit": "kilowattHours" }, "name": "Accumulated normal charging energy"}
+  ]},
+{ "hdr": "7E7", "rax": "7EF", "dbg": true, "cmd": {"22": "C101"}, "freq": 0.25,
+  "signals": [
+    {"id": "ELANTRA_TIRE_FL_SPD", "path": "Movement", "fmt": {"bix": 88,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "ELANTRA_TIRE_FR_SPD", "path": "Movement", "fmt": {"bix": 96,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "ELANTRA_TIRE_RL_SPD", "path": "Movement", "fmt": {"bix": 104, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "ELANTRA_TIRE_RR_SPD", "path": "Movement", "fmt": {"bix": 112, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
   ]}
+],
+"signalGroups": [
+  {"id": "ELANTRA_CELL_V", "path": "Battery.BatteryPack", "matchingRegex": "ELANTRA_(CELL_V_\\d+)", "name": "Hybrid battery cell voltage", "suggestedMetricGroup": "batteryModulesVoltage"}
 ]
 }
