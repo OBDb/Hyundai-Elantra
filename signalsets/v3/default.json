@@ -1,6 +1,10 @@
 { "ecu": [
     { "hdr": "7A0", "type": "bodyControl" },
-    { "hdr": "7E0", "type": "engine" }
+    { "hdr": "7E0", "type": "engine" },
+    { "hdr": "7E1", "type": "transmission" },
+    { "hdr": "7E2", "type": "hybridControl" },
+    { "hdr": "7E4", "type": "battery" },
+    { "hdr": "7E7", "type": "abs" }
   ],
   "commands": [
 { "hdr": "770", "rax": "778", "cmd": {"22": "BC03"}, "freq": 1, "filter": { "from": 2021 }, "dbgfilter": { "from": 2026 },
