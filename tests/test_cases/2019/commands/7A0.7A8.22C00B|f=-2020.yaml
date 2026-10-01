@@ -1,6 +1,20 @@
 command_id: 7A0.7A8.22C00B|f=-2020
 test_cases:
 - expected_values:
+    ELANTRA_TP_FL_PRE21: null
+    ELANTRA_TP_FR_PRE21: null
+    ELANTRA_TP_RL_PRE21: null
+    ELANTRA_TP_RR_PRE21: null
+    ELANTRA_TT_FL_PRE21: null
+    ELANTRA_TT_FR_PRE21: null
+    ELANTRA_TT_RL_PRE21: null
+    ELANTRA_TT_RR_PRE21: null
+  response: |-
+    7A8101762C00BFFFF00
+    7A82100000000020000
+    7A82200020000000200
+    7A823000002AAAAAAAA
+- expected_values:
     ELANTRA_TP_RR_PRE21: 36.6
     ELANTRA_TT_RR_PRE21: 13
   response: |-
