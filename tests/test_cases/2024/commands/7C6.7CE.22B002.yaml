@@ -2,7 +2,7 @@ command_id: 7C6.7CE.22B002
 test_cases:
 - expected_values:
     ELANTRA_CLUSTER_VOLTAGE: 13.125
-    ELANTRA_FLI_VOL: 4
+    ELANTRA_FLI_VOL: 2
     ELANTRA_ODO_KM: 0
     ELANTRA_ODO_MI: 57373
   response: |-
@@ -11,7 +11,7 @@ test_cases:
     7CE22E01DAAAAAAAAAA
 - expected_values:
     ELANTRA_CLUSTER_VOLTAGE: 13.28125
-    ELANTRA_FLI_VOL: 4
+    ELANTRA_FLI_VOL: 2
     ELANTRA_ODO_KM: 0
     ELANTRA_ODO_MI: 58551
   response: |-
@@ -20,7 +20,7 @@ test_cases:
     7CE22E4B7AAAAAAAAAA
 - expected_values:
     ELANTRA_CLUSTER_VOLTAGE: 13.67188
-    ELANTRA_FLI_VOL: 4
+    ELANTRA_FLI_VOL: 2
     ELANTRA_ODO_KM: 0
     ELANTRA_ODO_MI: 56112
   response: |-
@@ -29,7 +29,7 @@ test_cases:
     7CE22DB30AAAAAAAAAA
 - expected_values:
     ELANTRA_CLUSTER_VOLTAGE: 13.75
-    ELANTRA_FLI_VOL: 4
+    ELANTRA_FLI_VOL: 2
     ELANTRA_ODO_KM: 0
     ELANTRA_ODO_MI: 58556
   response: |-
@@ -38,7 +38,7 @@ test_cases:
     7CE22E4BCAAAAAAAAAA
 - expected_values:
     ELANTRA_CLUSTER_VOLTAGE: 13.90625
-    ELANTRA_FLI_VOL: 15
+    ELANTRA_FLI_VOL: 7.5
     ELANTRA_ODO_KM: 0
     ELANTRA_ODO_MI: 16739
   response: |-
@@ -47,7 +47,7 @@ test_cases:
     7CE224163AAAAAAAAAA
 - expected_values:
     ELANTRA_CLUSTER_VOLTAGE: 13.51562
-    ELANTRA_FLI_VOL: 21
+    ELANTRA_FLI_VOL: 10.5
     ELANTRA_ODO_KM: 0
     ELANTRA_ODO_MI: 57344
   response: |-
@@ -56,7 +56,7 @@ test_cases:
     7CE22E000AAAAAAAAAA
 - expected_values:
     ELANTRA_CLUSTER_VOLTAGE: 13.51562
-    ELANTRA_FLI_VOL: 24
+    ELANTRA_FLI_VOL: 12
     ELANTRA_ODO_KM: 0
     ELANTRA_ODO_MI: 57343
   response: |-
@@ -65,7 +65,7 @@ test_cases:
     7CE22DFFFAAAAAAAAAA
 - expected_values:
     ELANTRA_CLUSTER_VOLTAGE: 12.1875
-    ELANTRA_FLI_VOL: 32
+    ELANTRA_FLI_VOL: 16
     ELANTRA_ODO_KM: 0
     ELANTRA_ODO_MI: 2175
   response: |-
@@ -74,7 +74,6 @@ test_cases:
     7CE22087FAAAAAAAAAA
 - expected_values:
     ELANTRA_CLUSTER_VOLTAGE: 11.48438
-    ELANTRA_FLI_VOL: 255
     ELANTRA_ODO_KM: 0
     ELANTRA_ODO_MI: 55966
   response: |-
@@ -83,7 +82,7 @@ test_cases:
     7CE22DA9EAAAAAAAAAA
 - expected_values:
     ELANTRA_CLUSTER_VOLTAGE: 12.26562
-    ELANTRA_FLI_VOL: 4
+    ELANTRA_FLI_VOL: 2
     ELANTRA_ODO_KM: 13774
     ELANTRA_ODO_MI: 0
   response: |-
@@ -92,7 +91,7 @@ test_cases:
     7CE220000AAAAAAAAAA
 - expected_values:
     ELANTRA_CLUSTER_VOLTAGE: 12.57812
-    ELANTRA_FLI_VOL: 4
+    ELANTRA_FLI_VOL: 2
     ELANTRA_ODO_KM: 13775
     ELANTRA_ODO_MI: 0
   response: |-
@@ -101,7 +100,7 @@ test_cases:
     7CE220000AAAAAAAAAA
 - expected_values:
     ELANTRA_CLUSTER_VOLTAGE: 13.67188
-    ELANTRA_FLI_VOL: 41
+    ELANTRA_FLI_VOL: 20.5
     ELANTRA_ODO_KM: 19437
     ELANTRA_ODO_MI: 0
   response: |-
@@ -110,7 +109,7 @@ test_cases:
     7CE220000AAAAAAAAAA
 - expected_values:
     ELANTRA_CLUSTER_VOLTAGE: 13.98438
-    ELANTRA_FLI_VOL: 80
+    ELANTRA_FLI_VOL: 40
     ELANTRA_ODO_KM: 12284
     ELANTRA_ODO_MI: 0
   response: |-
