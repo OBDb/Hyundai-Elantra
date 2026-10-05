@@ -195,11 +195,11 @@
   ]},
 { "hdr": "7E0", "cmd": {"22": "E021"}, "freq": 1, "filter": { "from": 2015 }, "dbgfilter": { "to": 2016, "years": [2020], "from": 2026 },
   "signals": [
-    {"id": "ELANTRA_TB_PRES", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 543.350685,  "mul": 0.008291,    "unit": "kilopascal" }, "name": "Turbo boost pressure"},
-    {"id": "ELANTRA_WG_V",    "path": "Engine", "fmt": {"bix": 392, "len": 16, "max": 9.99985458,  "mul": 0.000152588, "unit": "volts"      }, "name": "Waste gate voltage"},
-    {"id": "ELANTRA_WG_DUTY", "path": "Engine", "fmt": {"bix": 408, "len": 16, "max": 199.9970916, "mul": 0.00305176,  "unit": "percent"    }, "name": "Waste gate duty"},
-    {"id": "ELANTRA_WG_POS",  "path": "Engine", "fmt": {"bix": 424, "len": 16, "max": 399.9941832, "mul": 0.00610352,  "unit": "percent"    }, "name": "Waste gate position"},
-    {"id": "ELANTRA_WG_SP",   "path": "Engine", "fmt": {"bix": 440, "len": 16, "max": 399.9941832, "mul": 0.00610352,  "unit": "percent"    }, "name": "Waste gate setpoint"}
+    {"id": "ELANTRA_TB_PRES", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 543.350685,               "mul": 0.008291,                                   "unit": "kilopascal" }, "name": "Turbo boost pressure"},
+    {"id": "ELANTRA_WG_V",    "path": "Engine", "fmt": {"bix": 392, "len": 16, "max": 9.99985458,               "mul": 0.000152588,                                "unit": "volts"      }, "name": "Waste gate voltage"},
+    {"id": "ELANTRA_WG_DUTY", "path": "Engine", "fmt": {"bix": 408, "len": 16, "max": 199.9970916,              "mul": 0.00305176,                                 "unit": "percent"    }, "name": "Waste gate duty"},
+    {"id": "ELANTRA_WG_POS",  "path": "Engine", "fmt": {"bix": 424, "len": 16, "max": 199.99,      "min": -200, "mul": 0.00610352,  "sign": true, "nullmin": -200, "unit": "percent"    }, "name": "Waste gate position"},
+    {"id": "ELANTRA_WG_SP",   "path": "Engine", "fmt": {"bix": 440, "len": 16, "max": 199.99,      "min": -200, "mul": 0.00610352,  "sign": true, "nullmin": -200, "unit": "percent"    }, "name": "Waste gate setpoint"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "00"}, "freq": 1, "filter": { "to": 2020 }, "dbgfilter": { "to": 2011, "years": [2013, 2014, 2015], "from": 2017 },
   "signals": [
@@ -400,10 +400,10 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E002"}, "freq": 5, "filter": { "from": 2015 }, "dbgfilter": { "to": 2015, "from": 2026 },
   "signals": [
-    {"id": "ELANTRA_INJ_DUR_1", "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 1"},
-    {"id": "ELANTRA_INJ_DUR_2", "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 2"},
-    {"id": "ELANTRA_INJ_DUR_3", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 3"},
-    {"id": "ELANTRA_INJ_DUR_4", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 4"}
+    {"id": "ELANTRA_INJ_DUR_1", "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "milliseconds" }, "name": "Injection duration cylinder 1"},
+    {"id": "ELANTRA_INJ_DUR_2", "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "milliseconds" }, "name": "Injection duration cylinder 2"},
+    {"id": "ELANTRA_INJ_DUR_3", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "milliseconds" }, "name": "Injection duration cylinder 3"},
+    {"id": "ELANTRA_INJ_DUR_4", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "milliseconds" }, "name": "Injection duration cylinder 4"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E003"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2017, 2018, 2019, 2020, 2021], "from": 2026 },
   "signals": [
@@ -412,8 +412,8 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E004"}, "freq": 5, "filter": { "from": 2021 }, "dbgfilter": { "from": 2026 },
   "signals": [
-    {"id": "ELANTRA_AUX_SOC", "path": "Battery", "fmt": {"bix": 320, "len": 8, "max": 100, "unit": "percent" }, "name": "Aux battery state of charge", "suggestedMetric": "stateOfCharge"},
-    {"id": "ELANTRA_AUX_SOH", "path": "Battery", "fmt": {"bix": 328, "len": 8, "max": 100, "unit": "percent" }, "name": "Aux battery state of health", "suggestedMetric": "stateOfHealth"}
+    {"id": "ELANTRA_AUX_SOC", "path": "Battery", "fmt": {"bix": 320, "len": 8, "max": 100, "nullmin": 0, "unit": "percent" }, "name": "Aux battery state of charge", "suggestedMetric": "stateOfCharge"},
+    {"id": "ELANTRA_AUX_SOH", "path": "Battery", "fmt": {"bix": 328, "len": 8, "max": 100, "nullmin": 0, "unit": "percent" }, "name": "Aux battery state of health", "suggestedMetric": "stateOfHealth"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E005"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2017, 2018, 2019, 2020, 2021], "from": 2026 },
   "signals": [

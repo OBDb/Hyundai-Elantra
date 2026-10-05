@@ -37,8 +37,8 @@ test_cases:
 - expected_values:
     ELANTRA_TB_PRES: 91.3834
     ELANTRA_WG_DUTY: 77.46282
-    ELANTRA_WG_POS: 340.60083
-    ELANTRA_WG_SP: 398.43779
+    ELANTRA_WG_POS: -59.39946
+    ELANTRA_WG_SP: -1.5625
     ELANTRA_WG_V: 3.89649
   response: |-
     7E8104562E021FE9FCE
@@ -54,7 +54,7 @@ test_cases:
 - expected_values:
     ELANTRA_TB_PRES: 89.40185
     ELANTRA_WG_DUTY: 76.68157
-    ELANTRA_WG_POS: 339.06885
+    ELANTRA_WG_POS: -60.93144
     ELANTRA_WG_SP: 0
     ELANTRA_WG_V: 3.85742
   response: |-
@@ -122,7 +122,7 @@ test_cases:
 - expected_values:
     ELANTRA_TB_PRES: 85.36414
     ELANTRA_WG_DUTY: 24.85659
-    ELANTRA_WG_POS: 398.4561
+    ELANTRA_WG_POS: -1.54419
     ELANTRA_WG_SP: 75.00005
     ELANTRA_WG_V: 3.88672
   response: |-
@@ -156,7 +156,7 @@ test_cases:
 - expected_values:
     ELANTRA_TB_PRES: 91.10151
     ELANTRA_WG_DUTY: 78.79034
-    ELANTRA_WG_POS: 337.52466
+    ELANTRA_WG_POS: -62.47563
     ELANTRA_WG_SP: 0
     ELANTRA_WG_V: 3.92578
   response: |-
