@@ -193,7 +193,7 @@
     {"id": "ELANTRA_RR_TP", "path": "Tires", "fmt": {"bix": 96,  "len": 8, "max": 3.51,             "mul": 0.01378952,             "nullmax": 3.51, "unit": "bars"    }, "name": "Rear right tire pressure",     "suggestedMetric": "rearRightTirePressure"},
     {"id": "ELANTRA_RR_TT", "path": "Tires", "fmt": {"bix": 104, "len": 8, "max": 205,  "min": -50,                    "add": -50, "nullmax": 205,  "unit": "celsius" }, "name": "Rear right tire temperature",  "suggestedMetric": "rearRightTireTemperature"}
   ]},
-{ "hdr": "7E0", "cmd": {"22": "E021"}, "freq": 1, "dbgfilter": { "to": 2016, "years": [2020], "from": 2026 },
+{ "hdr": "7E0", "cmd": {"22": "E021"}, "freq": 1, "filter": { "from": 2015 }, "dbgfilter": { "to": 2016, "years": [2020], "from": 2026 },
   "signals": [
     {"id": "ELANTRA_TB_PRES", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 543.350685,  "mul": 0.008291,    "unit": "kilopascal" }, "name": "Turbo boost pressure"},
     {"id": "ELANTRA_WG_V",    "path": "Engine", "fmt": {"bix": 392, "len": 16, "max": 9.99985458,  "mul": 0.000152588, "unit": "volts"      }, "name": "Waste gate voltage"},
@@ -201,7 +201,7 @@
     {"id": "ELANTRA_WG_POS",  "path": "Engine", "fmt": {"bix": 424, "len": 16, "max": 399.9941832, "mul": 0.00610352,  "unit": "percent"    }, "name": "Waste gate position"},
     {"id": "ELANTRA_WG_SP",   "path": "Engine", "fmt": {"bix": 440, "len": 16, "max": 399.9941832, "mul": 0.00610352,  "unit": "percent"    }, "name": "Waste gate setpoint"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "00"}, "freq": 1, "dbgfilter": { "to": 2011, "years": [2013, 2014, 2015], "from": 2017 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "00"}, "freq": 1, "filter": { "to": 2020 }, "dbgfilter": { "to": 2011, "years": [2013, 2014, 2015], "from": 2017 },
   "signals": [
     {"id": "ELANTRA_FUEL_CUT",               "path": "Fuel",     "fmt": {"bix": 88,  "len": 8, "max": 255, "unit": "scalar" }, "name": "Fuel cut"},
     {"id": "ELANTRA_IDLE_CONTROL_MODE",      "path": "Engine",   "fmt": {"bix": 120, "len": 8, "max": 255, "unit": "scalar" }, "name": "Idle control mode"},
@@ -209,7 +209,7 @@
     {"id": "ELANTRA_COOLANT_FAN_HIGH_SPEED", "path": "Movement", "fmt": {"bix": 171, "len": 1, "max": 1,   "unit": "offon"  }, "name": "Coolant fan high speed"},
     {"id": "ELANTRA_KNOCK_DETECTED",         "path": "Engine",   "fmt": {"bix": 200, "len": 8, "max": 255, "unit": "scalar" }, "name": "Knock detected"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "01"}, "freq": 1, "dbgfilter": { "to": 2008, "years": [2011], "from": 2017 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "01"}, "freq": 1, "filter": { "to": 2020 }, "dbgfilter": { "to": 2008, "years": [2011], "from": 2017 },
   "signals": [
     {"id": "ELANTRA_CONTROL_MODULE_VOLTAGE",                "path": "Battery",  "fmt": {"bix": 40,  "len": 8,  "max": 255,                                                                         "unit": "volts"   },                   "name": "Control module voltage"},
     {"id": "ELANTRA_CONTROL_MODULE_VOLTAGE_AFTER_IGNITION", "path": "Battery",  "fmt": {"bix": 48,  "len": 8,  "max": 255,                                                                         "unit": "volts"   },                   "name": "Control module voltage after ignition"},
@@ -223,7 +223,7 @@
     {"id": "ELANTRA_INTAKE_AIR_T",                          "path": "Engine",   "fmt": {"bix": 264, "len": 8,  "max": 143.25, "min": -48,            "mul": 0.75,                      "add": -48, "unit": "celsius" },                   "name": "Intake air temperature"},
     {"id": "ELANTRA_ENGINE_OIL_T",                          "path": "Engine",   "fmt": {"bix": 272, "len": 8,  "max": 143.25, "min": -48,            "mul": 0.75,                      "add": -48, "unit": "celsius" },                   "name": "Engine oil temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "02"}, "freq": 1, "dbgfilter": { "to": 2008, "years": [2011], "from": 2017 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "02"}, "freq": 1, "filter": { "to": 2020 }, "dbgfilter": { "to": 2008, "years": [2011], "from": 2017 },
   "signals": [
     {"id": "ELANTRA_OXYGEN_SENSOR_11",            "path": "ECU",      "fmt": {"bix": 32,  "len": 8,  "max": 1.12855,   "min": -0.2,      "mul": 0.00521,                 "add": -0.2, "unit": "volts"             },                     "name": "Oxygen sensor 1 bank 1"},
     {"id": "ELANTRA_OXYGEN_SENSOR_21",            "path": "ECU",      "fmt": {"bix": 48,  "len": 8,  "max": 1.12855,   "min": -0.2,      "mul": 0.00521,                 "add": -0.2, "unit": "volts"             },                     "name": "Oxygen sensor 2 bank 1"},
@@ -234,12 +234,12 @@
     {"id": "ELANTRA_FUEL_INJECTION_TIMING_3",     "path": "Fuel",     "fmt": {"bix": 208, "len": 16, "blsb": true,     "max": 53686.272,                  "mul": 0.8192,                                          "unit": "milliseconds" },                                     "name": "Fuel injection timing #3"},
     {"id": "ELANTRA_FUEL_INJECTION_TIMING_4",     "path": "Fuel",     "fmt": {"bix": 224, "len": 16, "blsb": true,     "max": 53686.272,                  "mul": 0.8192,                                          "unit": "milliseconds" },                                     "name": "Fuel injection timing #4"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "04"}, "freq": 1, "dbgfilter": { "to": 2008, "years": [2011], "from": 2017 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "04"}, "freq": 1, "filter": { "to": 2020 }, "dbgfilter": { "to": 2008, "years": [2011], "from": 2017 },
   "signals": [
     {"id": "ELANTRA_COOLANT_FAN_HIGH_SPEED__1_8_", "path": "Movement", "fmt": {"bix": 109, "len": 1, "max": 1, "unit": "offon" }, "name": "Coolant fan high speed (1.8)"},
     {"id": "ELANTRA_COOLANT_FAN_LOW_SPEED__1_8_",  "path": "Movement", "fmt": {"bix": 110, "len": 1, "max": 1, "unit": "offon" }, "name": "Coolant fan low speed (1.8)"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "08"}, "freq": 1, "dbgfilter": { "to": 2015, "from": 2017 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "08"}, "freq": 1, "filter": { "to": 2020 }, "dbgfilter": { "to": 2015, "from": 2017 },
   "signals": [
     {"id": "ELANTRA_EMIS_MIS_TOT_1",     "path": "Engine", "fmt": {"bix": 128, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Emission relevant misfires total, cylinder 1"},
     {"id": "ELANTRA_EMIS_MIS_TOT_2",     "path": "Engine", "fmt": {"bix": 144, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Emission relevant misfires total, cylinder 2"},
@@ -263,14 +263,14 @@
     {"id": "ELANTRA_MIS_CURRENT_6",      "path": "Engine", "fmt": {"bix": 576, "len": 8,  "max": 255,                 "unit": "scalar" },               "name": "Misfires current, cylinder 6"},
     {"id": "ELANTRA_MIS_CURRENT_TOT",    "path": "Engine", "fmt": {"bix": 584, "len": 8,  "max": 255,                 "unit": "scalar" },               "name": "Misfires current total"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "0A"}, "freq": 1, "dbgfilter": { "to": 2015, "from": 2017 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "0A"}, "freq": 1, "filter": { "to": 2020 }, "dbgfilter": { "to": 2015, "from": 2017 },
   "signals": [
     {"id": "ELANTRA_KNOCK_RETARD_CYL_1_ALT", "path": "Engine", "fmt": {"bix": 160, "len": 8, "max": 191.25, "div": 1.3333333333, "unit": "degrees" }, "name": "Knock retard cylinder 1, alternate"},
     {"id": "ELANTRA_KNOCK_RETARD_CYL_2_ALT", "path": "Engine", "fmt": {"bix": 168, "len": 8, "max": 191.25, "div": 1.3333333333, "unit": "degrees" }, "name": "Knock retard cylinder 2, alternate"},
     {"id": "ELANTRA_KNOCK_RETARD_CYL_3_ALT", "path": "Engine", "fmt": {"bix": 176, "len": 8, "max": 191.25, "div": 1.3333333333, "unit": "degrees" }, "name": "Knock retard cylinder 3, alternate"},
     {"id": "ELANTRA_KNOCK_RETARD_CYL_4_ALT", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 191.25, "div": 1.3333333333, "unit": "degrees" }, "name": "Knock retard cylinder 4, alternate"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "0B"}, "freq": 1, "dbgfilter": { "to": 2015, "from": 2017 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "0B"}, "freq": 1, "filter": { "to": 2020 }, "dbgfilter": { "to": 2015, "from": 2017 },
   "signals": [
     {"id": "ELANTRA_DI_TIME_1", "path": "Engine", "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 500, "mul": 100, "div": 13107, "unit": "milliseconds" }, "name": "Direct injection time 1"},
     {"id": "ELANTRA_DI_TIME_2", "path": "Engine", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 500, "mul": 100, "div": 13107, "unit": "milliseconds" }, "name": "Direct injection time 2"},
@@ -279,7 +279,7 @@
     {"id": "ELANTRA_DI_TIME_5", "path": "Engine", "fmt": {"bix": 96,  "len": 16, "blsb": true, "max": 500, "mul": 100, "div": 13107, "unit": "milliseconds" }, "name": "Direct injection time 5"},
     {"id": "ELANTRA_DI_TIME_6", "path": "Engine", "fmt": {"bix": 112, "len": 16, "blsb": true, "max": 500, "mul": 100, "div": 13107, "unit": "milliseconds" }, "name": "Direct injection time 6"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "0D"}, "freq": 1, "dbgfilter": { "to": 2011, "years": [2013, 2014, 2015], "from": 2017 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "0D"}, "freq": 1, "filter": { "to": 2020 }, "dbgfilter": { "to": 2011, "years": [2013, 2014, 2015], "from": 2017 },
   "signals": [
     {"id": "ELANTRA_MIS_CNT_EMIS_1", "path": "Engine.Misfires", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission-relevant misfires, cylinder #1"},
     {"id": "ELANTRA_MIS_CNT_EMIS_2", "path": "Engine.Misfires", "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission-relevant misfires, cylinder #2"},
@@ -291,11 +291,11 @@
     {"id": "ELANTRA_MIS_CNT_4",      "path": "Engine.Misfires", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires total counter, cylinder #4"},
     {"id": "ELANTRA_MIS_CNT_ALL",    "path": "Engine.Misfires", "fmt": {"bix": 432, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires total counter, all cylinders"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "0E"}, "freq": 30, "dbgfilter": { "to": 2015, "from": 2017 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "0E"}, "freq": 30, "filter": { "to": 2020 }, "dbgfilter": { "to": 2015, "from": 2017 },
   "signals": [
     {"id": "ELANTRA_ENG_RUN_TIME_TOT", "path": "Engine", "fmt": {"bix": 80, "len": 16, "blsb": true, "max": 393209.9999, "mul": 6, "unit": "minutes" }, "name": "Engine run time, total"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "13"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2017 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "13"}, "freq": 1, "filter": { "to": 2020 }, "dbgfilter": { "to": 2012, "from": 2017 },
   "signals": [
     {"id": "ELANTRA_TIMING_ADVANCE_1",    "path": "Engine", "fmt": {"bix": 32,  "len": 8, "max": 95.25, "min": -96, "mul": 0.75, "sign": true, "unit": "degrees"    }, "name": "Timing advance #1"},
     {"id": "ELANTRA_TIMING_ADVANCE_2",    "path": "Engine", "fmt": {"bix": 40,  "len": 8, "max": 95.25, "min": -96, "mul": 0.75, "sign": true, "unit": "degrees"    }, "name": "Timing advance #2"},
@@ -303,7 +303,7 @@
     {"id": "ELANTRA_TIMING_ADVANCE_4",    "path": "Engine", "fmt": {"bix": 56,  "len": 8, "max": 95.25, "min": -96, "mul": 0.75, "sign": true, "unit": "degrees"    }, "name": "Timing advance #4"},
     {"id": "ELANTRA_BAROMETRIC_PRESSURE", "path": "Engine", "fmt": {"bix": 312, "len": 8, "max": 127.5,             "mul": 0.5,                "unit": "kilopascal" }, "name": "Barometric pressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "14"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2017 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "14"}, "freq": 1, "filter": { "to": 2020 }, "dbgfilter": { "to": 2012, "from": 2017 },
   "signals": [
     {"id": "ELANTRA_COMMANDED_THROTTLE_ACTUATOR",                 "path": "Engine",   "fmt": {"bix": 40,  "len": 8,  "max": 99.609375,                "mul": 0.390625,                                    "unit": "percent" },                "name": "Commanded throttle actuator"},
     {"id": "ELANTRA_THROTTLE_POSITION__1",                        "path": "Engine",   "fmt": {"bix": 48,  "len": 16, "blsb": true,     "max": 799,    "min": -800,     "mul": 0.0244140625, "sign": true,                   "unit": "percent" },                                             "name": "Throttle position #1"},
@@ -315,19 +315,19 @@
     {"id": "ELANTRA_REQUESTED_TORQUE",                            "path": "Engine",   "fmt": {"bix": 176, "len": 16, "max": 100.00641,                "mul": 0.001526,                                    "unit": "percent" },                "name": "Requested torque"},
     {"id": "ELANTRA_THROTTLE_POSITION_SENSOR_VOLTAGE__1",         "path": "Battery",  "fmt": {"bix": 360, "len": 16, "blsb": true,     "max": 79,                      "mul": 0.0012207031,                                 "unit": "volts"   },                                             "name": "Throttle position sensor voltage #1"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "15"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2017 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "15"}, "freq": 1, "filter": { "to": 2020 }, "dbgfilter": { "to": 2012, "from": 2017 },
   "signals": [
     {"id": "ELANTRA_STFT_B1_IDLE", "path": "Fuel", "fmt": {"bix": 48, "len": 16, "blsb": true, "max": 100, "mul": 0.046875,                  "sign": true, "unit": "percent" }, "name": "Short term fuel % trim, bank 1 idle"},
     {"id": "ELANTRA_STFT_B1",      "path": "Fuel", "fmt": {"bix": 80, "len": 16, "blsb": true, "max": 100, "mul": 0.0030517578, "add": -100,               "unit": "percent" }, "name": "Short term fuel % trim, bank 1"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "16"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2017 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "16"}, "freq": 1, "filter": { "to": 2020 }, "dbgfilter": { "to": 2012, "from": 2017 },
   "signals": [
     {"id": "ELANTRA_KNOCK_RETARD_CYLINDER_1", "path": "ECU", "fmt": {"bix": 96,  "len": 8, "max": 191.25, "mul": 0.75, "unit": "degrees" }, "name": "Knock retard cylinder #1"},
     {"id": "ELANTRA_KNOCK_RETARD_CYLINDER_2", "path": "ECU", "fmt": {"bix": 104, "len": 8, "max": 191.25, "mul": 0.75, "unit": "degrees" }, "name": "Knock retard cylinder #2"},
     {"id": "ELANTRA_KNOCK_RETARD_CYLINDER_3", "path": "ECU", "fmt": {"bix": 112, "len": 8, "max": 191.25, "mul": 0.75, "unit": "degrees" }, "name": "Knock retard cylinder #3"},
     {"id": "ELANTRA_KNOCK_RETARD_CYLINDER_4", "path": "ECU", "fmt": {"bix": 120, "len": 8, "max": 191.25, "mul": 0.75, "unit": "degrees" }, "name": "Knock retard cylinder #4"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "17"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2017 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "17"}, "freq": 1, "filter": { "to": 2020 }, "dbgfilter": { "to": 2012, "from": 2017 },
   "signals": [
     {"id": "ELANTRA_INTAKE_CAMSHAFT_POSITION_COMMANDED", "path": "ECU", "fmt": {"bix": 32, "len": 8,  "max": 63.5,  "min": -64,         "mul": 0.5,                    "sign": true,               "unit": "degrees" },                "name": "intake camshaft position commanded"},
     {"id": "ELANTRA_INTAKE_CAMSHAFT_POSITION_ACTUAL",    "path": "ECU", "fmt": {"bix": 40, "len": 16, "blsb": true, "max": 255.9921875, "min": -256, "mul": 0.0078125,               "sign": true,                   "unit": "degrees" },                                            "name": "intake camshaft position actual"}
@@ -357,7 +357,7 @@
     {"id": "ELANTRA_MIN_ADPT_LO_MECH_P",      "path": "Engine",  "fmt": {"bix": 496, "len": 16, "blsb": true, "max": 10.02,                 "mul": 1.53,  "div": 10000,                                   "unit": "volts"   },                                                "name": "Min adaptation value for lower mechanical stop of the boost pressure actuator during engine stop"},
     {"id": "ELANTRA_MIN_ADPT_LO_MECH_STOP_P", "path": "Engine",  "fmt": {"bix": 512, "len": 16, "blsb": true, "max": 10.02,                 "mul": 1.53,  "div": 10000,                                   "unit": "volts"   },                                                "name": "Min adaptation value for lower mechanical stop of the boost pressure actuator during engine running"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "1D"}, "freq": 1, "dbgfilter": { "to": 2012, "years": [2015], "from": 2017 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "1D"}, "freq": 1, "filter": { "to": 2020 }, "dbgfilter": { "to": 2012, "years": [2015], "from": 2017 },
   "signals": [
     {"id": "ELANTRA_MIS_1",     "path": "Engine.Misfires", "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 1"},
     {"id": "ELANTRA_MIS_2",     "path": "Engine.Misfires", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 2"},
@@ -393,12 +393,12 @@
   "signals": [
     {"id": "ELANTRA_ATF_TEMP", "path": "Transmission", "fmt": {"bix": 16, "len": 8, "max": 255, "mul": 9, "div": 5, "add": -40, "unit": "fahrenheit" }, "name": "Transmission fluid temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E001"}, "freq": 5, "dbgfilter": { "to": 2015, "from": 2026 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E001"}, "freq": 5, "filter": { "from": 2015 }, "dbgfilter": { "to": 2015, "from": 2026 },
   "signals": [
     {"id": "ELANTRA_EIT", "path": "Engine", "fmt": {"bix": 264, "len": 8, "max": 143, "min": -48, "mul": 3, "div": 4, "add": -48, "unit": "celsius" }, "name": "Intake air temperature"},
     {"id": "ELANTRA_EOT", "path": "Engine", "fmt": {"bix": 272, "len": 8, "max": 143, "min": -48, "mul": 3, "div": 4, "add": -48, "unit": "celsius" }, "name": "Engine oil temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E002"}, "freq": 5, "dbgfilter": { "to": 2015, "from": 2026 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E002"}, "freq": 5, "filter": { "from": 2015 }, "dbgfilter": { "to": 2015, "from": 2026 },
   "signals": [
     {"id": "ELANTRA_INJ_DUR_1", "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 1"},
     {"id": "ELANTRA_INJ_DUR_2", "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 2"},
@@ -426,7 +426,7 @@
     {"id": "ELANTRA_GDI_IT_B3", "path": "Engine", "fmt": {"bix": 384, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank b, 3"},
     {"id": "ELANTRA_GDI_IT_B4", "path": "Engine", "fmt": {"bix": 400, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank b, 4"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E00A"}, "freq": 1, "dbgfilter": { "to": 2015, "from": 2026 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E00A"}, "freq": 1, "filter": { "from": 2015 }, "dbgfilter": { "to": 2015, "from": 2026 },
   "signals": [
     {"id": "ELANTRA_KNOCK_RETARD_1", "path": "Engine", "fmt": {"bix": 96,  "len": 8, "max": 25, "min": -25, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock retard, cylinder 1"},
     {"id": "ELANTRA_KNOCK_RETARD_2", "path": "Engine", "fmt": {"bix": 104, "len": 8, "max": 25, "min": -25, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock retard, cylinder 2"},
@@ -437,7 +437,7 @@
     {"id": "ELANTRA_KNOCK_LEARN_3",  "path": "Engine", "fmt": {"bix": 176, "len": 8, "max": 25, "min": -25, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock learn, cylinder 3"},
     {"id": "ELANTRA_KNOCK_LEARN_4",  "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 25, "min": -25, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock learn, cylinder 4"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E00D"}, "freq": 1, "dbgfilter": { "to": 2015, "from": 2017 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E00D"}, "freq": 1, "filter": { "to": 2020 }, "dbgfilter": { "to": 2015, "from": 2017 },
   "signals": [
     {"id": "ELANTRA_MISFIRES_C1_CUR",                                "path": "Engine", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, current, cylinder 1"},
     {"id": "ELANTRA_MISFIRES_C2_CUR",                                "path": "Engine", "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, current, cylinder 2"},
@@ -468,7 +468,7 @@
     {"id": "ELANTRA_AC_P",                "path": "Engine", "fmt": {"bix": 112, "len": 8,  "max": 3516.45, "mul": 13.79,               "unit": "kilopascal" }, "name": "Air conditioning pressure"},
     {"id": "ELANTRA_OVERHEAT_PROTECTION", "path": "Engine", "fmt": {"bix": 132, "len": 1,  "max": 1,                                   "unit": "offon"      }, "name": "Overheat protection, active"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E019"}, "freq": 1, "dbgfilter": { "to": 2016, "years": [2020], "from": 2026 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E019"}, "freq": 1, "filter": { "from": 2015 }, "dbgfilter": { "to": 2016, "years": [2020], "from": 2026 },
   "signals": [
     {"id": "ELANTRA_KNOCK_RETARD_1_E019", "path": "Engine", "fmt": {"bix": 168, "len": 8, "max": 0, "min": -191.25, "mul": 0.75, "add": -191.25, "unit": "degrees" }, "name": "Knock retard cylinder 1, alternate"},
     {"id": "ELANTRA_KNOCK_RETARD_2_E019", "path": "Engine", "fmt": {"bix": 176, "len": 8, "max": 0, "min": -191.25, "mul": 0.75, "add": -191.25, "unit": "degrees" }, "name": "Knock retard cylinder 2, alternate"},
