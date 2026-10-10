@@ -1,10 +1,10 @@
 command_id: 7E0.0144
 test_cases:
 - expected_values:
-    EQ_RAT: 0.86555
+    EQ_RAT: 0.86554
   response: 7E80441446ECA
 - expected_values:
-    EQ_RAT: 0.99998
+    EQ_RAT: 0.99997
   response: |-
     7E804414475FFAAAAAA
     7E8044144788FAAAAAA
@@ -21,19 +21,19 @@ test_cases:
     7E80441447FFFAAAAAA
     7E8044144FFFFAAAAAA
 - expected_values:
-    EQ_RAT: 0.98433
+    EQ_RAT: 0.98431
   response: 7E80441447DFE
 - expected_values:
-    EQ_RAT: 0.98439
+    EQ_RAT: 0.98438
   response: 7E80441447E00
 - expected_values:
-    EQ_RAT: 0.99998
+    EQ_RAT: 0.99997
   response: |-
     7E80441447FFFAAAAAA
     > 7A0.7A8.22C00B|f=2021-
     CAN ERROR
 - expected_values:
-    EQ_RAT: 0.99998
+    EQ_RAT: 0.99997
   response: |-
     7E80441447FFFAAAAAA
     CAN ERROR
