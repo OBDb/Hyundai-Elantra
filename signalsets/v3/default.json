@@ -604,11 +604,11 @@
   "signals": [
     {"id": "ELANTRA_VSS_V2_7E2", "path": "Movement", "fmt": {"bix": 104, "len": 16, "blsb": true, "max": 180, "min": -180, "div": 100, "sign": true, "unit": "milesPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed", "description": "Current vehicle speed"}
   ]},
-{ "hdr": "7E2", "rax": "7EA", "cmd": {"22": "E004"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2025 },
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"22": "E004"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2026 },
   "signals": [
     {"id": "ELANTRA_VPWR_V3", "path": "Battery", "fmt": {"bix": 152, "len": 8, "max": 100, "unit": "percent" }, "name": "12v battery charge"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0101"}, "freq": 1, "filter": { "from": 2021 }, "dbgfilter": { "to": 2021, "from": 2025 },
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0101"}, "freq": 1, "filter": { "from": 2021 }, "dbgfilter": { "to": 2021, "from": 2026 },
   "signals": [
     {"id": "ELANTRA_HVBAT_SOC",        "path": "Battery", "fmt": {"bix": 32,  "len": 8,  "max": 100,                        "div": 2,                "unit": "percent"       }, "name": "HV battery charge, dashboard",     "suggestedMetric": "stateOfCharge"},
     {"id": "ELANTRA_HVBAT_CHARGING",   "path": "Battery", "fmt": {"bix": 72,  "len": 1,  "max": 1,                                                   "unit": "offon"         }, "name": "HV battery charging",              "suggestedMetric": "isCharging"},
