@@ -1,4 +1,4 @@
-command_id: 7E1.7E9.21A0
+command_id: 7E1.7E9.21A0|f=-2020
 test_cases:
 - expected_values:
     ELANTRA_APP_REL_TCM: 0
