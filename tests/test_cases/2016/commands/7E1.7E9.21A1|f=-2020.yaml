@@ -1,4 +1,4 @@
-command_id: 7E1.7E9.21A1
+command_id: 7E1.7E9.21A1|f=-2020
 test_cases:
 - expected_values:
     ELANTRA_CURRENT_GEAR_7E1_2: 0

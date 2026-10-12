@@ -138,7 +138,7 @@ supported_commands_by_ecu:
   - 0131:CLR_DIST
 unsupported_commands_by_ecu:
   "7D1":
-  - 7D1.7D9.2101:ELANTRA_FL_VSS,ELANTRA_FR_VSS,ELANTRA_RL_VSS,ELANTRA_RR_VSS
+  - 7D1.7D9.2101
   "7D4":
   - 7D4.7DC.2101:ELANTRA_STEER_ANGLE_V2
   "7D6":
