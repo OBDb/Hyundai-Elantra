@@ -1,5 +1,6 @@
 { "ecu": [
     { "hdr": "7A0", "type": "bodyControl" },
+    { "hdr": "7C6", "type": "cluster" },
     { "hdr": "7E0", "type": "engine" },
     { "hdr": "7E1", "type": "transmission" },
     { "hdr": "7E2", "type": "hybridControl" },
