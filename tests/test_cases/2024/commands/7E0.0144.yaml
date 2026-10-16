@@ -26,6 +26,16 @@ test_cases:
     0144
     7E804414480E6
 - expected_values:
+    EQ_RAT: 0.97961
+  response: |-
+    01441
+    7E80441447D64
+- expected_values:
+    EQ_RAT: 0.98096
+  response: |-
+    01441
+    7E80441447D90
+- expected_values:
     EQ_RAT: 0.99115
   response: |-
     01441
@@ -36,10 +46,10 @@ test_cases:
     01441
     7E80441447F7C
 - expected_values:
-    EQ_RAT: 1.00293
+    EQ_RAT: 1.00183
   response: |-
     01441
-    7E80441448060
+    7E8044144803C
 - expected_values:
     EQ_RAT: 0.71973
   response: 7E80441445C20

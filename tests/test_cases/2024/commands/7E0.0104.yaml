@@ -26,10 +26,10 @@ test_cases:
     01041
     7E80341043F
 - expected_values:
-    LOAD_PCT: 25.09804
+    LOAD_PCT: 37.64706
   response: |-
     01041
-    7E803410440
+    7E803410460
 - expected_values:
     LOAD_PCT: 0
   response: '7E803410400'
