@@ -6,6 +6,16 @@ test_cases:
     0106
     7E803410680
 - expected_values:
+    SHRTFT1: 0
+  response: |-
+    01061
+    7E803410680
+- expected_values:
+    SHRTFT1: 0.78125
+  response: |-
+    01061
+    7E803410681
+- expected_values:
     SHRTFT1: -29.6875
   response: 7E80341065A
 - expected_values:
