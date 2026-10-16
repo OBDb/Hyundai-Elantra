@@ -6,6 +6,16 @@ test_cases:
     010C
     7E804410C0000
 - expected_values:
+    RPM: 721
+  response: |-
+    010C
+    7E804410C0B44
+- expected_values:
+    RPM: 1178.5
+  response: |-
+    010C
+    7E804410C126A
+- expected_values:
     RPM: 0
   response: |-
     010C1
