@@ -21,15 +21,15 @@ test_cases:
     01431
     7E80441430000
 - expected_values:
-    LOAD_ABS: 18.43137
+    LOAD_ABS: 12.15686
   response: |-
     01431
-    7E8044143002F
+    7E8044143001F
 - expected_values:
-    LOAD_ABS: 25.09804
+    LOAD_ABS: 63.13725
   response: |-
     01431
-    7E80441430040
+    7E804414300A1
 - expected_values:
     LOAD_ABS: 0
   response: '7E80441430000'
