@@ -11,15 +11,20 @@ test_cases:
     012F
     7E803412FA0
 - expected_values:
-    FLI: 50.98039
+    FLI: 3.92157
   response: |-
     012F1
-    7E803412F82
+    7E803412F0A
 - expected_values:
-    FLI: 55.68627
+    FLI: 18.82353
   response: |-
     012F1
-    7E803412F8E
+    7E803412F30
+- expected_values:
+    FLI: 24.70588
+  response: |-
+    012F1
+    7E803412F3F
 - expected_values:
     FLI: 62.7451
   response: |-

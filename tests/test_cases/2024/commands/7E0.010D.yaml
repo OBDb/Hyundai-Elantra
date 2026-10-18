@@ -16,15 +16,15 @@ test_cases:
     010D1
     7E803410D00
 - expected_values:
-    VSS: 10
+    VSS: 31
   response: |-
     010D1
-    7E803410D0A
+    7E803410D1F
 - expected_values:
-    VSS: 32
+    VSS: 81
   response: |-
     010D1
-    7E803410D20
+    7E803410D51
 - expected_values:
     VSS: 0
   response: 7E803410D00
