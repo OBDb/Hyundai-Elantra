@@ -36,10 +36,10 @@ test_cases:
     01441
     7E80441447D0E
 - expected_values:
-    EQ_RAT: 1.00183
+    EQ_RAT: 1.00122
   response: |-
     01441
-    7E8044144803C
+    7E80441448028
 - expected_values:
     EQ_RAT: 1.99
   response: |-
