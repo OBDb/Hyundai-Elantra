@@ -26,10 +26,10 @@ test_cases:
     01311
     7E8044131C9D0
 - expected_values:
-    CLR_DIST: 51680
+    CLR_DIST: 51861
   response: |-
     01311
-    7E8044131C9E0
+    7E8044131CA95
 - expected_values:
     CLR_DIST: 0
   response: '7E80441310000'
