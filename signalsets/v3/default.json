@@ -591,7 +591,7 @@
   "signals": [
     {"id": "ELANTRA_GEAR_CUR_2025", "path": "Transmission", "fmt": {"bix": 216, "len": 8, "max": 15, "unit": "scalar" }, "name": "Current gear"}
   ]},
-{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "01A5"}, "freq": 5, "dbgfilter": { "to": 2015, "years": [2017, 2018, 2019, 2020, 2021], "from": 2025 },
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "01A5"}, "freq": 5, "dbgfilter": { "to": 2015, "years": [2017, 2018, 2019, 2020, 2021], "from": 2026 },
   "signals": [
     {"id": "ELANTRA_DUAL_CLU_TRANS_ODD",       "path": "Transmission", "fmt": {"bix": 32,  "len": 8,  "max": 255,                                                     "unit": "scalar"  }, "name": "Dual-clutch transmission odd shaft, gear engaged"},
     {"id": "ELANTRA_DUAL_CLU_TRANS_EVEN",      "path": "Transmission", "fmt": {"bix": 40,  "len": 8,  "max": 255,                                                     "unit": "scalar"  }, "name": "Dual-clutch transmission even shaft, gear engaged"},
