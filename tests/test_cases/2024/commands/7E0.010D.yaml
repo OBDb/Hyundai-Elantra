@@ -11,6 +11,11 @@ test_cases:
     010D
     7E803410D0A
 - expected_values:
+    VSS: 23
+  response: |-
+    010D
+    7E803410D17
+- expected_values:
     VSS: 0
   response: |-
     010D1

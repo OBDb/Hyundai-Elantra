@@ -6,15 +6,15 @@ test_cases:
     0104
     7E803410400
 - expected_values:
-    LOAD_PCT: 31.37255
+    LOAD_PCT: 30.98039
   response: |-
     0104
-    7E803410450
+    7E80341044F
 - expected_values:
-    LOAD_PCT: 32.54902
+    LOAD_PCT: 44.31373
   response: |-
     0104
-    7E803410453
+    7E803410471
 - expected_values:
     LOAD_PCT: 0
   response: |-
