@@ -21,10 +21,10 @@ test_cases:
     01111
     7E80341112F
 - expected_values:
-    TP: 25.4902
+    TP: 25.09804
   response: |-
     01111
-    7E803411141
+    7E803411140
 - expected_values:
     TP: 32.94118
   response: |-
