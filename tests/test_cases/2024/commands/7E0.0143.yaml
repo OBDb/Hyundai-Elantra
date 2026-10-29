@@ -6,15 +6,15 @@ test_cases:
     0143
     7E80441430000
 - expected_values:
-    LOAD_ABS: 18.03922
+    LOAD_ABS: 24.70588
   response: |-
     0143
-    7E8044143002E
+    7E8044143003F
 - expected_values:
-    LOAD_ABS: 20
+    LOAD_ABS: 64.70588
   response: |-
     0143
-    7E80441430033
+    7E804414300A5
 - expected_values:
     LOAD_ABS: 0
   response: |-
