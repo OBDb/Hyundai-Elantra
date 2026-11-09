@@ -12,6 +12,10 @@ test_cases:
     7E806413480DF8000AA
     CAN ERROR
 - expected_values:
+    LAMBDA11_CURRENT: 0.98776
+    O2S11_CURRENT: -0.05078
+  response: 7E80641347E6F7FF3
+- expected_values:
     LAMBDA11_CURRENT: 1.03903
     O2S11_CURRENT: 0.0625
   response: |-
@@ -65,14 +69,18 @@ test_cases:
     > 770.778.22BC04|f=2021-
     CAN ERROR
 - expected_values:
+    LAMBDA11_CURRENT: 0.99997
+    O2S11_CURRENT: -0.01953
+  response: 7E80641347FFF7FFB
+- expected_values:
     LAMBDA11_CURRENT: 1.00195
     O2S11_CURRENT: -0.00391
   response: 7E806413480407FFF
 - expected_values:
     LAMBDA11_CURRENT: 1.99
-    O2S11_CURRENT: 1.32422
-  response: 7E8064134FFFF8153
+    O2S11_CURRENT: 1.16406
+  response: 7E8064134FFFF812A
 - expected_values:
     LAMBDA11_CURRENT: 1.99
-    O2S11_CURRENT: 2.125
-  response: 7E8064134FFFF8220
+    O2S11_CURRENT: 2.08984
+  response: 7E8064134FFFF8217
