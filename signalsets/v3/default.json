@@ -35,7 +35,7 @@
     {"id": "ELANTRA_HAZARD_SW", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 255,                             "unit": "scalar" }, "name": "Hazard switch"},
     {"id": "ELANTRA_HL_SW",     "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 1,   "nullmin": 0, "nullmax": 2, "unit": "noyes"  }, "name": "Headlight switch (raw >2)"}
   ]},
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC06"}, "freq": 0.25, "dbgfilter": { "to": 2021, "from": 2027 },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC06"}, "freq": 0.25, "dbgfilter": { "to": 2020, "from": 2027 },
   "signals": [
     {"id": "ELANTRA_BRAKE_LIGHT", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "scalar" }, "name": "Brake light"}
   ]},
@@ -135,7 +135,7 @@
   "signals": [
     {"id": "ELANTRA_VSS", "path": "Movement", "fmt": {"bix": 232, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
   ]},
-{ "hdr": "7B3", "rax": "7BB", "cmd": {"22": "0101"}, "freq": 5, "dbgfilter": { "to": 2021, "from": 2027 },
+{ "hdr": "7B3", "rax": "7BB", "cmd": {"22": "0101"}, "freq": 5, "dbgfilter": { "to": 2020, "from": 2027 },
   "signals": [
     {"id": "ELANTRA_HVAC_IAT_PASSENGER_VENT",      "path": "Climate", "fmt": {"bix": 64, "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "nullmax": 87.5, "unit": "celsius" }, "name": "Interior temperature, passenger vent"},
     {"id": "ELANTRA_HVAC_IAT_PASSENGER_LEGS_VENT", "path": "Climate", "fmt": {"bix": 72, "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "nullmax": 87.5, "unit": "celsius" }, "name": "Interior temperature, passenger legs vent"}
@@ -568,7 +568,7 @@
   "signals": [
     {"id": "ELANTRA_CURRENT_GEAR_7E1_2", "path": "Transmission", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "scalar" }, "name": "Current gear"}
   ]},
-{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "01A0"}, "freq": 0.25, "dbgfilter": { "to": 2016, "years": [2018, 2019, 2020, 2021, 2022, 2023], "from": 2027 },
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "01A0"}, "freq": 0.25, "dbgfilter": { "to": 2016, "years": [2018, 2019, 2020, 2022, 2023], "from": 2027 },
   "signals": [
     {"id": "ELANTRA_RPM_7E1",                   "path": "Movement",     "fmt": {"bix": 32,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Engine RPM"},
     {"id": "ELANTRA_VSS_7E1",                   "path": "Movement",     "fmt": {"bix": 48,  "len": 8,  "max": 255,                                                        "unit": "kilometersPerHour" }, "name": "Vehicle speed",                            "suggestedMetric": "speed"},
