@@ -1,7 +1,6 @@
 command_id: 7E1.7E9.2201A4|f=-2024
 test_cases:
 - expected_values:
-    ELANTRA_GEAR_CUR: 0
     ELANTRA_GEAR_NXT: 0
   response: |-
     7E910256201A4FFFFE0
@@ -11,7 +10,6 @@ test_cases:
     7E92400F0FCC0FF0050
     7E925004500AAAAAAAA
 - expected_values:
-    ELANTRA_GEAR_CUR: 0
     ELANTRA_GEAR_NXT: 0
   response: |-
     7E910256201A4FFFFE0
@@ -21,7 +19,7 @@ test_cases:
     7E92400F0FCC0FF0056
     7E925004500AAAAAAAA
 - expected_values:
-    ELANTRA_GEAR_CUR: 1
+    ELANTRA_GEAR_CUR: '1'
     ELANTRA_GEAR_NXT: 1
   response: |-
     7E910256201A4FFFFE0
@@ -31,7 +29,6 @@ test_cases:
     7E92401F0FDC0FF0023
     7E925002500AAAAAAAA
 - expected_values:
-    ELANTRA_GEAR_CUR: 0
     ELANTRA_GEAR_NXT: 0
   response: |-
     7E910256201A4FFFFE0
@@ -41,7 +38,6 @@ test_cases:
     7E92400F0FCC0FF0030
     7E925003100AAAAAAAA
 - expected_values:
-    ELANTRA_GEAR_CUR: 0
     ELANTRA_GEAR_NXT: 0
   response: |-
     7E910256201A4FFFFE0
@@ -51,7 +47,6 @@ test_cases:
     7E92400F0FCC0FF0031
     7E925003200AAAAAAAA
 - expected_values:
-    ELANTRA_GEAR_CUR: 14
     ELANTRA_GEAR_NXT: 14
   response: |-
     7E910256201A4FFFFE0
@@ -61,7 +56,7 @@ test_cases:
     7E9240EF0FCC0FF005C
     7E925004700AAAAAAAA
 - expected_values:
-    ELANTRA_GEAR_CUR: 1
+    ELANTRA_GEAR_CUR: '1'
     ELANTRA_GEAR_NXT: 1
   response: |-
     7E910256201A4FFFFE0
@@ -71,7 +66,7 @@ test_cases:
     7E92401F0FDC0FF001D
     7E925001B00AAAAAAAA
 - expected_values:
-    ELANTRA_GEAR_CUR: 4
+    ELANTRA_GEAR_CUR: '4'
     ELANTRA_GEAR_NXT: 3
   response: |-
     7E910256201A4FFFFE0
@@ -81,7 +76,7 @@ test_cases:
     7E92403F0FDC0FF0028
     7E925002500AAAAAAAA
 - expected_values:
-    ELANTRA_GEAR_CUR: 2
+    ELANTRA_GEAR_CUR: '2'
     ELANTRA_GEAR_NXT: 2
   response: |-
     7E910256201A4FFFFE0
@@ -91,7 +86,7 @@ test_cases:
     7E92402F0FCC0FF0037
     7E925002900AAAAAAAA
 - expected_values:
-    ELANTRA_GEAR_CUR: 4
+    ELANTRA_GEAR_CUR: '4'
     ELANTRA_GEAR_NXT: 4
   response: |-
     7E910256201A4FFFFE0
@@ -101,7 +96,7 @@ test_cases:
     7E92404F0FCC0FF0032
     7E925002700AAAAAAAA
 - expected_values:
-    ELANTRA_GEAR_CUR: 3
+    ELANTRA_GEAR_CUR: '3'
     ELANTRA_GEAR_NXT: 3
   response: |-
     7E910256201A4FFFFE0
@@ -111,7 +106,7 @@ test_cases:
     7E92403F0FCC0FF005E
     7E925004300AAAAAAAA
 - expected_values:
-    ELANTRA_GEAR_CUR: 5
+    ELANTRA_GEAR_CUR: '5'
     ELANTRA_GEAR_NXT: 5
   response: |-
     7E910256201A4FFFFE0
@@ -121,7 +116,7 @@ test_cases:
     7E92405F0FCC0FF0028
     7E925002500AAAAAAAA
 - expected_values:
-    ELANTRA_GEAR_CUR: 4
+    ELANTRA_GEAR_CUR: '4'
     ELANTRA_GEAR_NXT: 4
   response: |-
     7E910256201A4FFFFE0
@@ -131,7 +126,7 @@ test_cases:
     7E92404F0FCC0FF0037
     7E925002800AAAAAAAA
 - expected_values:
-    ELANTRA_GEAR_CUR: 7
+    ELANTRA_GEAR_CUR: '7'
     ELANTRA_GEAR_NXT: 7
   response: |-
     7E910256201A4FFFFE0
