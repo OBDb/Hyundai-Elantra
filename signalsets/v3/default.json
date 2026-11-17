@@ -33,7 +33,7 @@
 { "hdr": "770", "rax": "778", "cmd": {"22": "BC05"}, "freq": 1, "filter": { "from": 2021 }, "dbgfilter": { "from": 2027 },
   "signals": [
     {"id": "ELANTRA_HAZARD_SW", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 255,                             "unit": "scalar" }, "name": "Hazard switch"},
-    {"id": "ELANTRA_HL_SW",     "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 1,   "nullmin": 0, "nullmax": 2, "unit": "noyes"  }, "name": "Headlight switch (raw >2)"}
+    {"id": "ELANTRA_HL_SW",     "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 2,   "nullmin": 0, "nullmax": 2, "unit": "noyes"  }, "name": "Headlight switch (raw >2)"}
   ]},
 { "hdr": "770", "rax": "778", "cmd": {"22": "BC06"}, "freq": 0.25, "dbgfilter": { "to": 2020, "from": 2027 },
   "signals": [
@@ -738,9 +738,9 @@
     {"id": "ELANTRA_HVBAT_HTR1_T",      "path": "Battery",             "fmt": {"bix": 184, "len": 8,  "max": 127, "min": -127,                        "sign": true,                               "unit": "celsius"       }, "name": "HV battery heater 1 temperature"},
     {"id": "ELANTRA_HVBAT_HTR2_T",      "path": "Battery",             "fmt": {"bix": 192, "len": 8,  "max": 127, "min": -127,                        "sign": true,                               "unit": "celsius"       }, "name": "HV battery heater 2 temperature"},
     {"id": "ELANTRA_HVBAT_SOH",         "path": "Battery",             "fmt": {"bix": 200, "len": 16, "max": 100,                        "div": 10,                 "nullmin": 0,                 "unit": "percent"       }, "name": "HV battery state of health",           "suggestedMetric": "stateOfHealth"},
-    {"id": "ELANTRA_HVBAT_DET_MAX_ID",  "path": "Battery",             "fmt": {"bix": 216, "len": 8,  "max": 98,                                                                  "nullmax": 200, "unit": "scalar"        }, "name": "HV battery max deterioration cell id"},
+    {"id": "ELANTRA_HVBAT_DET_MAX_ID",  "path": "Battery",             "fmt": {"bix": 216, "len": 8,  "max": 200,                                                                 "nullmax": 200, "unit": "scalar"        }, "name": "HV battery max deterioration cell id"},
     {"id": "ELANTRA_HVBAT_WH",          "path": "Battery",             "fmt": {"bix": 224, "len": 16, "max": 100,              "mul": 2, "div": 1000,                                             "unit": "kilowattHours" }, "name": "HV battery remaining energy"},
-    {"id": "ELANTRA_HVBAT_DET_MIN_ID",  "path": "Battery",             "fmt": {"bix": 240, "len": 8,  "max": 98,                                                                  "nullmax": 200, "unit": "scalar"        }, "name": "HV battery min deterioration cell id"},
+    {"id": "ELANTRA_HVBAT_DET_MIN_ID",  "path": "Battery",             "fmt": {"bix": 240, "len": 8,  "max": 200,                                                                 "nullmax": 200, "unit": "scalar"        }, "name": "HV battery min deterioration cell id"},
     {"id": "ELANTRA_HVBAT_SOC_DISP",    "path": "Battery",             "fmt": {"bix": 248, "len": 8,  "max": 100,                        "div": 2,                                                "unit": "percent"       }, "name": "HV battery charge",                    "suggestedMetric": "stateOfCharge"},
     {"id": "ELANTRA_HVBAT_CMU097_VOLT", "path": "Battery.Modules.097", "fmt": {"bix": 272, "len": 8,  "max": 4.2, "min": 2.8,            "div": 50,                                               "unit": "volts"         }, "name": "HV battery module 097 voltage"},
     {"id": "ELANTRA_HVBAT_CMU098_VOLT", "path": "Battery.Modules.098", "fmt": {"bix": 280, "len": 8,  "max": 4.2, "min": 2.8,            "div": 50,                                               "unit": "volts"         }, "name": "HV battery module 098 voltage"}
