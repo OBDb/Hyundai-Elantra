@@ -125,7 +125,7 @@
     {"id": "ELANTRA_SENS_3_ODO_EVT_2", "path": "Trips", "fmt": {"bix": 296, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 3 odometer event 2"},
     {"id": "ELANTRA_SENS_3_ODO_EVT_3", "path": "Trips", "fmt": {"bix": 320, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 3 odometer event 3"}
   ]},
-{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C00F"}, "freq": 30, "dbgfilter": { "to": 2015, "years": [2017, 2018, 2019, 2020, 2021, 2022, 2024], "from": 2026 },
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C00F"}, "freq": 30, "dbgfilter": { "to": 2015, "years": [2017, 2018, 2019, 2020, 2021, 2022], "from": 2026 },
   "signals": [
     {"id": "ELANTRA_SENS_4_ODO_EVT_1", "path": "Trips", "fmt": {"bix": 272, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 4 odometer event 1"},
     {"id": "ELANTRA_SENS_4_ODO_EVT_2", "path": "Trips", "fmt": {"bix": 296, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 4 odometer event 2"},
