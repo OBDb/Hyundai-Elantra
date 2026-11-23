@@ -8,6 +8,11 @@ test_cases:
 - expected_values:
     ELANTRA_DEFOG_LIGHT: 0
   response: |-
+    778100B62BC07000003
+    778210000000000AAAA
+- expected_values:
+    ELANTRA_DEFOG_LIGHT: 0
+  response: |-
     778100B62BC07000010
     778210000000000AAAA
 - expected_values:
